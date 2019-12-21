@@ -1,0 +1,23 @@
+{
+  "title": "Tag-Style Label",
+  "label": "Tag-Style Label",
+  "notes": "A tag-style label for content; used for news and stories",
+  "preview": "@preview",
+  "status": "ready",
+  "context": {
+    "tag_classes": "mb-2 mr-auto bg-secondary text-light px-2 d-inline-block rounded",
+    "tag_text": "Label Text"
+  },
+  "variants": [
+    {
+      "name": "reverse",
+      "title": "Reverse Label",
+      "label": "Reverse Label",
+      "notes": "Reverse color label for use on dark backgrounds.",
+      "context": {
+        "tag_classes": "mb-2 mr-auto bg-light text-dark px-2 d-inline-block rounded",
+        "tag_text": "Label Text"
+      }
+    }
+  ]
+}

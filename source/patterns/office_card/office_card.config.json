@@ -1,0 +1,26 @@
+{
+  "title": "Office Card",
+  "label": "Office Card",
+  "notes": "A card describing a related office",
+  "preview": "@preview",
+  "status": "ready",
+  "context": {
+    "link_list_classes": "list-unstyled m-0",
+    "link_list_item_classes": "",
+    "button_icon": " <i class=\"fas ml-auto align-self-center fa-angle-right\"></i>",
+    "button_classes": "btn text-left btn-block my-2 btn-outline-secondary d-flex",
+    "button_text": "Button Text"
+  },
+  "variants": [
+    {
+      "name": "wide",
+      "title": "Wide",
+      "label": "Wide",
+      "notes": "Wider version of the card with the links presented in two columns.",
+      "context": {
+        "link_list_classes": "list-unstyled my-0 row",
+        "link_list_item_classes": "col-6"
+      }
+    }
+  ]
+}

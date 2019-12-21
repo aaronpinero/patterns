@@ -1,0 +1,6 @@
+{
+  "title": "Breadcrumb",
+  "label": "Breadcrumb",
+  "notes": "Default Bootstrap breadcrumb component with additional style classes",
+  "status": "ready"
+}
