@@ -44,10 +44,10 @@ fs.readFile('./dist/css/patterns.temp.css', (err, css) => {
   postcss([autoprefixer])
     .process(css, { from: './dist/css/patterns.temp.css', to: './dist/css/patterns.css' })
     .then(result => {
-      fs.writeFile('./dist/css/patterns.css', result.css, (err) =>
+      fs.writeFile('./dist/css/patterns.css', result.css, (err) => {
         if (err) throw err;
         fs.unlink('./dist/css/patterns.temp.css');
-      );
+      });
       if ( result.map ) {
         fs.writeFile('./dist/css/patterns.css.map', result.map, () => true);
       }
