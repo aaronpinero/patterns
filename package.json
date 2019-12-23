@@ -29,7 +29,7 @@
     "postcss": "^7.0.25",
     "terser": "^4.4.3",
     "tyfy": "^2.0.5",
-    "tyfy-bootstrap": "^1.0.0"
+    "tyfy-bootstrap": "^1.1.0"
   },
   "browserslist": [
     "> 5%"

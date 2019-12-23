@@ -17,37 +17,22 @@ var scss = '';
 // get stylesheets paths
 var stylesheets = new Array();
 var patternstyles = glob.sync("./source/patterns/**/*.scss");
-stylesheets.push(require.resolve('tyfy-bootstrap/source/scss/tyfy-bootstrap.scss')); // tybs
+stylesheets.push(require.resolve('tyfy-bootstrap/dist/style/tyfy-bootstrap.css')); // tybs
 stylesheets = stylesheets.concat(patternstyles);
 
-// concatenate scripts
+// concatenate styles
 stylesheets.forEach(element => scss += (fs.readFileSync(element,"utf8") + "\n"));
-
-// write a temporary file that contains all the scss
-fs.writeFileSync('./dist/css/patterns.scss',scss);
 
 // render the scss as css
 sass.render({
-  file: './dist/css/patterns.scss',
+  data: scss,
   sourceComments: true
-}, function(err, result) {
+}, function(err, sassresult) {
 	if (err) throw err;
-
-	// write the rendered css
-	fs.writeFileSync('./dist/css/patterns.temp.css',result.css);
-
-	// remove temporary file
-	fs.unlinkSync('./dist/css/patterns.scss');
-});
- 
-fs.readFile('./dist/css/patterns.temp.css', (err, css) => {
   postcss([autoprefixer])
-    .process(css, { from: './dist/css/patterns.temp.css', to: './dist/css/patterns.css' })
+    .process(sassresult.css,{from:undefined})
     .then(result => {
-      fs.writeFile('./dist/css/patterns.css', result.css, (err) => {
-        if (err) throw err;
-        fs.unlink('./dist/css/patterns.temp.css');
-      });
+      fs.writeFile('./dist/css/patterns.css', result.css, () => true);
       if ( result.map ) {
         fs.writeFile('./dist/css/patterns.css.map', result.map, () => true);
       }
