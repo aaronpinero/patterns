@@ -1,0 +1,101 @@
+// pattern styles
+$breadcrumb-item-timing:0.1s;
+.breadcrumb {
+  background-color:white;
+  .breadcrumb-item {
+    margin-right:-0.375rem;
+    overflow:hidden;
+    position:relative;
+    transition:opacity $breadcrumb-item-timing;
+    z-index:1;
+    &.not-inview {
+      opacity:0;
+    }
+    &.inview {
+      animation:breadcrumb-item-slide $breadcrumb-item-timing ease-in-out;
+    }
+    & > a,
+    & > span {
+      clip-path:polygon(0% 0%, (calc(100% - 0.75rem)) 0%, 100% 50%, calc(100% - 0.75rem) 100%, 0% 100%, 0.75rem 50%);
+      display:block;
+      position:relative;
+      height:2.5rem;
+      line-height:2.5rem;
+      padding: 0 1rem 0 1.25rem;
+      white-space:nowrap;
+    }
+    & > a {
+      background:#e6e6e6;
+      text-decoration:none;
+      transition:all 0.25s;
+      &:hover,
+      &:active {
+        background-color:var(--primary);
+        color:white;
+      }
+    }
+    & > span {
+      background:#f2f2f2;
+    }
+    &:first-child {
+      & > a {
+        clip-path:polygon(0% 0%, (calc(100% - 0.75rem)) 0%, 100% 50%, calc(100% - 0.75rem) 100%, 0% 100%, 0 50%);
+        padding-left:0.75rem;
+      }
+    }
+    &:last-child {
+      flex:2 0 0;
+      margin-left:0;
+      & > span {
+        clip-path:polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%, 0.75rem 50%);
+      }
+    }
+    &:nth-last-child(2) {
+      transition:opacity ($breadcrumb-item-timing + 0.1s);
+      &.inview {
+        animation:breadcrumb-item-slide ($breadcrumb-item-timing + 0.1s) ease-in-out;
+      }
+    }
+    &:nth-last-child(3) {
+      transition:opacity ($breadcrumb-item-timing + 0.2s);
+      &.inview {
+        animation:breadcrumb-item-slide ($breadcrumb-item-timing + 0.2s) ease-in-out;
+      }
+    }
+    &:nth-last-child(4) {
+      transition:opacity ($breadcrumb-item-timing + 0.3s);
+      &.inview {
+        animation:breadcrumb-item-slide ($breadcrumb-item-timing + 0.3s) ease-in-out;
+      }
+    }
+    &:nth-last-child(5) {
+      transition:opacity ($breadcrumb-item-timing + 0.4s);
+      &.inview {
+        animation:breadcrumb-item-slide ($breadcrumb-item-timing + 0.4s) ease-in-out;
+      }
+    }
+    &:nth-last-child(6) {
+      transition:opacity ($breadcrumb-item-timing + 0.5s);
+      &.inview {
+        animation:breadcrumb-item-slide ($breadcrumb-item-timing + 0.5s) ease-in-out;
+      }
+    }
+    &.dropdown {
+      overflow:visible;
+    }
+    & + .breadcrumb-item {
+      padding-left:0;
+      &::before {
+        display:none;
+      }
+    }
+  }
+}
+@keyframes breadcrumb-item-slide {
+  0% {
+    left:-50px;
+  }
+  100% {
+    left:0;
+  }
+}

@@ -1,10 +1,22 @@
-<div class="container-fluid px-5">
-  <nav aria-label="breadcrumb" class="p-3">
-    <ol class="breadcrumb p-0 m-0 bg-transparent">
-      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item"><a href="page.html">Section Level 1</a></li>
-      <li class="breadcrumb-item"><a href="subpage.html">Section Level 2</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Current Page</li>
-    </ol>
-  </nav>
-</div>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb p-0 w-100 d-flex flex-nowrap rounded-0">
+    <li class="breadcrumb-item make-inview"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item make-inview"><a href="page.html">Section Level 1</a></li>
+    <li class="breadcrumb-item make-inview"><a href="subpage.html">Section Level 2</a></li>
+    <li class="breadcrumb-item active" aria-current="page"><span>Current Page</span></li>
+  </ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb p-0 w-100 d-flex flex-nowrap rounded-0">
+    <li class="breadcrumb-item make-inview"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item dropdown">
+      <a href="#" role="button" id="littlecrumbs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">…</a>
+      <div class="dropdown-menu" aria-labelledby="littlecrumbs">
+        <a class="dropdown-item" href="#">Section Level 1</a>
+        <a class="dropdown-item" href="#">Section Level 2</a>
+      </div>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span>Current Page</span></li>
+  </ol>
+</nav>

@@ -13,7 +13,7 @@ var glob = require("glob");
 var scripts = new Array();
 scripts.push(require.resolve('tyfy/dist/script/inview.js')); // inview from tyfy
 scripts.push(require.resolve('jquery/dist/jquery.js')); // jquery
-scripts.push(require.resolve('popper.js/dist/popper.js')); // popper
+scripts.push(require.resolve('popper.js/dist/umd/popper.js')); // popper
 scripts.push(require.resolve('bootstrap/dist/js/bootstrap.js')); // bootstrap
 
 // variable to hold js

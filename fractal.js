@@ -9,5 +9,5 @@ fractal.set('project.author', 'Aaron Pinero');
 fractal.components.set('path', __dirname + '/source/patterns');
 fractal.components.set('default.preview', '@preview');
 
-fractal.docs.set('path', __dirname + '/resources/patterns_guide');
+fractal.docs.set('path', __dirname + '/source/patterns_guide');
 fractal.web.set('static.path', __dirname + '/dist');
