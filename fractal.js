@@ -10,4 +10,6 @@ fractal.components.set('path', __dirname + '/source/patterns');
 fractal.components.set('default.preview', '@preview');
 
 fractal.docs.set('path', __dirname + '/source/patterns_guide');
+
 fractal.web.set('static.path', __dirname + '/dist');
+fractal.web.set('builder.dest', __dirname + '/docs');

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.1" type="text/css">
+
+
+<title>Breadcrumb | TyBs Patterns</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+    </button>
+    <a href="../../index.html" class="Header-title" data-pjax>TyBs Patterns</a>
+</div>
+
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+
+    
+    
+
+<div class="Pen" data-behaviour="pen" id="pen-990c75be1c8437a258d473fdd30871a2">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/breadcrumb.html" title="Component preview">
+            Breadcrumb
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+
+</div>
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-990c75be1c8437a258d473fdd30871a2">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/breadcrumb.html"
+                sandbox="allow-same-origin allow-scripts allow-forms allow-modals"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-990c75be1c8437a258d473fdd30871a2">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-990c75be1c8437a258d473fdd30871a2-panel-html">HTML</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-990c75be1c8437a258d473fdd30871a2-panel-view">View</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-990c75be1c8437a258d473fdd30871a2-panel-context">Context</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-990c75be1c8437a258d473fdd30871a2-panel-assets">Assets</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-990c75be1c8437a258d473fdd30871a2-panel-info">Info</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-990c75be1c8437a258d473fdd30871a2-panel-notes">Notes</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-990c75be1c8437a258d473fdd30871a2-panel-html">
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"breadcrumb"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb p-0 w-100 d-flex flex-nowrap rounded-0"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item make-inview"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"index.html"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item make-inview"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"page.html"</span>&gt;</span>Section Level 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item make-inview"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"subpage.html"</span>&gt;</span>Section Level 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item active"</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">"page"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"current"</span>&gt;</span>Current Page<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-990c75be1c8437a258d473fdd30871a2-panel-view">
+    <code class="Code Code--lang-handlebars">
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"breadcrumb"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb p-0 w-100 d-flex flex-nowrap rounded-0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item make-inview"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"index.html"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item make-inview"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"page.html"</span>&gt;</span>Section Level 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item make-inview"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"subpage.html"</span>&gt;</span>Section Level 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item active"</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">"page"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"current"</span>&gt;</span>Current Page<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-990c75be1c8437a258d473fdd30871a2-panel-context">
+    <code class="Code Code--lang-json">
+        
+            
+            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-990c75be1c8437a258d473fdd30871a2-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-51d1695341800fe45921ae2baba816e4">breadcrumb.js</option>
+                
+                <option value="file-3885d0fad50b991fa8893b07b6a4366f">breadcrumb.scss</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-51d1695341800fe45921ae2baba816e4" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-JavaScript FileBrowser-code">
+                                <pre><span class="hljs-comment">// javascript to switch from small to large screen configuration, using intersection observer and resize observer</span>
+
+<span class="hljs-comment">// start from large screen configuration, check to see if the breadcrumb is being cut off</span>
+
+<span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">"DOMContentLoaded"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-string">"IntersectionObserver"</span> <span class="hljs-keyword">in</span> <span class="hljs-built_in">window</span>) { <span class="hljs-comment">// if available</span>
+    
+    <span class="hljs-comment">// identify the breadcrumb</span>
+    <span class="hljs-keyword">var</span> b = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">".breadcrumb"</span>);
+    
+    <span class="hljs-comment">// is there a breadcrumb?</span>
+    <span class="hljs-keyword">if</span> (b !== <span class="hljs-literal">null</span> &amp;&amp; b !== <span class="hljs-literal">undefined</span>) {
+    
+      <span class="hljs-comment">// identify the current page title</span>
+      <span class="hljs-keyword">var</span> c = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">".breadcrumb .current"</span>);
+
+      <span class="hljs-comment">// identify the items in the breadcrumb that are not the first or last items</span>
+      <span class="hljs-keyword">var</span> i = <span class="hljs-built_in">Array</span>.from(b.querySelectorAll(<span class="hljs-string">"li"</span>));
+      i.splice(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>);
+      i.splice(<span class="hljs-number">-1</span>,<span class="hljs-number">1</span>);
+      <span class="hljs-comment">// console.log(i);</span>
+
+      <span class="hljs-comment">// get the approximate width of the breadcrumb at full size as an initial value</span>
+      <span class="hljs-keyword">var</span> w = <span class="hljs-number">0</span>;
+      b.querySelectorAll(<span class="hljs-string">"li *:first-child"</span>).forEach(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> w += item.scrollWidth);
+      <span class="hljs-comment">// console.log({w});</span>
+
+      <span class="hljs-comment">// inner HTML code for the small screen dropdown item</span>
+      <span class="hljs-keyword">var</span> dropdown_html = <span class="hljs-string">'&lt;a href="#" role="button" id="littlecrumbs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;…&lt;/a&gt;&lt;div class="dropdown-menu" aria-labelledby="littlecrumbs"&gt;&lt;/div&gt;'</span>;
+
+      <span class="hljs-comment">// options for the intersection observer</span>
+      <span class="hljs-keyword">var</span> c_observer_options = {
+        <span class="hljs-attr">root</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'.breadcrumb li:last-child'</span>),
+        <span class="hljs-attr">rootMargin</span>: <span class="hljs-string">'0px'</span>,
+        <span class="hljs-attr">threshold</span>: <span class="hljs-number">0.95</span>
+      }
+    
+      <span class="hljs-comment">// callback for the intersection observer</span>
+      <span class="hljs-keyword">var</span> c_observer_callback = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">entries, observer</span>) </span>{
+        entries.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">entry</span>) </span>{
+          <span class="hljs-keyword">var</span> is_smaller = entry.intersectionRatio &lt;= <span class="hljs-number">0.94999999</span>;
+          <span class="hljs-comment">// console.log({is_smaller});</span>
+
+          <span class="hljs-comment">// if the screen is too small, change to the small screen context</span>
+          <span class="hljs-comment">// and then observe for when the breadcrumb is big enough again for the large screen context</span>
+          <span class="hljs-keyword">if</span> (is_smaller) {
+
+            <span class="hljs-comment">// stop observing intersections</span>
+            c_observer.unobserve(c);
+
+            <span class="hljs-comment">// transition to small screen context</span>
+            b.classList.add(<span class="hljs-string">'smallscreen'</span>);
+            <span class="hljs-keyword">var</span> items = b.querySelectorAll(<span class="hljs-string">"li"</span>);
+            <span class="hljs-keyword">if</span> (items.length &gt; <span class="hljs-number">2</span>) {
+              <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> x=<span class="hljs-number">1</span>;x&lt;(items.length - <span class="hljs-number">1</span>);x++) {
+                items[x].parentNode.removeChild(items[x]);
+              }
+            }
+            <span class="hljs-keyword">var</span> dropdown = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">"li"</span>);
+            dropdown.className = <span class="hljs-string">"dropdown breadcrumb-item"</span>;
+            dropdown.innerHTML = dropdown_html;
+            c.parentNode.before(dropdown);
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> y=<span class="hljs-number">0</span>;y &lt; i.length;y++) {
+              <span class="hljs-keyword">var</span> l = i[y].querySelector(<span class="hljs-string">'a'</span>).cloneNode(<span class="hljs-literal">true</span>);
+              l.className = <span class="hljs-string">"dropdown-item"</span>;
+              b.querySelector(<span class="hljs-string">'.dropdown .dropdown-menu'</span>).append(l);
+            }
+
+            <span class="hljs-comment">// if resize observer is supported, do it</span>
+            <span class="hljs-keyword">if</span> (ResizeObserver) {
+
+              <span class="hljs-comment">// observer for the breadcrumb</span>
+              <span class="hljs-keyword">const</span> b_observer = <span class="hljs-keyword">new</span> ResizeObserver(<span class="hljs-function"><span class="hljs-params">entries</span> =&gt;</span> {
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> entry <span class="hljs-keyword">of</span> entries) {
+                  <span class="hljs-keyword">var</span> size = entry.contentRect.width;
+                  <span class="hljs-comment">// console.log({size});</span>
+                  <span class="hljs-keyword">if</span> (size &gt; w) {
+
+                    <span class="hljs-comment">// start the intersection observer again</span>
+                    c_observer.observe(c);
+
+                    <span class="hljs-comment">// stop the resize observer</span>
+                    b_observer.unobserve(b);
+
+                    <span class="hljs-comment">// exit the small screen context</span>
+                    b.classList.remove(<span class="hljs-string">'smallscreen'</span>);
+                    <span class="hljs-keyword">var</span> dd = b.querySelector(<span class="hljs-string">'.dropdown'</span>);
+                    dd.parentNode.removeChild(dd);
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> y=<span class="hljs-number">0</span>;y &lt; i.length;y++) {
+                      c.parentNode.before(i[y]);
+                    }
+                  }
+                }
+              });
+              b_observer.observe(b);
+            }
+          }
+
+        });
+      };
+
+      <span class="hljs-comment">// define the observer</span>
+      <span class="hljs-keyword">let</span> c_observer = <span class="hljs-keyword">new</span> IntersectionObserver(c_observer_callback,c_observer_options);
+
+      <span class="hljs-comment">// apply the observer to the items</span>
+      c_observer.observe(c);
+    }
+  }
+});</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/breadcrumb/breadcrumb.js"><span>/components/raw/breadcrumb/breadcrumb.js</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">source/patterns/breadcrumb/breadcrumb.js</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">4.1 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-3885d0fad50b991fa8893b07b6a4366f" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code">
+                                <pre><span class="hljs-comment">// pattern styles</span>
+<span class="hljs-variable">$breadcrumb-item-timing</span>:<span class="hljs-number">0.1s</span>;
+<span class="hljs-selector-class">.breadcrumb</span> {
+  <span class="hljs-attribute">background-color</span>:white;
+  <span class="hljs-selector-class">.breadcrumb-item</span> {
+    <span class="hljs-attribute">margin-right</span>:-<span class="hljs-number">0.375rem</span>;
+    <span class="hljs-attribute">overflow</span>:hidden;
+    <span class="hljs-attribute">position</span>:relative;
+    <span class="hljs-attribute">transition</span>:opacity <span class="hljs-variable">$breadcrumb-item-timing</span>;
+    <span class="hljs-attribute">z-index</span>:<span class="hljs-number">1</span>;
+    &amp;<span class="hljs-selector-class">.not-inview</span> {
+      <span class="hljs-attribute">opacity</span>:<span class="hljs-number">0</span>;
+    }
+    &amp;<span class="hljs-selector-class">.inview</span> {
+      <span class="hljs-attribute">animation</span>:breadcrumb-item-slide <span class="hljs-variable">$breadcrumb-item-timing</span> ease-in-out;
+    }
+    &amp; &gt; <span class="hljs-selector-tag">a</span>,
+    &amp; &gt; <span class="hljs-selector-tag">span</span> {
+      <span class="hljs-attribute">clip-path</span>:polygon(<span class="hljs-number">0%</span> <span class="hljs-number">0%</span>, (calc(<span class="hljs-number">100%</span> - <span class="hljs-number">0.75rem</span>)) <span class="hljs-number">0%</span>, <span class="hljs-number">100%</span> <span class="hljs-number">50%</span>, calc(<span class="hljs-number">100%</span> - <span class="hljs-number">0.75rem</span>) <span class="hljs-number">100%</span>, <span class="hljs-number">0%</span> <span class="hljs-number">100%</span>, <span class="hljs-number">0.75rem</span> <span class="hljs-number">50%</span>);
+      <span class="hljs-attribute">display</span>:block;
+      <span class="hljs-attribute">position</span>:relative;
+      <span class="hljs-attribute">height</span>:<span class="hljs-number">2.5rem</span>;
+      <span class="hljs-attribute">line-height</span>:<span class="hljs-number">2.5rem</span>;
+      <span class="hljs-attribute">overflow</span>:hidden;
+      <span class="hljs-attribute">padding</span>:<span class="hljs-number">0</span> <span class="hljs-number">1rem</span> <span class="hljs-number">0</span> <span class="hljs-number">1.25rem</span>;
+      <span class="hljs-attribute">text-overflow</span>:ellipsis;
+      <span class="hljs-attribute">white-space</span>:nowrap;
+    }
+    &amp; &gt; <span class="hljs-selector-tag">a</span> {
+      <span class="hljs-attribute">background</span>:<span class="hljs-number">#e6e6e6</span>;
+      <span class="hljs-attribute">text-decoration</span>:none;
+      <span class="hljs-attribute">transition</span>:all <span class="hljs-number">0.25s</span>;
+      &amp;<span class="hljs-selector-pseudo">:hover</span>,
+      &amp;<span class="hljs-selector-pseudo">:active</span> {
+        <span class="hljs-attribute">background-color</span>:var(--primary);
+        <span class="hljs-attribute">color</span>:white;
+      }
+    }
+    &amp; &gt; <span class="hljs-selector-tag">span</span> {
+      <span class="hljs-attribute">background</span>:<span class="hljs-number">#f2f2f2</span>;
+      <span class="hljs-attribute">display</span>:inline-block;
+    }
+    &amp;<span class="hljs-selector-pseudo">:first-child</span> {
+      <span class="hljs-attribute">min-width</span>:<span class="hljs-number">3.125rem</span>;
+      &amp; &gt; <span class="hljs-selector-tag">a</span> {
+        <span class="hljs-attribute">clip-path</span>:polygon(<span class="hljs-number">0%</span> <span class="hljs-number">0%</span>, (calc(<span class="hljs-number">100%</span> - <span class="hljs-number">0.75rem</span>)) <span class="hljs-number">0%</span>, <span class="hljs-number">100%</span> <span class="hljs-number">50%</span>, calc(<span class="hljs-number">100%</span> - <span class="hljs-number">0.75rem</span>) <span class="hljs-number">100%</span>, <span class="hljs-number">0%</span> <span class="hljs-number">100%</span>, <span class="hljs-number">0</span> <span class="hljs-number">50%</span>);
+        <span class="hljs-attribute">padding-left</span>:<span class="hljs-number">0.75rem</span>;
+      }
+    }
+    &amp;<span class="hljs-selector-pseudo">:last-child</span> {
+      <span class="hljs-attribute">background</span>:linear-gradient(to right,transparent <span class="hljs-number">0px</span>, transparent <span class="hljs-number">1rem</span>, <span class="hljs-number">#f2f2f2</span> <span class="hljs-number">1.01rem</span>);
+      <span class="hljs-attribute">flex</span>:<span class="hljs-number">2</span>;
+      <span class="hljs-attribute">line-height</span>:<span class="hljs-number">0.5</span>;
+      <span class="hljs-attribute">margin-left</span>:<span class="hljs-number">0</span>;
+      <span class="hljs-attribute">min-width</span>:<span class="hljs-number">6rem</span>;
+      &amp; &gt; <span class="hljs-selector-tag">span</span> {
+        <span class="hljs-attribute">clip-path</span>:polygon(<span class="hljs-number">0%</span> <span class="hljs-number">0%</span>, <span class="hljs-number">100%</span> <span class="hljs-number">0%</span>, <span class="hljs-number">100%</span> <span class="hljs-number">50%</span>, <span class="hljs-number">100%</span> <span class="hljs-number">100%</span>, <span class="hljs-number">0%</span> <span class="hljs-number">100%</span>, <span class="hljs-number">0.75rem</span> <span class="hljs-number">50%</span>);
+      }
+    }
+    &amp;<span class="hljs-selector-pseudo">:nth-last-child</span>(2) {
+      <span class="hljs-attribute">transition</span>:opacity (<span class="hljs-variable">$breadcrumb-item-timing</span> + <span class="hljs-number">0.1s</span>);
+      &amp;<span class="hljs-selector-class">.inview</span> {
+        <span class="hljs-attribute">animation</span>:breadcrumb-item-slide (<span class="hljs-variable">$breadcrumb-item-timing</span> + <span class="hljs-number">0.1s</span>) ease-in-out;
+      }
+    }
+    &amp;<span class="hljs-selector-pseudo">:nth-last-child</span>(3) {
+      <span class="hljs-attribute">transition</span>:opacity (<span class="hljs-variable">$breadcrumb-item-timing</span> + <span class="hljs-number">0.2s</span>);
+      &amp;<span class="hljs-selector-class">.inview</span> {
+        <span class="hljs-attribute">animation</span>:breadcrumb-item-slide (<span class="hljs-variable">$breadcrumb-item-timing</span> + <span class="hljs-number">0.2s</span>) ease-in-out;
+      }
+    }
+    &amp;<span class="hljs-selector-pseudo">:nth-last-child</span>(4) {
+      <span class="hljs-attribute">transition</span>:opacity (<span class="hljs-variable">$breadcrumb-item-timing</span> + <span class="hljs-number">0.3s</span>);
+      &amp;<span class="hljs-selector-class">.inview</span> {
+        <span class="hljs-attribute">animation</span>:breadcrumb-item-slide (<span class="hljs-variable">$breadcrumb-item-timing</span> + <span class="hljs-number">0.3s</span>) ease-in-out;
+      }
+    }
+    &amp;<span class="hljs-selector-pseudo">:nth-last-child</span>(5) {
+      <span class="hljs-attribute">transition</span>:opacity (<span class="hljs-variable">$breadcrumb-item-timing</span> + <span class="hljs-number">0.4s</span>);
+      &amp;<span class="hljs-selector-class">.inview</span> {
+        <span class="hljs-attribute">animation</span>:breadcrumb-item-slide (<span class="hljs-variable">$breadcrumb-item-timing</span> + <span class="hljs-number">0.4s</span>) ease-in-out;
+      }
+    }
+    &amp;<span class="hljs-selector-pseudo">:nth-last-child</span>(6) {
+      <span class="hljs-attribute">transition</span>:opacity (<span class="hljs-variable">$breadcrumb-item-timing</span> + <span class="hljs-number">0.5s</span>);
+      &amp;<span class="hljs-selector-class">.inview</span> {
+        <span class="hljs-attribute">animation</span>:breadcrumb-item-slide (<span class="hljs-variable">$breadcrumb-item-timing</span> + <span class="hljs-number">0.5s</span>) ease-in-out;
+      }
+    }
+    &amp;<span class="hljs-selector-class">.dropdown</span> {
+      <span class="hljs-attribute">overflow</span>:visible;
+    }
+    &amp; + <span class="hljs-selector-class">.breadcrumb-item</span> {
+      <span class="hljs-attribute">padding-left</span>:<span class="hljs-number">0</span>;
+      &amp;<span class="hljs-selector-pseudo">::before</span> {
+        <span class="hljs-attribute">display</span>:none;
+      }
+    }
+  }
+  &amp;<span class="hljs-selector-class">.smallscreen</span> {
+    <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:first-child</span> {
+      <span class="hljs-selector-tag">a</span> {
+        <span class="hljs-attribute">font-size</span>:<span class="hljs-number">0</span>;
+        &amp;<span class="hljs-selector-pseudo">:before</span> {
+          <span class="hljs-attribute">content</span>: <span class="hljs-string">"\f015"</span>;
+          <span class="hljs-attribute">display</span>:block;
+          <span class="hljs-attribute">font-family</span>:<span class="hljs-string">"Font Awesome 5 Free"</span>;
+          -webkit-<span class="hljs-attribute">font</span>-smoothing: antialiased;
+          <span class="hljs-attribute">font-size</span>:<span class="hljs-number">1rem</span>;
+          <span class="hljs-attribute">font-style</span>: normal;
+          <span class="hljs-attribute">font-variant</span>: normal;
+          <span class="hljs-attribute">font-weight</span>:<span class="hljs-number">900</span>;
+          <span class="hljs-attribute">text-rendering</span>:auto;
+        }
+      }
+    }
+  }
+}
+<span class="hljs-keyword">@keyframes</span> breadcrumb-item-slide {
+  0% {
+    <span class="hljs-attribute">left</span>:-<span class="hljs-number">50px</span>;
+  }
+  100% {
+    <span class="hljs-attribute">left</span>:<span class="hljs-number">0</span>;
+  }
+}</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/breadcrumb/breadcrumb.scss"><span>/components/raw/breadcrumb/breadcrumb.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">source/patterns/breadcrumb/breadcrumb.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">3.2 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-990c75be1c8437a258d473fdd30871a2-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@breadcrumb</span>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/breadcrumb.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/breadcrumb.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">source/patterns/breadcrumb/breadcrumb.hbs</span>
+        </li>
+        
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-990c75be1c8437a258d473fdd30871a2-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <h1 id="breadcrumb-component">Breadcrumb Component</h1>
+<p>The Breadcrumb component builds on the default provided by Bootstrap. It uses a common breadcrumb pattern style where each item in the breadcrumb is shaped as an “arrow” pointing to the currently active item.</p>
+<p>This implementation is different from others in that it does not depend on CSS pseudo-elements to make the arrow shaped pieces. Instead, CSS clip-path is used to shape each item in the breadcrumb trail as appropriate.</p>
+<p>The styling for the breadcrumb does not require JavaScript. However, I want a specific behavior in the case where the screen is narrow. In order to implement this behavior, it is necessary to manipulate the DOM, so JavaScript is required. The script uses the Intersection Observer API and the Resize Observer API to trigger the collapse or expansion of the breadcrumb as needed, regardless of the width of the breadcrumb. No CSS media query is needed.</p>
+
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+        
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <h3 class="Tree-title">components</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Breadcrumb</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-tag">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Tag-Style Label</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="tag--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="tag--reverse.html" data-pjax>
+                <span>Reverse Label</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <h3 class="Tree-title">documentation</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../index.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+
+
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.1"></script>
+
+
+
+</body>
+</html>
