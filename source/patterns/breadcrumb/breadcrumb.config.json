@@ -1,5 +1,26 @@
 {
   "title": "Breadcrumb",
   "label": "Breadcrumb",
-  "status": "ready"
+  "status": "ready",
+  "context": {
+    "bi_classes": "",
+    "bi_ariacurrent": "",
+    "bi_innertag": "a",
+    "bi_innertag_attr": " href=\"#\"",
+    "bi_innertext": "Home"
+  },
+  "variants": [
+    {
+      "name": "animated",
+      "title": "Default, Animated",
+      "label": "Default, Animated",
+      "context": {
+        "bi_classes": " make-inview",
+        "bi_ariacurrent": "",
+        "bi_innertag": "a",
+        "bi_innertag_attr": " href=\"#\"",
+        "bi_innertext": "Home"
+      }
+    }
+  ]
 }

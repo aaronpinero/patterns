@@ -1,7 +1,6 @@
 {
   "title": "Tag Label",
   "label": "Tag Label",
-  "preview": "@preview",
   "status": "ready",
   "context": {
     "tag_classes": " bg-dark text-white",
