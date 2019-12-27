@@ -9300,23 +9300,40 @@ form:not(.form-inline) label:not(.sr-only) + .form-control, form:not(.form-inlin
 .modal-content > * + * {
   margin-top: 0; }
 
-/* line 10, stdin */
+/*!
+ * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url(../webfonts/fa-solid-900.eot);
+  src: url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-solid-900.woff2) format("woff2"), url(../webfonts/fa-solid-900.woff) format("woff"), url(../webfonts/fa-solid-900.ttf) format("truetype"), url(../webfonts/fa-solid-900.svg#fontawesome) format("svg"); }
+
+/* line 12, stdin */
+.fa, .fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900; }
+
+/* line 15, stdin */
 .breadcrumb {
   background-color: white; }
-  /* line 12, stdin */
+  /* line 17, stdin */
   .breadcrumb .breadcrumb-item {
     margin-right: -0.375rem;
     overflow: hidden;
     position: relative;
     transition: opacity 0.1s;
     z-index: 1; }
-    /* line 18, stdin */
+    /* line 23, stdin */
     .breadcrumb .breadcrumb-item.not-inview {
       opacity: 0; }
-    /* line 21, stdin */
+    /* line 26, stdin */
     .breadcrumb .breadcrumb-item.inview {
       animation: breadcrumb-item-slide 0.1s ease-in-out; }
-    /* line 24, stdin */
+    /* line 29, stdin */
     .breadcrumb .breadcrumb-item > a,
     .breadcrumb .breadcrumb-item > span {
       -webkit-clip-path: polygon(0% 0%, calc(100% - 0.75rem) 0%, 100% 50%, calc(100% - 0.75rem) 100%, 0% 100%, 0.75rem 50%);
@@ -9325,72 +9342,95 @@ form:not(.form-inline) label:not(.sr-only) + .form-control, form:not(.form-inlin
       position: relative;
       height: 2.5rem;
       line-height: 2.5rem;
+      overflow: hidden;
       padding: 0 1rem 0 1.25rem;
+      text-overflow: ellipsis;
       white-space: nowrap; }
-    /* line 34, stdin */
+    /* line 41, stdin */
     .breadcrumb .breadcrumb-item > a {
       background: #e6e6e6;
       text-decoration: none;
       transition: all 0.25s; }
-      /* line 38, stdin */
+      /* line 45, stdin */
       .breadcrumb .breadcrumb-item > a:hover, .breadcrumb .breadcrumb-item > a:active {
         background-color: var(--primary);
         color: white; }
-    /* line 44, stdin */
+    /* line 51, stdin */
     .breadcrumb .breadcrumb-item > span {
-      background: #f2f2f2; }
-    /* line 48, stdin */
-    .breadcrumb .breadcrumb-item:first-child > a {
-      -webkit-clip-path: polygon(0% 0%, calc(100% - 0.75rem) 0%, 100% 50%, calc(100% - 0.75rem) 100%, 0% 100%, 0 50%);
-              clip-path: polygon(0% 0%, calc(100% - 0.75rem) 0%, 100% 50%, calc(100% - 0.75rem) 100%, 0% 100%, 0 50%);
-      padding-left: 0.75rem; }
-    /* line 53, stdin */
+      background: #f2f2f2;
+      display: inline-block; }
+    /* line 55, stdin */
+    .breadcrumb .breadcrumb-item:first-child {
+      min-width: 3.125rem; }
+      /* line 57, stdin */
+      .breadcrumb .breadcrumb-item:first-child > a {
+        -webkit-clip-path: polygon(0% 0%, calc(100% - 0.75rem) 0%, 100% 50%, calc(100% - 0.75rem) 100%, 0% 100%, 0 50%);
+                clip-path: polygon(0% 0%, calc(100% - 0.75rem) 0%, 100% 50%, calc(100% - 0.75rem) 100%, 0% 100%, 0 50%);
+        padding-left: 0.75rem; }
+    /* line 62, stdin */
     .breadcrumb .breadcrumb-item:last-child {
-      flex: 2 0 0;
-      margin-left: 0; }
-      /* line 56, stdin */
+      background: linear-gradient(to right, transparent 0px, transparent 1rem, #f2f2f2 1.01rem);
+      flex: 2;
+      line-height: 0.5;
+      margin-left: 0;
+      min-width: 6rem; }
+      /* line 68, stdin */
       .breadcrumb .breadcrumb-item:last-child > span {
         -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%, 0.75rem 50%);
                 clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%, 0.75rem 50%); }
-    /* line 60, stdin */
+    /* line 72, stdin */
     .breadcrumb .breadcrumb-item:nth-last-child(2) {
       transition: opacity 0.2s; }
-      /* line 62, stdin */
+      /* line 74, stdin */
       .breadcrumb .breadcrumb-item:nth-last-child(2).inview {
         animation: breadcrumb-item-slide 0.2s ease-in-out; }
-    /* line 66, stdin */
+    /* line 78, stdin */
     .breadcrumb .breadcrumb-item:nth-last-child(3) {
       transition: opacity 0.3s; }
-      /* line 68, stdin */
+      /* line 80, stdin */
       .breadcrumb .breadcrumb-item:nth-last-child(3).inview {
         animation: breadcrumb-item-slide 0.3s ease-in-out; }
-    /* line 72, stdin */
+    /* line 84, stdin */
     .breadcrumb .breadcrumb-item:nth-last-child(4) {
       transition: opacity 0.4s; }
-      /* line 74, stdin */
+      /* line 86, stdin */
       .breadcrumb .breadcrumb-item:nth-last-child(4).inview {
         animation: breadcrumb-item-slide 0.4s ease-in-out; }
-    /* line 78, stdin */
+    /* line 90, stdin */
     .breadcrumb .breadcrumb-item:nth-last-child(5) {
       transition: opacity 0.5s; }
-      /* line 80, stdin */
+      /* line 92, stdin */
       .breadcrumb .breadcrumb-item:nth-last-child(5).inview {
         animation: breadcrumb-item-slide 0.5s ease-in-out; }
-    /* line 84, stdin */
+    /* line 96, stdin */
     .breadcrumb .breadcrumb-item:nth-last-child(6) {
       transition: opacity 0.6s; }
-      /* line 86, stdin */
+      /* line 98, stdin */
       .breadcrumb .breadcrumb-item:nth-last-child(6).inview {
         animation: breadcrumb-item-slide 0.6s ease-in-out; }
-    /* line 90, stdin */
+    /* line 102, stdin */
     .breadcrumb .breadcrumb-item.dropdown {
       overflow: visible; }
-    /* line 93, stdin */
+    /* line 105, stdin */
     .breadcrumb .breadcrumb-item + .breadcrumb-item {
       padding-left: 0; }
-      /* line 95, stdin */
+      /* line 107, stdin */
       .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
         display: none; }
+  /* line 114, stdin */
+  .breadcrumb.smallscreen li:first-child a {
+    font-size: 0; }
+    /* line 116, stdin */
+    .breadcrumb.smallscreen li:first-child a:before {
+      content: "\f015";
+      display: block;
+      font-family: "Font Awesome 5 Free";
+      -webkit-font-smoothing: antialiased;
+      font-size: 1rem;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 900;
+      text-rendering: auto; }
 
 @keyframes breadcrumb-item-slide {
   0% {
@@ -9398,13 +9438,13 @@ form:not(.form-inline) label:not(.sr-only) + .form-control, form:not(.form-inlin
   100% {
     left: 0; } }
 
-/* line 110, stdin */
+/* line 140, stdin */
 .content-label {
   transition: opacity 0.5s; }
-  /* line 112, stdin */
+  /* line 142, stdin */
   .content-label.not-inview {
     opacity: 0; }
-  /* line 115, stdin */
+  /* line 145, stdin */
   .content-label.inview {
     animation: content-label-wipe 0.5s ease-in-out; }
 

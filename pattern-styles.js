@@ -18,6 +18,7 @@ var scss = '';
 var stylesheets = new Array();
 var patternstyles = glob.sync("./source/patterns/**/*.scss");
 stylesheets.push(require.resolve('tyfy-bootstrap/dist/style/tyfy-bootstrap.css')); // tybs
+stylesheets.push(require.resolve('@fortawesome/fontawesome-free/css/solid.min.css')); // fontawesome
 stylesheets = stylesheets.concat(patternstyles);
 
 // concatenate styles

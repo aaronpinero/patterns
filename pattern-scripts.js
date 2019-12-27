@@ -15,6 +15,8 @@ scripts.push(require.resolve('tyfy/dist/script/inview.js')); // inview from tyfy
 scripts.push(require.resolve('jquery/dist/jquery.js')); // jquery
 scripts.push(require.resolve('popper.js/dist/umd/popper.js')); // popper
 scripts.push(require.resolve('bootstrap/dist/js/bootstrap.js')); // bootstrap
+var patternscripts = glob.sync("./source/patterns/**/*.js");
+scripts = scripts.concat(patternscripts);
 
 // variable to hold js
 var allscripts = '';
