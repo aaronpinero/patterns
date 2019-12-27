@@ -1,21 +1,37 @@
 {
-  "title": "Tag-Style Label",
-  "label": "Tag-Style Label",
-  "notes": "A tag-style label for content; used for news and stories",
+  "title": "Tag Label",
+  "label": "Tag Label",
   "preview": "@preview",
   "status": "ready",
   "context": {
-    "tag_classes": " bg-dark text-white px-2 d-inline-block",
+    "tag_classes": " bg-dark text-white",
     "tag_text": "Label Text"
   },
   "variants": [
     {
-      "name": "reverse",
-      "title": "Reverse Label",
-      "label": "Reverse Label",
-      "notes": "Reverse color label for use on dark backgrounds.",
+      "name": "animated",
+      "title": "Default, Animated",
+      "label": "Default, Animated",
       "context": {
-        "tag_classes": " bg-light text-dark px-2 d-inline-block",
+        "tag_classes": " make-inview bg-dark text-white",
+        "tag_text": "Label Text"
+      }
+    },
+    {
+      "name": "reverse",
+      "title": "Reverse Color",
+      "label": "Reverse Color",
+      "context": {
+        "tag_classes": " bg-light text-dark",
+        "tag_text": "Label Text"
+      }
+    },
+    {
+      "name": "animated-reverse",
+      "title": "Reverse Color, Animated",
+      "label": "Reverse Color, Animated",
+      "context": {
+        "tag_classes": " make-inview bg-light text-dark",
         "tag_text": "Label Text"
       }
     }
