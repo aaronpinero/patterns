@@ -1,0 +1,63 @@
+// pattern styles
+$breadcrumb-item-bgcolor:#e6e6e6;
+$breadcrumb-item-bgcolor-current:#f2f2f2;
+$breadcrumb-item-timing:0.25s;
+
+.breadcrumb-item {
+  margin-right:-0.375rem;
+  overflow:hidden;
+  position:relative;
+  transition:opacity $breadcrumb-item-timing;
+  z-index:1;
+  &.not-inview {
+    opacity:0;
+  }
+  &.inview {
+    animation:breadcrumb-item-slide $breadcrumb-item-timing ease-in-out;
+  }
+  & > a,
+  & > span {
+    clip-path:polygon(0% 0%, (calc(100% - 0.75rem)) 0%, 100% 50%, calc(100% - 0.75rem) 100%, 0% 100%, 0.75rem 50%);
+    display:block;
+    position:relative;
+    height:2.5rem;
+    line-height:2.5rem;
+    overflow:hidden;
+    padding:0 1rem 0 1.25rem;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+  & > a {
+    background:$breadcrumb-item-bgcolor;
+    text-decoration:none;
+    transition:all 0.25s;
+    &:hover,
+    &:active {
+      background-color:var(--primary);
+      color:white;
+    }
+  }
+  & > span {
+    background:$breadcrumb-item-bgcolor-current;
+    display:inline-block;
+  }
+  &.active {
+    background:linear-gradient(to right,transparent 0px, transparent 1rem, #f2f2f2 1.01rem);
+    flex:2;
+    line-height:0.5;
+    margin-left:0;
+    min-width:6rem;
+    & > span {
+      clip-path:polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%, 0.75rem 50%);
+    }
+  }
+
+}
+@keyframes breadcrumb-item-slide {
+  0% {
+    left:-50px;
+  }
+  100% {
+    left:0;
+  }
+}
