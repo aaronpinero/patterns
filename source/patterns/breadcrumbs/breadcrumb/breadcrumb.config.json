@@ -2,6 +2,7 @@
   "title": "Breadcrumb",
   "label": "Breadcrumb",
   "status": "ready",
+  "order": 2,
   "context": {
     "bi_classes": "",
     "bi_ariacurrent": "",
