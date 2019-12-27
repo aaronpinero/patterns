@@ -1,4 +1,4 @@
-# Tag Component
+# Tag
 
 This component is similar to the badge from Bootstrap. However, the text size is larger for improved accessibility. The component is intended for display of a tag (taxonomy term) associated with a content node.
 

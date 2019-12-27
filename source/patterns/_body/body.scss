@@ -1,0 +1,16 @@
+// animation to hide any flicker caused by the tyfy inview module
+body {
+  animation:body-fadein 0.1s ease-in-out;
+}
+
+@keyframes body-fadein {
+  0% {
+    opacity:0;
+  }
+  33% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Breadcrumb Item",
+  "label": "Breadcrumb Item",
+  "status": "ready",
+  "order": 1,
+  "context": {
+    "bi_classes": "",
+    "bi_ariacurrent": "",
+    "bi_innertag": "a",
+    "bi_innertag_attr": " href=\"#\"",
+    "bi_innertext": "Link Name"
+  },
+  "variants": [
+    {
+      "name": "animated",
+      "title": "Default, Animated",
+      "label": "Default, Animated",
+      "context": {
+        "bi_classes": " make-inview",
+        "bi_ariacurrent": "",
+        "bi_innertag": "a",
+        "bi_innertag_attr": " href=\"#\"",
+        "bi_innertext": "Link Name"
+      }
+    },
+    {
+      "name": "active",
+      "title": "Active",
+      "label": "Active",
+      "context": {
+        "bi_classes": " active",
+        "bi_ariacurrent": " aria-current=\"page\"",
+        "bi_innertag": "span",
+        "bi_innertag_attr": " class=\"current\"",
+        "bi_innertext": "Current Page Name"
+      }
+    }
+  ]
+}
