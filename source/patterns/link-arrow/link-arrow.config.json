@@ -1,0 +1,65 @@
+{
+  "title": "Link Arrow",
+  "label": "Link Arrow",
+  "status": "ready",
+  "context": {
+    "link_arrow_classes": "link-animate-arrow arrow-left",
+    "link_arrow_text": "Link Text"
+  },
+  "variants": [
+    {
+      "name": "right",
+      "title": "Right Arrow",
+      "label": "Right Arrow",
+      "context": {
+        "link_arrow_classes": "link-animate-arrow arrow-right",
+        "link_arrow_text": "Link Text"
+      }
+    },
+    {
+      "name": "down",
+      "title": "Down Arrow",
+      "label": "Down Arrow",
+      "context": {
+        "link_arrow_classes": "link-animate-arrow arrow-down",
+        "link_arrow_text": "Link Text"
+      }
+    },
+    {
+      "name": "button",
+      "title": "Button, Left Arrow",
+      "label": "Button, Left Arrow",
+      "context": {
+        "link_arrow_classes": "btn btn-primary link-animate-arrow arrow-left",
+        "link_arrow_text": "Button Text"
+      }
+    },
+    {
+      "name": "button-right",
+      "title": "Button, Right Arrow",
+      "label": "Button, Right Arrow",
+      "context": {
+        "link_arrow_classes": "btn btn-primary link-animate-arrow arrow-right",
+        "link_arrow_text": "Button Text"
+      }
+    },
+    {
+      "name": "button-outline",
+      "title": "Outline Button, Left Arrow",
+      "label": "Outline Button, Left Arrow",
+      "context": {
+        "link_arrow_classes": "btn btn-outline-secondary link-animate-arrow arrow-left",
+        "link_arrow_text": "Button Text"
+      }
+    },
+    {
+      "name": "button-outline-right",
+      "title": "Outline Button, Right Arrow",
+      "label": "Outline Button, Right Arrow",
+      "context": {
+        "link_arrow_classes": "btn btn-outline-secondary link-animate-arrow arrow-right",
+        "link_arrow_text": "Button Text"
+      }
+    }
+  ]
+}
