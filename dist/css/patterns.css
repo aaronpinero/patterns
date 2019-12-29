@@ -9463,7 +9463,7 @@ body {
     opacity: 0;
     position: absolute;
     transform: scale(0.8);
-    transition: opacity 0.25s, right 0.25s, left 0.25s, top 0.25s; }
+    transition: opacity 0.25s, right 0.25s, left 0.25s, bottom 0.25s; }
   /* line 178, stdin */
   .link-animate-arrow:hover {
     text-decoration: none; }
@@ -9500,22 +9500,36 @@ body {
   /* line 223, stdin */
   .link-animate-arrow.arrow-down::after {
     content: "\f063";
+    bottom: -0.5rem;
     left: 50%;
-    margin-left: -0.5rem;
+    margin-left: -1rem;
     text-align: center;
-    top: 0%;
-    width: 1rem; }
+    width: 2rem; }
   /* line 232, stdin */
   .link-animate-arrow.arrow-down:hover::after {
-    top: 100%; }
+    bottom: -1.4rem; }
+  /* line 237, stdin */
+  .link-animate-arrow.arrow-down.btn::after {
+    background-color: inherit;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    line-height: 0.75;
+    margin-left: -1.5rem;
+    padding-bottom: 0.75rem;
+    width: 3rem;
+    z-index: -1; }
+  /* line 247, stdin */
+  .link-animate-arrow.arrow-down.btn:hover::after {
+    background-color: inherit;
+    z-index: 0; }
 
-/* line 241, stdin */
+/* line 258, stdin */
 .content-label {
   transition: opacity 0.5s; }
-  /* line 243, stdin */
+  /* line 260, stdin */
   .content-label.not-inview {
     opacity: 0; }
-  /* line 246, stdin */
+  /* line 263, stdin */
   .content-label.inview {
     animation: content-label-wipe 0.5s ease-in-out; }
 

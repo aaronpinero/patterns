@@ -10,7 +10,7 @@ $link-arrow-timing:0.25s;
     opacity:0;
     position:absolute;
     transform:scale(0.8);
-    transition:opacity $link-arrow-timing, right $link-arrow-timing, left $link-arrow-timing, top $link-arrow-timing;
+    transition:opacity $link-arrow-timing, right $link-arrow-timing, left $link-arrow-timing, bottom $link-arrow-timing;
   }
   &:hover {
     text-decoration:none;
@@ -59,15 +59,32 @@ $link-arrow-timing:0.25s;
   &.arrow-down {
     &::after {
       content: "\f063";
+      bottom:-0.5rem;
       left:50%;
-      margin-left:-0.5rem;
+      margin-left:-1rem;
       text-align:center;
-      top:0%;
-      width:1rem;
+      width:2rem;
     }
     &:hover {
       &::after {
-        top:100%;
+        bottom:-1.4rem;
+      }
+    }
+    &.btn {
+      &::after {
+        background-color:inherit;
+        clip-path:polygon(0% 0%, 100% 0%, 50% 100%);
+        line-height:0.75;
+        margin-left:-1.5rem;
+        padding-bottom:0.75rem;
+        width:3rem;
+        z-index:-1;
+      }
+      &:hover {
+        &::after {
+          background-color:inherit;
+          z-index:0;
+        }
       }
     }
   }

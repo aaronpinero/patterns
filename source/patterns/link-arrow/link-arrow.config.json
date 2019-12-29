@@ -4,7 +4,7 @@
   "status": "ready",
   "context": {
     "link_arrow_classes": "link-animate-arrow arrow-left",
-    "link_arrow_text": "Link Text"
+    "link_arrow_text": "Read More"
   },
   "variants": [
     {
@@ -13,7 +13,7 @@
       "label": "Right Arrow",
       "context": {
         "link_arrow_classes": "link-animate-arrow arrow-right",
-        "link_arrow_text": "Link Text"
+        "link_arrow_text": "Go Back"
       }
     },
     {
@@ -22,7 +22,7 @@
       "label": "Down Arrow",
       "context": {
         "link_arrow_classes": "link-animate-arrow arrow-down",
-        "link_arrow_text": "Link Text"
+        "link_arrow_text": "Show More"
       }
     },
     {
@@ -31,7 +31,7 @@
       "label": "Button, Left Arrow",
       "context": {
         "link_arrow_classes": "btn btn-primary link-animate-arrow arrow-left",
-        "link_arrow_text": "Button Text"
+        "link_arrow_text": "Continue"
       }
     },
     {
@@ -40,7 +40,16 @@
       "label": "Button, Right Arrow",
       "context": {
         "link_arrow_classes": "btn btn-primary link-animate-arrow arrow-right",
-        "link_arrow_text": "Button Text"
+        "link_arrow_text": "Go Back"
+      }
+    },
+    {
+      "name": "button-down",
+      "title": "Button, Down Arrow",
+      "label": "Button, Down Arrow",
+      "context": {
+        "link_arrow_classes": "btn btn-primary link-animate-arrow arrow-down",
+        "link_arrow_text": "Load More"
       }
     },
     {
@@ -49,7 +58,7 @@
       "label": "Outline Button, Left Arrow",
       "context": {
         "link_arrow_classes": "btn btn-outline-secondary link-animate-arrow arrow-left",
-        "link_arrow_text": "Button Text"
+        "link_arrow_text": "Continue"
       }
     },
     {
@@ -58,7 +67,16 @@
       "label": "Outline Button, Right Arrow",
       "context": {
         "link_arrow_classes": "btn btn-outline-secondary link-animate-arrow arrow-right",
-        "link_arrow_text": "Button Text"
+        "link_arrow_text": "Go Back"
+      }
+    },
+    {
+      "name": "button-outline-down",
+      "title": "Outline Button, Down Arrow",
+      "label": "Outline Button, Down Arrow",
+      "context": {
+        "link_arrow_classes": "btn btn-outline-secondary link-animate-arrow arrow-down",
+        "link_arrow_text": "Load More"
       }
     }
   ]
