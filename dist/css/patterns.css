@@ -9452,10 +9452,75 @@ body {
       text-rendering: auto; }
 
 /* line 166, stdin */
-.link-animate-arrow {
+.btn.btn-animate-arrow {
   position: relative;
   transition: all 0.25s; }
   /* line 169, stdin */
+  .btn.btn-animate-arrow::after {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    opacity: 0;
+    position: absolute;
+    transform: scale(0.8);
+    transition: opacity 0.25s, right 0.25s, left 0.25s, bottom 0.25s; }
+  /* line 179, stdin */
+  .btn.btn-animate-arrow:hover::after {
+    opacity: 1; }
+  /* line 184, stdin */
+  .btn.btn-animate-arrow.arrow-left::after {
+    content: "\f061";
+    right: 0.625rem; }
+  /* line 188, stdin */
+  .btn.btn-animate-arrow.arrow-left:hover {
+    padding-right: 1.875rem; }
+  /* line 193, stdin */
+  .btn.btn-animate-arrow.arrow-right::after {
+    content: "\f060";
+    left: 0.625rem; }
+  /* line 197, stdin */
+  .btn.btn-animate-arrow.arrow-right:hover {
+    margin-left: -1.125rem;
+    padding-left: 1.875rem; }
+  /* line 203, stdin */
+  .btn.btn-animate-arrow.arrow-down::after {
+    bottom: -0.5rem;
+    content: "\f063";
+    left: 50%;
+    line-height: 0.75;
+    margin-left: -1rem;
+    padding-bottom: 0.75rem;
+    text-align: center;
+    width: 2rem;
+    z-index: -1; }
+  /* line 214, stdin */
+  .btn.btn-animate-arrow.arrow-down::before {
+    background-color: inherit;
+    bottom: 0;
+    border-radius: 0 0 4px 0;
+    content: "";
+    display: block;
+    height: 2rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -1rem;
+    transform: rotate(45deg);
+    transition: bottom 0.25s;
+    width: 2rem;
+    z-index: -1; }
+  /* line 230, stdin */
+  .btn.btn-animate-arrow.arrow-down:hover::after {
+    bottom: -1.4rem;
+    z-index: 0; }
+  /* line 234, stdin */
+  .btn.btn-animate-arrow.arrow-down:hover::before {
+    bottom: -1rem; }
+
+/* line 244, stdin */
+.link-animate-arrow {
+  position: relative;
+  transition: all 0.25s; }
+  /* line 247, stdin */
   .link-animate-arrow::after {
     display: inline-block;
     font-family: "Font Awesome 5 Free";
@@ -9464,40 +9529,40 @@ body {
     position: absolute;
     transform: scale(0.8);
     transition: opacity 0.25s, right 0.25s, left 0.25s, bottom 0.25s; }
-  /* line 178, stdin */
+  /* line 256, stdin */
   .link-animate-arrow:hover {
     text-decoration: none; }
-    /* line 180, stdin */
+    /* line 258, stdin */
     .link-animate-arrow:hover::after, .link-animate-arrow:hover::before {
       opacity: 1; }
-  /* line 186, stdin */
+  /* line 264, stdin */
   .link-animate-arrow.arrow-left::after {
     content: "\f061";
     right: 0; }
-  /* line 190, stdin */
+  /* line 268, stdin */
   .link-animate-arrow.arrow-left:hover {
     padding-right: 1.125rem; }
-  /* line 194, stdin */
+  /* line 272, stdin */
   .link-animate-arrow.arrow-left.btn::after {
     right: 0.625rem; }
-  /* line 197, stdin */
+  /* line 275, stdin */
   .link-animate-arrow.arrow-left.btn:hover {
     padding-right: 1.875rem; }
-  /* line 203, stdin */
+  /* line 281, stdin */
   .link-animate-arrow.arrow-right::after {
     content: "\f060";
     left: 0; }
-  /* line 208, stdin */
+  /* line 286, stdin */
   .link-animate-arrow.arrow-right:hover::after {
     left: -1.125rem; }
-  /* line 213, stdin */
+  /* line 291, stdin */
   .link-animate-arrow.arrow-right.btn::after {
     left: 0.625rem; }
-  /* line 216, stdin */
+  /* line 294, stdin */
   .link-animate-arrow.arrow-right.btn:hover {
     margin-left: -1.125rem;
     padding-left: 1.875rem; }
-  /* line 223, stdin */
+  /* line 301, stdin */
   .link-animate-arrow.arrow-down::after {
     content: "\f063";
     bottom: -0.5rem;
@@ -9505,10 +9570,10 @@ body {
     margin-left: -1rem;
     text-align: center;
     width: 2rem; }
-  /* line 232, stdin */
+  /* line 310, stdin */
   .link-animate-arrow.arrow-down:hover::after {
     bottom: -1.4rem; }
-  /* line 237, stdin */
+  /* line 315, stdin */
   .link-animate-arrow.arrow-down.btn::after {
     background-color: inherit;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
@@ -9518,18 +9583,90 @@ body {
     padding-bottom: 0.75rem;
     width: 3rem;
     z-index: -1; }
-  /* line 247, stdin */
+  /* line 325, stdin */
   .link-animate-arrow.arrow-down.btn:hover::after {
     background-color: inherit;
     z-index: 0; }
 
-/* line 258, stdin */
+/* line 339, stdin */
+a[href].link-underline,
+.links-underline a[href] {
+  border-bottom: 1px currentColor solid;
+  transition: color 0.25s ease-in-out; }
+  /* line 343, stdin */
+  a[href].link-underline:hover, a[href].link-underline:active,
+  .links-underline a[href]:hover,
+  .links-underline a[href]:active {
+    border-bottom: 2px currentColor solid;
+    text-decoration: none; }
+
+/* line 349, stdin */
+a[href].link-animate-underline,
+.links-animate-underline a[href] {
+  background-image: linear-gradient(to bottom, transparent 20%, currentColor 21%);
+  background-position: 0 1em;
+  background-repeat: no-repeat;
+  background-size: 0% 6px;
+  text-decoration: none;
+  transition: background-size 0.25s ease-in-out; }
+  /* line 357, stdin */
+  a[href].link-animate-underline:hover, a[href].link-animate-underline:focus,
+  .links-animate-underline a[href]:hover,
+  .links-animate-underline a[href]:focus {
+    background-size: 100% 6px; }
+
+/* line 362, stdin */
+a[href].link-animate-arrow {
+  position: relative;
+  transition: padding-right 0.25s; }
+  /* line 365, stdin */
+  a[href].link-animate-arrow::after {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    opacity: 0;
+    position: absolute;
+    transform: scale(0.8);
+    transition: opacity 0.25s, right 0.25s, left 0.25s, bottom 0.25s; }
+  /* line 374, stdin */
+  a[href].link-animate-arrow:hover {
+    text-decoration: none; }
+    /* line 376, stdin */
+    a[href].link-animate-arrow:hover::after {
+      opacity: 1; }
+  /* line 381, stdin */
+  a[href].link-animate-arrow.arrow-left::after {
+    content: "\f061";
+    right: 0; }
+  /* line 385, stdin */
+  a[href].link-animate-arrow.arrow-left:hover {
+    padding-right: 1.125rem; }
+  /* line 390, stdin */
+  a[href].link-animate-arrow.arrow-right::after {
+    content: "\f060";
+    left: 0; }
+  /* line 395, stdin */
+  a[href].link-animate-arrow.arrow-right:hover::after {
+    left: -1.125rem; }
+  /* line 401, stdin */
+  a[href].link-animate-arrow.arrow-down::after {
+    content: "\f063";
+    bottom: -0.5rem;
+    left: 50%;
+    margin-left: -1rem;
+    text-align: center;
+    width: 2rem; }
+  /* line 410, stdin */
+  a[href].link-animate-arrow.arrow-down:hover::after {
+    bottom: -1.4rem; }
+
+/* line 419, stdin */
 .content-label {
   transition: opacity 0.5s; }
-  /* line 260, stdin */
+  /* line 421, stdin */
   .content-label.not-inview {
     opacity: 0; }
-  /* line 263, stdin */
+  /* line 424, stdin */
   .content-label.inview {
     animation: content-label-wipe 0.5s ease-in-out; }
 

@@ -1,0 +1,82 @@
+// pattern styles
+$link-timing:0.25s;
+// pattern styles
+// from https://codepen.io/shshaw/pen/pdyJBW
+a[href].link-underline,
+.links-underline a[href] {
+  border-bottom:1px currentColor solid;
+  transition:color $link-timing ease-in-out;
+  &:hover,
+  &:active {
+    border-bottom:2px currentColor solid;
+    text-decoration:none;
+  }
+}
+a[href].link-animate-underline,
+.links-animate-underline a[href]{ 
+  background-image:linear-gradient(to bottom, transparent 20%, currentColor 21%);
+  background-position:0 1em;
+  background-repeat:no-repeat;
+  background-size:0% 6px;
+  text-decoration:none;
+  transition:background-size $link-timing ease-in-out;
+  &:hover,
+  &:focus {
+    background-size:100% 6px;
+  }
+}
+a[href].link-animate-arrow {
+  position:relative;
+  transition:padding-right $link-timing;
+  &::after {
+    display:inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight:900;
+    opacity:0;
+    position:absolute;
+    transform:scale(0.8);
+    transition:opacity $link-timing, right $link-timing, left $link-timing, bottom $link-timing;
+  }
+  &:hover {
+    text-decoration:none;
+    &::after {
+      opacity:1;
+    }
+  }
+  &.arrow-left {
+    &::after {
+      content: "\f061";
+      right:0;
+    }
+    &:hover {
+      padding-right:1.125rem;
+    }
+  }
+  &.arrow-right {
+    &::after {
+      content: "\f060";
+      left:0;
+    }
+    &:hover {
+      &::after {
+        left:-1.125rem;
+      }
+    }
+  }
+  &.arrow-down {
+    &::after {
+      content: "\f063";
+      bottom:-0.5rem;
+      left:50%;
+      margin-left:-1rem;
+      text-align:center;
+      width:2rem;
+    }
+    &:hover {
+      &::after {
+        bottom:-1.4rem;
+      }
+    }
+  }
+}
+
