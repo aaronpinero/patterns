@@ -50,8 +50,9 @@ $button-timing:0.25s;
     }
     &::before {
       background-color:inherit;
-      bottom:0;
+      bottom:0.28rem;
       border-radius:0 0 4px 0;
+      clip-path:polygon(100% 99%, 100% 100%, 99% 100%);
       content:"";
       display:block;
       height:2rem;
@@ -59,7 +60,7 @@ $button-timing:0.25s;
       left:50%;
       margin-left:-1rem;
       transform:rotate(45deg);
-      transition:bottom $button-timing;
+      transition:bottom $button-timing, clip-path $button-timing;
       width:2rem;
       z-index:-1;
     }
@@ -70,6 +71,7 @@ $button-timing:0.25s;
       }
       &::before {
         bottom:-1rem;
+        clip-path:polygon(100% 0%, 100% 100%, 0% 100%);
       }
     }
   }
