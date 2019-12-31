@@ -1,0 +1,8 @@
+{
+  "title": "Counter",
+  "label": "Counter",
+  "status": "ready",
+  "context": {
+    "counter_number": "1,246,335.30"
+  }
+}

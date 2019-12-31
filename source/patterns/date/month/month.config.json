@@ -1,0 +1,32 @@
+{
+  "title": "Month",
+  "label": "Month",
+  "status": "ready",
+  "context": {
+    "datestamp_month_full": "November",
+    "datestamp_month_short": "Nov",
+    "datestamp_month_style": " regular"
+  },
+  "variants": [
+    {
+      "name": "reverse",
+      "title": "Reverse Color",
+      "label": "Reverse Color",
+      "context": {
+        "datestamp_month_full": "November",
+        "datestamp_month_short": "Nov",
+        "datestamp_month_style": " reverse"
+      }
+    },
+    {
+      "name": "animated",
+      "title": "Animated",
+      "label": "Animated",
+      "context": {
+        "datestamp_month_full": "November",
+        "datestamp_month_short": "Nov",
+        "datestamp_month_style": " reverse make-inview"
+      }
+    }
+  ]
+}
