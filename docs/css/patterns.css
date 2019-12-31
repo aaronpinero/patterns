@@ -9452,11 +9452,11 @@ body {
       text-rendering: auto; }
 
 /* line 166, stdin */
-.link-animate-arrow {
+.btn.btn-animate-arrow {
   position: relative;
   transition: all 0.25s; }
   /* line 169, stdin */
-  .link-animate-arrow::after {
+  .btn.btn-animate-arrow::after {
     display: inline-block;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -9464,72 +9464,143 @@ body {
     position: absolute;
     transform: scale(0.8);
     transition: opacity 0.25s, right 0.25s, left 0.25s, bottom 0.25s; }
-  /* line 178, stdin */
-  .link-animate-arrow:hover {
-    text-decoration: none; }
-    /* line 180, stdin */
-    .link-animate-arrow:hover::after, .link-animate-arrow:hover::before {
-      opacity: 1; }
-  /* line 186, stdin */
-  .link-animate-arrow.arrow-left::after {
+  /* line 179, stdin */
+  .btn.btn-animate-arrow:hover::after {
+    opacity: 1; }
+  /* line 184, stdin */
+  .btn.btn-animate-arrow.arrow-left::after {
     content: "\f061";
-    right: 0; }
-  /* line 190, stdin */
-  .link-animate-arrow.arrow-left:hover {
-    padding-right: 1.125rem; }
-  /* line 194, stdin */
-  .link-animate-arrow.arrow-left.btn::after {
     right: 0.625rem; }
-  /* line 197, stdin */
-  .link-animate-arrow.arrow-left.btn:hover {
+  /* line 188, stdin */
+  .btn.btn-animate-arrow.arrow-left:hover {
     padding-right: 1.875rem; }
-  /* line 203, stdin */
-  .link-animate-arrow.arrow-right::after {
+  /* line 193, stdin */
+  .btn.btn-animate-arrow.arrow-right::after {
     content: "\f060";
-    left: 0; }
-  /* line 208, stdin */
-  .link-animate-arrow.arrow-right:hover::after {
-    left: -1.125rem; }
-  /* line 213, stdin */
-  .link-animate-arrow.arrow-right.btn::after {
     left: 0.625rem; }
-  /* line 216, stdin */
-  .link-animate-arrow.arrow-right.btn:hover {
+  /* line 197, stdin */
+  .btn.btn-animate-arrow.arrow-right:hover {
     margin-left: -1.125rem;
     padding-left: 1.875rem; }
-  /* line 223, stdin */
-  .link-animate-arrow.arrow-down::after {
+  /* line 203, stdin */
+  .btn.btn-animate-arrow.arrow-down::after {
+    bottom: -0.5rem;
+    content: "\f063";
+    left: 50%;
+    line-height: 0.75;
+    margin-left: -1rem;
+    padding-bottom: 0.75rem;
+    text-align: center;
+    width: 2rem;
+    z-index: -1; }
+  /* line 214, stdin */
+  .btn.btn-animate-arrow.arrow-down::before {
+    background-color: inherit;
+    bottom: 0.28rem;
+    border-radius: 0 0 4px 0;
+    -webkit-clip-path: polygon(100% 99%, 100% 100%, 99% 100%);
+            clip-path: polygon(100% 99%, 100% 100%, 99% 100%);
+    content: "";
+    display: block;
+    height: 2rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -1rem;
+    transform: rotate(45deg);
+    transition: bottom 0.25s, -webkit-clip-path 0.25s;
+    transition: bottom 0.25s, clip-path 0.25s;
+    transition: bottom 0.25s, clip-path 0.25s, -webkit-clip-path 0.25s;
+    width: 2rem;
+    z-index: -1; }
+  /* line 231, stdin */
+  .btn.btn-animate-arrow.arrow-down:hover::after {
+    bottom: -1.4rem;
+    z-index: 0; }
+  /* line 235, stdin */
+  .btn.btn-animate-arrow.arrow-down:hover::before {
+    bottom: -1rem;
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(100% 0%, 100% 100%, 0% 100%); }
+
+/* line 248, stdin */
+a[href].link-underline,
+.links-underline a[href] {
+  border-bottom: 1px currentColor solid;
+  transition: color 0.25s ease-in-out; }
+  /* line 252, stdin */
+  a[href].link-underline:hover, a[href].link-underline:active,
+  .links-underline a[href]:hover,
+  .links-underline a[href]:active {
+    border-bottom: 2px currentColor solid;
+    text-decoration: none; }
+
+/* line 258, stdin */
+a[href].link-animate-underline,
+.links-animate-underline a[href] {
+  background-image: linear-gradient(to bottom, transparent 20%, currentColor 21%);
+  background-position: 0 1em;
+  background-repeat: no-repeat;
+  background-size: 0% 6px;
+  text-decoration: none;
+  transition: background-size 0.25s ease-in-out; }
+  /* line 266, stdin */
+  a[href].link-animate-underline:hover, a[href].link-animate-underline:focus,
+  .links-animate-underline a[href]:hover,
+  .links-animate-underline a[href]:focus {
+    background-size: 100% 6px; }
+
+/* line 271, stdin */
+a[href].link-animate-arrow {
+  position: relative;
+  transition: padding-right 0.25s; }
+  /* line 274, stdin */
+  a[href].link-animate-arrow::after {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    opacity: 0;
+    position: absolute;
+    transform: scale(0.8);
+    transition: opacity 0.25s, right 0.25s, left 0.25s, bottom 0.25s; }
+  /* line 283, stdin */
+  a[href].link-animate-arrow:hover {
+    text-decoration: none; }
+    /* line 285, stdin */
+    a[href].link-animate-arrow:hover::after {
+      opacity: 1; }
+  /* line 290, stdin */
+  a[href].link-animate-arrow.arrow-left::after {
+    content: "\f061";
+    right: 0; }
+  /* line 294, stdin */
+  a[href].link-animate-arrow.arrow-left:hover {
+    padding-right: 1.125rem; }
+  /* line 299, stdin */
+  a[href].link-animate-arrow.arrow-right::after {
+    content: "\f060";
+    left: 0; }
+  /* line 304, stdin */
+  a[href].link-animate-arrow.arrow-right:hover::after {
+    left: -1.125rem; }
+  /* line 310, stdin */
+  a[href].link-animate-arrow.arrow-down::after {
     content: "\f063";
     bottom: -0.5rem;
     left: 50%;
     margin-left: -1rem;
     text-align: center;
     width: 2rem; }
-  /* line 232, stdin */
-  .link-animate-arrow.arrow-down:hover::after {
+  /* line 319, stdin */
+  a[href].link-animate-arrow.arrow-down:hover::after {
     bottom: -1.4rem; }
-  /* line 237, stdin */
-  .link-animate-arrow.arrow-down.btn::after {
-    background-color: inherit;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
-            clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
-    line-height: 0.75;
-    margin-left: -1.5rem;
-    padding-bottom: 0.75rem;
-    width: 3rem;
-    z-index: -1; }
-  /* line 247, stdin */
-  .link-animate-arrow.arrow-down.btn:hover::after {
-    background-color: inherit;
-    z-index: 0; }
 
-/* line 258, stdin */
+/* line 328, stdin */
 .content-label {
   transition: opacity 0.5s; }
-  /* line 260, stdin */
+  /* line 330, stdin */
   .content-label.not-inview {
     opacity: 0; }
-  /* line 263, stdin */
+  /* line 333, stdin */
   .content-label.inview {
     animation: content-label-wipe 0.5s ease-in-out; }
 
