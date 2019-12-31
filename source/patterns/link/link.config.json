@@ -1,0 +1,56 @@
+{
+  "title": "Link",
+  "label": "Link",
+  "status": "ready",
+  "context": {
+    "link_classes": "",
+    "link_text": "Link Text"
+  },
+  "variants": [
+    {
+      "name": "underlined",
+      "title": "Underlined",
+      "label": "Underlined",
+      "context": {
+        "link_classes": "link-underline",
+        "link_text": "This is the text of a link"
+      }
+    },
+    {
+      "name": "animate-underline",
+      "title": "Animated Underline",
+      "label": "Animated Underline",
+      "context": {
+        "link_classes": "link-animate-underline",
+        "link_text": "This is the text of a link"
+      }
+    },
+    {
+      "name": "left-arrow",
+      "title": "Left Arrow",
+      "label": "Left Arrow",
+      "context": {
+        "link_classes": "link-animate-arrow arrow-left",
+        "link_text": "Read More"
+      }
+    },
+    {
+      "name": "right",
+      "title": "Right Arrow",
+      "label": "Right Arrow",
+      "context": {
+        "link_classes": "link-animate-arrow arrow-right",
+        "link_text": "Go Back"
+      }
+    },
+    {
+      "name": "down",
+      "title": "Down Arrow",
+      "label": "Down Arrow",
+      "context": {
+        "link_classes": "link-animate-arrow arrow-down",
+        "link_text": "Show More"
+      }
+    }
+  ]
+}

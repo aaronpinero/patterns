@@ -1,0 +1,38 @@
+{
+  "title": "Button",
+  "label": "Button",
+  "status": "ready",
+  "context": {
+    "button_classes": "btn btn-primary",
+    "button_text": "Button Text"
+  },
+  "variants": [
+    {
+      "name": "left-arrow",
+      "title": "Left Arrow",
+      "label": "Left Arrow",
+      "context": {
+        "button_classes": "btn btn-primary btn-animate-arrow arrow-left",
+        "button_text": "Continue"
+      }
+    },
+    {
+      "name": "right-arrow",
+      "title": "Right Arrow",
+      "label": "Right Arrow",
+      "context": {
+        "button_classes": "btn btn-primary btn-animate-arrow arrow-right",
+        "button_text": "Go Back"
+      }
+    },
+    {
+      "name": "button-down",
+      "title": "Down Arrow",
+      "label": "Down Arrow",
+      "context": {
+        "button_classes": "btn btn-primary btn-animate-arrow arrow-down",
+        "button_text": "Load More"
+      }
+    }
+  ]
+}
