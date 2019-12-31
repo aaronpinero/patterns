@@ -1,0 +1,38 @@
+$color-datestamp-month:var(--red);
+$datestamp-timing:0.5s;
+
+.datestamp-month[title] {
+  border-bottom:1px rgba(black,0.05) solid;
+  color:$color-datestamp-month;
+  display:block;
+  font-size:0.875rem;
+  font-weight:bold;
+  line-height:1rem;
+  padding:0.25rem 0;
+  position:relative;
+  text-align:center;
+  text-decoration:none;
+  text-transform:uppercase;
+  &.reverse {
+    background-color:$color-datestamp-month;
+    border-bottom:none;
+    color:white;
+    transition:opacity $datestamp-timing;
+    &.not-inview {
+      opacity:0;
+    }
+    &.inview {
+      animation:datestamp-month-wipe $datestamp-timing ease-in-out;
+    }
+  }
+}
+
+@keyframes datestamp-month-wipe {
+  0% {
+    clip-path:polygon(0% 0%, 5% 0%, 1% 100%, 0% 100%)
+  }
+  100% {
+    clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
+  }
+}
+

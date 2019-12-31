@@ -1,0 +1,20 @@
+{
+  "title": "Day",
+  "label": "Day",
+  "status": "ready",
+  "context": {
+    "datestamp_day_number": "25",
+    "datestamp_day_style": ""
+  },
+  "variants": [
+    {
+      "name": "animated",
+      "title": "Animated",
+      "label": "Animated",
+      "context": {
+        "datestamp_day_number": "25",
+        "datestamp_day_style": " make-counter"
+      }
+    }
+  ]
+}
