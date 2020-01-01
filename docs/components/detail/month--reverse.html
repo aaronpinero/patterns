@@ -157,7 +157,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-7f6e950002b35ce2b96dbeda0d00f8d1-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"datestamp-month reverse"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"November"</span>&gt;</span>Nov<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"event-month reverse"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"November"</span>&gt;</span>Nov<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -165,7 +165,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-7f6e950002b35ce2b96dbeda0d00f8d1-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"datestamp-month</span></span></span><span class="hljs-template-variable">{{datestamp_month_style}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{datestamp_month_full}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span><span class="hljs-template-variable">{{datestamp_month_short}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"event-month</span></span></span><span class="hljs-template-variable">{{event_month_style}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{event_month_full}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span><span class="hljs-template-variable">{{event_month_short}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -175,9 +175,9 @@
         
             
             <pre>{
-  <span class="hljs-attr">"datestamp_month_full"</span>: <span class="hljs-string">"November"</span>,
-  <span class="hljs-attr">"datestamp_month_short"</span>: <span class="hljs-string">"Nov"</span>,
-  <span class="hljs-attr">"datestamp_month_style"</span>: <span class="hljs-string">" reverse"</span>
+  <span class="hljs-attr">"event_month_full"</span>: <span class="hljs-string">"November"</span>,
+  <span class="hljs-attr">"event_month_short"</span>: <span class="hljs-string">"Nov"</span>,
+  <span class="hljs-attr">"event_month_style"</span>: <span class="hljs-string">" reverse"</span>
 }</pre>
             
         
@@ -209,12 +209,12 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre><span class="hljs-variable">$color-datestamp-month</span>:var(--red);
-<span class="hljs-variable">$datestamp-timing</span>:<span class="hljs-number">0.5s</span>;
+                                <pre><span class="hljs-variable">$color-event-month</span>:var(--red);
+<span class="hljs-variable">$event-month-timing</span>:<span class="hljs-number">0.5s</span>;
 
-<span class="hljs-selector-class">.datestamp-month</span><span class="hljs-selector-attr">[title]</span> {
+<span class="hljs-selector-class">.event-month</span><span class="hljs-selector-attr">[title]</span> {
   <span class="hljs-attribute">border-bottom</span>:<span class="hljs-number">1px</span> rgba(black,<span class="hljs-number">0.05</span>) solid;
-  <span class="hljs-attribute">color</span>:<span class="hljs-variable">$color-datestamp-month</span>;
+  <span class="hljs-attribute">color</span>:<span class="hljs-variable">$color-event-month</span>;
   <span class="hljs-attribute">display</span>:block;
   <span class="hljs-attribute">font-size</span>:<span class="hljs-number">0.875rem</span>;
   <span class="hljs-attribute">font-weight</span>:bold;
@@ -225,20 +225,20 @@
   <span class="hljs-attribute">text-decoration</span>:none;
   <span class="hljs-attribute">text-transform</span>:uppercase;
   &amp;<span class="hljs-selector-class">.reverse</span> {
-    <span class="hljs-attribute">background-color</span>:<span class="hljs-variable">$color-datestamp-month</span>;
+    <span class="hljs-attribute">background-color</span>:<span class="hljs-variable">$color-event-month</span>;
     <span class="hljs-attribute">border-bottom</span>:none;
     <span class="hljs-attribute">color</span>:white;
-    <span class="hljs-attribute">transition</span>:opacity <span class="hljs-variable">$datestamp-timing</span>;
+    <span class="hljs-attribute">transition</span>:opacity <span class="hljs-variable">$event-month-timing</span>;
     &amp;<span class="hljs-selector-class">.not-inview</span> {
       <span class="hljs-attribute">opacity</span>:<span class="hljs-number">0</span>;
     }
     &amp;<span class="hljs-selector-class">.inview</span> {
-      <span class="hljs-attribute">animation</span>:datestamp-month-wipe <span class="hljs-variable">$datestamp-timing</span> ease-in-out;
+      <span class="hljs-attribute">animation</span>:event-month-wipe <span class="hljs-variable">$event-month-timing</span> ease-in-out;
     }
   }
 }
 
-<span class="hljs-keyword">@keyframes</span> datestamp-month-wipe {
+<span class="hljs-keyword">@keyframes</span> event-month-wipe {
   0% {
     <span class="hljs-attribute">clip-path</span>:polygon(<span class="hljs-number">0%</span> <span class="hljs-number">0%</span>, <span class="hljs-number">5%</span> <span class="hljs-number">0%</span>, <span class="hljs-number">1%</span> <span class="hljs-number">100%</span>, <span class="hljs-number">0%</span> <span class="hljs-number">100%</span>)
   }
@@ -263,7 +263,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">809 Bytes</span>
+                    <span class="Meta-value">791 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -813,7 +813,7 @@
         
         <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-day">
             <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Day</span>
+                <span>Event Day</span>
             </h4>
             <ul class="Tree-collectionItems" data-role="items">
             
@@ -875,9 +875,33 @@
         
     
         
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="event-date.html" data-pjax>
+                <span>Event Date</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
         <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-month">
             <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Month</span>
+                <span>Event Month</span>
             </h4>
             <ul class="Tree-collectionItems" data-role="items">
             
@@ -959,6 +983,30 @@
     
 
             </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="year.html" data-pjax>
+                <span>Event Year</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
         </li>
         
     

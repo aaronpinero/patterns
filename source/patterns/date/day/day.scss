@@ -1,7 +1,7 @@
-$color-datestamp-day:var(--blue);
+$color-event-day:var(--blue);
 
-.datestamp-day {
-  color:$color-datestamp-day;
+.event-day {
+  color:$color-event-day;
   display:block;
   font-size:2rem;
   line-height:1;

@@ -1,9 +1,9 @@
-$color-datestamp-month:var(--red);
-$datestamp-timing:0.5s;
+$color-event-month:var(--red);
+$event-month-timing:0.5s;
 
-.datestamp-month[title] {
+.event-month[title] {
   border-bottom:1px rgba(black,0.05) solid;
-  color:$color-datestamp-month;
+  color:$color-event-month;
   display:block;
   font-size:0.875rem;
   font-weight:bold;
@@ -14,20 +14,20 @@ $datestamp-timing:0.5s;
   text-decoration:none;
   text-transform:uppercase;
   &.reverse {
-    background-color:$color-datestamp-month;
+    background-color:$color-event-month;
     border-bottom:none;
     color:white;
-    transition:opacity $datestamp-timing;
+    transition:opacity $event-month-timing;
     &.not-inview {
       opacity:0;
     }
     &.inview {
-      animation:datestamp-month-wipe $datestamp-timing ease-in-out;
+      animation:event-month-wipe $event-month-timing ease-in-out;
     }
   }
 }
 
-@keyframes datestamp-month-wipe {
+@keyframes event-month-wipe {
   0% {
     clip-path:polygon(0% 0%, 5% 0%, 1% 100%, 0% 100%)
   }

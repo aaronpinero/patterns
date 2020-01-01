@@ -1,0 +1,13 @@
+$color-event-year:var(--gray);
+
+.event-year {
+  border-top:1px rgba(black,0.05) solid;
+  color:$color-event-year;
+  display:block;
+  font-size:0.875rem;
+  font-weight:bold;
+  line-height:1rem;
+  padding:0.25rem 0;
+  position:relative;
+  text-align:center;
+}

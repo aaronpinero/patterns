@@ -1,0 +1,8 @@
+{
+  "title": "Event Year",
+  "label": "Event Year",
+  "status": "ready",
+  "context": {
+    "event_year_number": "2020"
+  }
+}

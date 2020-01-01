@@ -1,10 +1,10 @@
 {
-  "title": "Day",
-  "label": "Day",
+  "title": "Event Day",
+  "label": "Event Day",
   "status": "ready",
   "context": {
-    "datestamp_day_number": "25",
-    "datestamp_day_style": ""
+    "event_day_number": "25",
+    "event_day_style": ""
   },
   "variants": [
     {
@@ -12,8 +12,8 @@
       "title": "Animated",
       "label": "Animated",
       "context": {
-        "datestamp_day_number": "25",
-        "datestamp_day_style": " make-counter"
+        "event_day_number": "25",
+        "event_day_style": " make-counter"
       }
     }
   ]

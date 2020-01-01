@@ -1,11 +1,11 @@
 {
-  "title": "Month",
-  "label": "Month",
+  "title": "Event Month",
+  "label": "Event Month",
   "status": "ready",
   "context": {
-    "datestamp_month_full": "November",
-    "datestamp_month_short": "Nov",
-    "datestamp_month_style": " regular"
+    "event_month_full": "November",
+    "event_month_short": "Nov",
+    "event_month_style": " regular"
   },
   "variants": [
     {
@@ -13,9 +13,9 @@
       "title": "Reverse Color",
       "label": "Reverse Color",
       "context": {
-        "datestamp_month_full": "November",
-        "datestamp_month_short": "Nov",
-        "datestamp_month_style": " reverse"
+        "event_month_full": "November",
+        "event_month_short": "Nov",
+        "event_month_style": " reverse"
       }
     },
     {
@@ -23,9 +23,9 @@
       "title": "Animated",
       "label": "Animated",
       "context": {
-        "datestamp_month_full": "November",
-        "datestamp_month_short": "Nov",
-        "datestamp_month_style": " reverse make-inview"
+        "event_month_full": "November",
+        "event_month_short": "Nov",
+        "event_month_style": " reverse make-inview"
       }
     }
   ]
