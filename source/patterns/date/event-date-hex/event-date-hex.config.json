@@ -1,10 +1,9 @@
 {
-  "title": "Tag Label",
-  "label": "Tag Label",
+  "title": "Event Date Hexagon",
+  "label": "Event Date Hexagon",
   "status": "ready",
   "context": {
-    "tag_classes": " bg-dark text-white",
-    "tag_text": "Label Text"
+    "hex_classes": ""
   },
   "variants": [
     {
@@ -12,8 +11,7 @@
       "title": "Default, Animated",
       "label": "Default, Animated",
       "context": {
-        "tag_classes": " make-inview bg-dark text-white",
-        "tag_text": "Label Text"
+        "hex_classes": " make-inview"
       }
     },
     {
@@ -21,8 +19,7 @@
       "title": "Reverse",
       "label": "Reverse",
       "context": {
-        "tag_classes": " bg-light text-dark",
-        "tag_text": "Label Text"
+        "hex_classes": " reverse"
       }
     },
     {
@@ -30,8 +27,7 @@
       "title": "Reverse, Animated",
       "label": "Reverse, Animated",
       "context": {
-        "tag_classes": " make-inview bg-light text-dark",
-        "tag_text": "Label Text"
+        "hex_classes": " make-inview reverse"
       }
     }
   ]

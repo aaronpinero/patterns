@@ -18,12 +18,12 @@ $event-month-timing:0.5s;
     border:none;
     color:white;
     transition:opacity $event-month-timing;
-    &.not-inview {
-      opacity:0;
-    }
-    &.inview {
-      animation:event-month-wipe $event-month-timing ease-in-out;
-    }
+  }
+  &.not-inview {
+    opacity:0;
+  }
+  &.inview {
+    animation:event-month-wipe $event-month-timing ease-in-out;
   }
 }
 

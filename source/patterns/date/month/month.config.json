@@ -10,8 +10,8 @@
   "variants": [
     {
       "name": "reverse",
-      "title": "Reverse Color",
-      "label": "Reverse Color",
+      "title": "Reverse",
+      "label": "Reverse",
       "context": {
         "event_month_full": "November",
         "event_month_short": "Nov",
@@ -22,6 +22,16 @@
       "name": "animated",
       "title": "Animated",
       "label": "Animated",
+      "context": {
+        "event_month_full": "November",
+        "event_month_short": "Nov",
+        "event_month_style": " make-inview"
+      }
+    },
+    {
+      "name": "reverse-animated",
+      "title": "Reverse, Animated",
+      "label": "Reverse, Animated",
       "context": {
         "event_month_full": "November",
         "event_month_short": "Nov",
