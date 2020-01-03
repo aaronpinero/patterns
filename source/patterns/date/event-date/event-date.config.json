@@ -1,5 +1,27 @@
 {
   "title": "Event Date",
   "label": "Event Date",
-  "status": "ready"
+  "status": "ready",
+  "variants": [
+    {
+      "name": "alt",
+      "title": "Alternate",
+      "label": "Alternate"
+    },
+    {
+      "name": "yearless",
+      "title": "Without Year",
+      "label": "Without Year"
+    },
+    {
+      "name": "animated",
+      "title": "Animated",
+      "label": "Animated"
+    },
+    {
+      "name": "alt-animated",
+      "title": "Alternate Animated",
+      "label": "Alternate Animated"
+    }
+  ]
 }

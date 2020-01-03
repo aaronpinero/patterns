@@ -13,8 +13,8 @@
   "variants": [
     {
       "name": "animated",
-      "title": "Default, Animated",
-      "label": "Default, Animated",
+      "title": "Animated",
+      "label": "Animated",
       "context": {
         "bi_classes": " make-inview",
         "bi_ariacurrent": "",

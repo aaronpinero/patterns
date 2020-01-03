@@ -2,7 +2,7 @@ $color-event-month:var(--red);
 $event-month-timing:0.5s;
 
 .event-month[title] {
-  border-bottom:1px rgba(black,0.05) solid;
+  border:1px rgba(black,0.1) solid;
   color:$color-event-month;
   display:block;
   font-size:0.875rem;
@@ -15,7 +15,7 @@ $event-month-timing:0.5s;
   text-transform:uppercase;
   &.reverse {
     background-color:$color-event-month;
-    border-bottom:none;
+    border:none;
     color:white;
     transition:opacity $event-month-timing;
     &.not-inview {
