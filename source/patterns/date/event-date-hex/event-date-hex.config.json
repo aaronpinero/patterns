@@ -1,6 +1,7 @@
 {
   "title": "Event Date Hexagon",
   "label": "Event Date Hexagon",
+  "order": 3,
   "status": "ready",
   "context": {
     "hex_classes": ""

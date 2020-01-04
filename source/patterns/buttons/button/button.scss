@@ -1,5 +1,11 @@
 // pattern styles
 $button-timing:0.25s;
+.btn {
+  transition:transform $button-timing;
+  &:hover {
+    transform:scale(1.06);
+  }
+}
 .btn.btn-animate-arrow {
   position:relative;
   transition:all $button-timing;
@@ -10,7 +16,7 @@ $button-timing:0.25s;
     opacity:0;
     position:absolute;
     transform:scale(0.8);
-    transition:opacity $button-timing, right $button-timing, left $button-timing, bottom $button-timing;
+    transition:transform $button-timing, opacity $button-timing, right $button-timing, left $button-timing, bottom $button-timing;
   }
   &:hover {
     &::after {

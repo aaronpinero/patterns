@@ -1,6 +1,7 @@
 {
   "title": "Event Month",
   "label": "Event Month",
+  "order": 4,
   "status": "ready",
   "context": {
     "event_month_full": "November",

@@ -1,6 +1,7 @@
 {
   "title": "Event Year",
   "label": "Event Year",
+  "order": 6,
   "status": "ready",
   "context": {
     "event_year_number": "2020"
