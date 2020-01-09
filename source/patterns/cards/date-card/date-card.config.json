@@ -1,0 +1,33 @@
+{
+  "title": "Date Card",
+  "label": "Date Card",
+  "context": {
+    "date_card_style": "",
+    "date_card_title": "Description of the date or deadline in the calendar",
+    "date_card_description": ""
+  },
+  "order": 1,
+  "status": "ready",
+  "variants": [
+    {
+      "name": "noborder",
+      "title": "No Border",
+      "label": "No Border",
+      "context": {
+        "date_card_style": " no-border",
+        "date_card_title": "Description of the date or deadline in the calendar",
+        "date_card_description": ""
+      }
+    },
+    {
+      "name": "description",
+      "title": "With Description",
+      "label": "With Description",
+      "context": {
+        "date_card_style": "",
+        "date_card_title": "Name of the date or deadline in the calendar",
+        "date_card_description": "Some additional description of the date that might include <a href=\"#\">a link</a>."
+      }
+    }
+  ]
+}
