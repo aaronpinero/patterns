@@ -3,28 +3,28 @@
   "label": "Date Card",
   "context": {
     "date_card_style": "",
-    "date_card_title": "Description of the date or deadline in the calendar",
-    "date_card_description": ""
-  },
+    "date_card_title": "Name of the date or deadline in the calendar",
+    "date_card_description": "Some additional description of the date that might include <a href=\"#\">a link</a>."
+},
   "order": 1,
   "status": "ready",
   "variants": [
     {
-      "name": "noborder",
-      "title": "No Border",
-      "label": "No Border",
+      "name": "borderless",
+      "title": "Borderless",
+      "label": "Borderless",
       "context": {
-        "date_card_style": " no-border",
-        "date_card_title": "Description of the date or deadline in the calendar",
-        "date_card_description": ""
+        "date_card_style": " borderless",
+        "date_card_title": "Name of the date or deadline in the calendar",
+        "date_card_description": "Some additional description of the date that might include <a href=\"#\">a link</a>."
       }
     },
     {
-      "name": "description",
-      "title": "With Description",
-      "label": "With Description",
+      "name": "animated",
+      "title": "Animated",
+      "label": "Animated",
       "context": {
-        "date_card_style": "",
+        "date_card_style": " make-inview animate-wipe",
         "date_card_title": "Name of the date or deadline in the calendar",
         "date_card_description": "Some additional description of the date that might include <a href=\"#\">a link</a>."
       }
