@@ -9319,7 +9319,7 @@ form:not(.form-inline) label:not(.sr-only) + .form-control, form:not(.form-inlin
 
 /* line 14, stdin */
 .animate-wipe {
-  transition: opacity 0.5s; }
+  transition: all 0.5s; }
   /* line 16, stdin */
   .animate-wipe.not-inview {
     opacity: 0; }
@@ -9899,21 +9899,3 @@ a[href].link-animate-arrow {
   /* line 569, stdin */
   a[href].link-animate-arrow.arrow-down:hover::after {
     bottom: -1.4rem; }
-
-/* line 578, stdin */
-.content-label {
-  transition: opacity 0.5s; }
-  /* line 580, stdin */
-  .content-label.not-inview {
-    opacity: 0; }
-  /* line 583, stdin */
-  .content-label.inview {
-    animation: content-label-wipe 0.5s ease-in-out; }
-
-@keyframes content-label-wipe {
-  0% {
-    -webkit-clip-path: polygon(0% 0%, 5% 0%, 1% 100%, 0% 100%);
-            clip-path: polygon(0% 0%, 5% 0%, 1% 100%, 0% 100%); }
-  100% {
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); } }

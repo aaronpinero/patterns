@@ -8,6 +8,15 @@
   },
   "variants": [
     {
+      "name": "animate-in",
+      "title": "Animate In",
+      "label": "Animate In",
+      "context": {
+        "button_classes": "btn btn-outline-secondary make-inview animate-wipe",
+        "button_text": "Sign Up"
+      }
+    },
+    {
       "name": "left-arrow",
       "title": "Left Arrow",
       "label": "Left Arrow",

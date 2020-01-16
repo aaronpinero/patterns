@@ -1,6 +1,6 @@
 $animation-timing:0.5s;
 .animate-wipe {
-  transition:opacity $animation-timing;
+  transition:all $animation-timing;
   &.not-inview {
     opacity:0;
   }

@@ -12,7 +12,7 @@
       "title": "Default, Animated",
       "label": "Default, Animated",
       "context": {
-        "tag_classes": " make-inview bg-dark text-white",
+        "tag_classes": " make-inview animate-wipe bg-dark text-white",
         "tag_text": "Label Text"
       }
     },
@@ -30,7 +30,7 @@
       "title": "Reverse, Animated",
       "label": "Reverse, Animated",
       "context": {
-        "tag_classes": " make-inview bg-light text-dark",
+        "tag_classes": " make-inview animate-wipe bg-light text-dark",
         "tag_text": "Label Text"
       }
     }
