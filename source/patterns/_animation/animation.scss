@@ -9,6 +9,22 @@ $animation-timing:0.5s;
   }
 }
 
+// for accessibility, no animation and no change in opacity
+// https://www.w3.org/WAI/WCAG21/Techniques/css/C39.html
+@media (prefers-reduced-motion: reduce) {
+  $animation-timing:1ms;
+  .animate-wipe {
+    transition:all $animation-timing;
+    &.not-inview {
+      opacity:1;
+    }
+    &.inview {
+      animation:none;
+    }
+  }
+}
+
+// define wipe animation
 @keyframes animation-wipe {
   0% {
     clip-path:polygon(0% 0%, 5% 0%, 1% 100%, 0% 100%)

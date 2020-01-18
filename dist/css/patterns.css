@@ -9327,6 +9327,17 @@ form:not(.form-inline) label:not(.sr-only) + .form-control, form:not(.form-inlin
   .animate-wipe.inview {
     animation: animation-wipe 0.5s ease-in-out; }
 
+@media (prefers-reduced-motion: reduce) {
+  /* line 28, stdin */
+  .animate-wipe {
+    transition: all 1ms; }
+    /* line 30, stdin */
+    .animate-wipe.not-inview {
+      opacity: 1; }
+    /* line 33, stdin */
+    .animate-wipe.inview {
+      animation: none; } }
+
 @keyframes animation-wipe {
   0% {
     -webkit-clip-path: polygon(0% 0%, 5% 0%, 1% 100%, 0% 100%);
@@ -9335,7 +9346,7 @@ form:not(.form-inline) label:not(.sr-only) + .form-control, form:not(.form-inlin
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
             clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); } }
 
-/* line 33, stdin */
+/* line 49, stdin */
 body {
   animation: body-fadein 0.1s ease-in-out; }
 
@@ -9347,25 +9358,25 @@ body {
   100% {
     opacity: 1; } }
 
-/* line 50, stdin */
+/* line 66, stdin */
 .hexagon {
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
 
-/* line 58, stdin */
+/* line 74, stdin */
 .breadcrumb-item {
   margin-right: -0.375rem;
   overflow: hidden;
   position: relative;
   transition: opacity 0.25s;
   z-index: 1; }
-  /* line 64, stdin */
+  /* line 80, stdin */
   .breadcrumb-item.not-inview {
     opacity: 0; }
-  /* line 67, stdin */
+  /* line 83, stdin */
   .breadcrumb-item.inview {
     animation: breadcrumb-item-slide 0.25s ease-in-out; }
-  /* line 70, stdin */
+  /* line 86, stdin */
   .breadcrumb-item > a,
   .breadcrumb-item > span {
     -webkit-clip-path: polygon(0% 0%, calc(100% - 0.75rem) 0%, 100% 50%, calc(100% - 0.75rem) 100%, 0% 100%, 0.75rem 50%);
@@ -9378,30 +9389,38 @@ body {
     padding: 0 1rem 0 1.25rem;
     text-overflow: ellipsis;
     white-space: nowrap; }
-  /* line 82, stdin */
+  /* line 98, stdin */
   .breadcrumb-item > a {
     background: #e6e6e6;
     text-decoration: none;
     transition: all 0.25s; }
-    /* line 86, stdin */
+    /* line 102, stdin */
     .breadcrumb-item > a:hover, .breadcrumb-item > a:active {
       background-color: var(--primary);
       color: white; }
-  /* line 92, stdin */
+  /* line 108, stdin */
   .breadcrumb-item > span {
     background: #f2f2f2;
     display: inline-block; }
-  /* line 96, stdin */
+  /* line 112, stdin */
   .breadcrumb-item.active {
     background: linear-gradient(to right, transparent 0px, transparent 1rem, #f2f2f2 1.01rem);
     flex: 2;
     line-height: 0.5;
     margin-left: 0;
     min-width: 6rem; }
-    /* line 102, stdin */
+    /* line 118, stdin */
     .breadcrumb-item.active > span {
       -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%, 0.75rem 50%);
               clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%, 0.75rem 50%); }
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 130, stdin */
+  .breadcrumb-item.not-inview {
+    opacity: 1; }
+  /* line 133, stdin */
+  .breadcrumb-item.inview {
+    animation: none !important; } }
 
 @keyframes breadcrumb-item-slide {
   0% {
@@ -9409,60 +9428,60 @@ body {
   100% {
     left: 0; } }
 
-/* line 117, stdin */
+/* line 150, stdin */
 .breadcrumb {
   background-color: white; }
-  /* line 120, stdin */
+  /* line 153, stdin */
   .breadcrumb .breadcrumb-item:first-child {
     min-width: 3.125rem; }
-    /* line 122, stdin */
+    /* line 155, stdin */
     .breadcrumb .breadcrumb-item:first-child > a {
       -webkit-clip-path: polygon(0% 0%, calc(100% - 0.75rem) 0%, 100% 50%, calc(100% - 0.75rem) 100%, 0% 100%, 0 50%);
               clip-path: polygon(0% 0%, calc(100% - 0.75rem) 0%, 100% 50%, calc(100% - 0.75rem) 100%, 0% 100%, 0 50%);
       padding-left: 0.75rem; }
-  /* line 127, stdin */
+  /* line 160, stdin */
   .breadcrumb .breadcrumb-item:nth-last-child(2) {
     transition: opacity 0.35s; }
-    /* line 129, stdin */
+    /* line 162, stdin */
     .breadcrumb .breadcrumb-item:nth-last-child(2).inview {
       animation: breadcrumb-item-slide 0.35s ease-in-out; }
-  /* line 133, stdin */
+  /* line 166, stdin */
   .breadcrumb .breadcrumb-item:nth-last-child(3) {
     transition: opacity 0.45s; }
-    /* line 135, stdin */
+    /* line 168, stdin */
     .breadcrumb .breadcrumb-item:nth-last-child(3).inview {
       animation: breadcrumb-item-slide 0.45s ease-in-out; }
-  /* line 139, stdin */
+  /* line 172, stdin */
   .breadcrumb .breadcrumb-item:nth-last-child(4) {
     transition: opacity 0.55s; }
-    /* line 141, stdin */
+    /* line 174, stdin */
     .breadcrumb .breadcrumb-item:nth-last-child(4).inview {
       animation: breadcrumb-item-slide 0.55s ease-in-out; }
-  /* line 145, stdin */
+  /* line 178, stdin */
   .breadcrumb .breadcrumb-item:nth-last-child(5) {
     transition: opacity 0.65s; }
-    /* line 147, stdin */
+    /* line 180, stdin */
     .breadcrumb .breadcrumb-item:nth-last-child(5).inview {
       animation: breadcrumb-item-slide 0.65s ease-in-out; }
-  /* line 151, stdin */
+  /* line 184, stdin */
   .breadcrumb .breadcrumb-item:nth-last-child(6) {
     transition: opacity 0.75s; }
-    /* line 153, stdin */
+    /* line 186, stdin */
     .breadcrumb .breadcrumb-item:nth-last-child(6).inview {
       animation: breadcrumb-item-slide 0.75s ease-in-out; }
-  /* line 157, stdin */
+  /* line 190, stdin */
   .breadcrumb .breadcrumb-item.dropdown {
     overflow: visible; }
-  /* line 160, stdin */
+  /* line 193, stdin */
   .breadcrumb .breadcrumb-item + .breadcrumb-item {
     padding-left: 0; }
-    /* line 162, stdin */
+    /* line 195, stdin */
     .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
       display: none; }
-  /* line 169, stdin */
+  /* line 202, stdin */
   .breadcrumb.smallscreen li:first-child a {
     font-size: 0; }
-    /* line 171, stdin */
+    /* line 204, stdin */
     .breadcrumb.smallscreen li:first-child a:before {
       content: "\f015";
       display: block;
@@ -9474,18 +9493,18 @@ body {
       font-weight: 900;
       text-rendering: auto; }
 
-/* line 188, stdin */
+/* line 221, stdin */
 .btn {
   transition: transform 0.25s; }
-  /* line 190, stdin */
+  /* line 223, stdin */
   .btn:hover {
     transform: scale(1.06); }
 
-/* line 194, stdin */
+/* line 227, stdin */
 .btn.btn-animate-arrow {
   position: relative;
   transition: all 0.25s; }
-  /* line 197, stdin */
+  /* line 230, stdin */
   .btn.btn-animate-arrow::after {
     display: inline-block;
     font-family: "Font Awesome 5 Free";
@@ -9494,25 +9513,25 @@ body {
     position: absolute;
     transform: scale(0.8);
     transition: transform 0.25s, opacity 0.25s, right 0.25s, left 0.25s, bottom 0.25s; }
-  /* line 207, stdin */
+  /* line 240, stdin */
   .btn.btn-animate-arrow:hover::after {
     opacity: 1; }
-  /* line 212, stdin */
+  /* line 245, stdin */
   .btn.btn-animate-arrow.arrow-left::after {
     content: "\f061";
     right: 0.625rem; }
-  /* line 216, stdin */
+  /* line 249, stdin */
   .btn.btn-animate-arrow.arrow-left:hover {
     padding-right: 1.875rem; }
-  /* line 221, stdin */
+  /* line 254, stdin */
   .btn.btn-animate-arrow.arrow-right::after {
     content: "\f060";
     left: 0.625rem; }
-  /* line 225, stdin */
+  /* line 258, stdin */
   .btn.btn-animate-arrow.arrow-right:hover {
     margin-left: -1.125rem;
     padding-left: 1.875rem; }
-  /* line 231, stdin */
+  /* line 264, stdin */
   .btn.btn-animate-arrow.arrow-down::after {
     bottom: -0.5rem;
     content: "\f063";
@@ -9523,7 +9542,7 @@ body {
     text-align: center;
     width: 2rem;
     z-index: -1; }
-  /* line 242, stdin */
+  /* line 275, stdin */
   .btn.btn-animate-arrow.arrow-down::before {
     background-color: inherit;
     bottom: 0.28rem;
@@ -9542,22 +9561,22 @@ body {
     transition: bottom 0.25s, clip-path 0.25s, -webkit-clip-path 0.25s;
     width: 2rem;
     z-index: -1; }
-  /* line 259, stdin */
+  /* line 292, stdin */
   .btn.btn-animate-arrow.arrow-down:hover::after {
     bottom: -1.4rem;
     z-index: 0; }
-  /* line 263, stdin */
+  /* line 296, stdin */
   .btn.btn-animate-arrow.arrow-down:hover::before {
     bottom: -1rem;
     -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
             clip-path: polygon(100% 0%, 100% 100%, 0% 100%); }
 
-/* line 274, stdin */
+/* line 307, stdin */
 .date-card .date-time,
 .date-card .date-location {
   padding-left: 1.5rem;
   position: relative; }
-  /* line 278, stdin */
+  /* line 311, stdin */
   .date-card .date-time::before,
   .date-card .date-location::before {
     color: rgba(0, 0, 0, 0.4);
@@ -9568,54 +9587,54 @@ body {
     text-align: center;
     width: 1rem; }
 
-/* line 289, stdin */
+/* line 322, stdin */
 .date-card .date-time::before {
   content: "\f017"; }
 
-/* line 294, stdin */
+/* line 327, stdin */
 .date-card .date-location::before {
   content: "\f3c5"; }
 
-/* line 301, stdin */
+/* line 334, stdin */
 .date-card {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
   position: relative;
   transition: all 0.25s; }
-  /* line 305, stdin */
+  /* line 338, stdin */
   .date-card .date-card-date {
     padding: 0.875rem; }
-    /* line 307, stdin */
+    /* line 340, stdin */
     .date-card .date-card-date .event-date {
       width: 3rem; }
-  /* line 311, stdin */
+  /* line 344, stdin */
   .date-card .date-card-body {
     padding: 0.875rem; }
-  /* line 314, stdin */
+  /* line 347, stdin */
   .date-card .date-card-title + .date-card-description {
     margin-top: 0.5rem; }
-  /* line 318, stdin */
+  /* line 351, stdin */
   .date-card.js-date-clickthrough .date-card-title a {
     background-image: none !important;
     border: none !important;
     text-decoration: none !important; }
-  /* line 323, stdin */
+  /* line 356, stdin */
   .date-card.js-date-clickthrough:hover {
     border-color: rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transform: scale(1.06); }
-  /* line 329, stdin */
+  /* line 362, stdin */
   .date-card.borderless {
     border: none;
     box-shadow: none; }
-    /* line 332, stdin */
+    /* line 365, stdin */
     .date-card.borderless .date-card-date {
       padding: 0 0.875rem 0 0; }
-    /* line 335, stdin */
+    /* line 368, stdin */
     .date-card.borderless .date-card-body {
       border-left: none !important;
       padding: 0 0 0 0.375rem; }
 
-/* line 341, stdin */
+/* line 374, stdin */
 .make-counter {
   display: inline-flex;
   flex-wrap: nowrap;
@@ -9624,7 +9643,7 @@ body {
   line-height: 1.5rem;
   overflow: hidden; }
 
-/* line 349, stdin */
+/* line 382, stdin */
 .make-counter span {
   display: block;
   font-size: inherit;
@@ -9633,89 +9652,89 @@ body {
   position: relative;
   top: 0; }
 
-/* line 357, stdin */
+/* line 390, stdin */
 .make-counter .digit-con {
   width: 0.6em;
   height: inherit;
   overflow: hidden; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(1) .count-transition {
   transition: top 1.15s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(2) .count-transition {
   transition: top 1.3s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(3) .count-transition {
   transition: top 1.45s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(4) .count-transition {
   transition: top 1.6s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(5) .count-transition {
   transition: top 1.75s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(6) .count-transition {
   transition: top 1.9s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(7) .count-transition {
   transition: top 2.05s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(8) .count-transition {
   transition: top 2.2s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(9) .count-transition {
   transition: top 2.35s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(10) .count-transition {
   transition: top 2.5s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(11) .count-transition {
   transition: top 2.65s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(12) .count-transition {
   transition: top 2.8s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(13) .count-transition {
   transition: top 2.95s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(14) .count-transition {
   transition: top 3.1s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(15) .count-transition {
   transition: top 3.25s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(16) .count-transition {
   transition: top 3.4s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(17) .count-transition {
   transition: top 3.55s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(18) .count-transition {
   transition: top 3.7s; }
 
-/* line 363, stdin */
+/* line 396, stdin */
 .make-counter .digit-con:nth-child(19) .count-transition {
   transition: top 3.85s; }
 
-/* line 369, stdin */
+/* line 402, stdin */
 .event-day {
   color: var(--gray-dark);
   display: block;
@@ -9723,7 +9742,7 @@ body {
   line-height: 1;
   margin: 0.25rem auto;
   text-align: center; }
-  /* line 376, stdin */
+  /* line 409, stdin */
   .event-day.make-counter {
     display: flex;
     justify-content: center;
@@ -9731,7 +9750,7 @@ body {
     height: 2rem;
     line-height: 2rem; }
 
-/* line 387, stdin */
+/* line 420, stdin */
 .event-date-hex {
   background-color: rgba(0, 0, 0, 0.05);
   display: flex;
@@ -9739,32 +9758,32 @@ body {
   justify-content: center;
   height: 5.313rem;
   width: 4.6rem; }
-  /* line 394, stdin */
+  /* line 427, stdin */
   .event-date-hex .event-month[title] {
     border-left: none;
     border-right: none;
     border-top: none;
     margin: 0 auto; }
-  /* line 400, stdin */
+  /* line 433, stdin */
   .event-date-hex .event-day {
     font-size: 1.75rem;
     line-height: 2rem;
     height: 2rem;
     margin-top: 0; }
-  /* line 406, stdin */
+  /* line 439, stdin */
   .event-date-hex.reverse {
     background-color: var(--blue); }
-    /* line 408, stdin */
+    /* line 441, stdin */
     .event-date-hex.reverse .event-month[title] {
       border-bottom-color: rgba(255, 255, 255, 0.4);
       color: white; }
-    /* line 412, stdin */
+    /* line 445, stdin */
     .event-date-hex.reverse .event-day {
       color: white; }
-  /* line 416, stdin */
+  /* line 449, stdin */
   .event-date-hex.not-inview {
     opacity: 0; }
-  /* line 419, stdin */
+  /* line 452, stdin */
   .event-date-hex.inview {
     animation: hex-pop 0.25s ease-in-out; }
 
@@ -9778,11 +9797,11 @@ body {
             clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transform: scale(1); } }
 
-/* line 437, stdin */
+/* line 470, stdin */
 .event-date .event-year {
   margin-top: 0; }
 
-/* line 444, stdin */
+/* line 477, stdin */
 .event-month[title] {
   border: 1px rgba(0, 0, 0, 0.1) solid;
   color: var(--red);
@@ -9795,16 +9814,16 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase; }
-  /* line 456, stdin */
+  /* line 489, stdin */
   .event-month[title].reverse {
     background-color: var(--red);
     border: none;
     color: white;
     transition: opacity 0.5s; }
-  /* line 462, stdin */
+  /* line 495, stdin */
   .event-month[title].not-inview {
     opacity: 0; }
-  /* line 465, stdin */
+  /* line 498, stdin */
   .event-month[title].inview {
     animation: event-month-wipe 0.5s ease-in-out; }
 
@@ -9816,7 +9835,7 @@ body {
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
             clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); } }
 
-/* line 482, stdin */
+/* line 515, stdin */
 .event-year {
   border-top: 1px rgba(0, 0, 0, 0.1) solid;
   color: var(--gray);
@@ -9828,19 +9847,19 @@ body {
   position: relative;
   text-align: center; }
 
-/* line 498, stdin */
+/* line 531, stdin */
 a[href].link-underline,
 .links-underline a[href] {
   border-bottom: 1px currentColor solid;
   transition: color 0.25s ease-in-out; }
-  /* line 502, stdin */
+  /* line 535, stdin */
   a[href].link-underline:hover, a[href].link-underline:active,
   .links-underline a[href]:hover,
   .links-underline a[href]:active {
     border-bottom: 2px currentColor solid;
     text-decoration: none; }
 
-/* line 508, stdin */
+/* line 541, stdin */
 a[href].link-animate-underline,
 .links-animate-underline a[href] {
   background-image: linear-gradient(to bottom, transparent 20%, currentColor 21%);
@@ -9849,17 +9868,17 @@ a[href].link-animate-underline,
   background-size: 0% 6px;
   text-decoration: none;
   transition: background-size 0.25s ease-in-out; }
-  /* line 516, stdin */
+  /* line 549, stdin */
   a[href].link-animate-underline:hover, a[href].link-animate-underline:focus,
   .links-animate-underline a[href]:hover,
   .links-animate-underline a[href]:focus {
     background-size: 100% 6px; }
 
-/* line 521, stdin */
+/* line 554, stdin */
 a[href].link-animate-arrow {
   position: relative;
   transition: padding-right 0.25s; }
-  /* line 524, stdin */
+  /* line 557, stdin */
   a[href].link-animate-arrow::after {
     display: inline-block;
     font-family: "Font Awesome 5 Free";
@@ -9868,27 +9887,27 @@ a[href].link-animate-arrow {
     position: absolute;
     transform: scale(0.8);
     transition: opacity 0.25s, right 0.25s, left 0.25s, bottom 0.25s; }
-  /* line 533, stdin */
+  /* line 566, stdin */
   a[href].link-animate-arrow:hover {
     text-decoration: none; }
-    /* line 535, stdin */
+    /* line 568, stdin */
     a[href].link-animate-arrow:hover::after {
       opacity: 1; }
-  /* line 540, stdin */
+  /* line 573, stdin */
   a[href].link-animate-arrow.arrow-left::after {
     content: "\f061";
     right: 0; }
-  /* line 544, stdin */
+  /* line 577, stdin */
   a[href].link-animate-arrow.arrow-left:hover {
     padding-right: 1.125rem; }
-  /* line 549, stdin */
+  /* line 582, stdin */
   a[href].link-animate-arrow.arrow-right::after {
     content: "\f060";
     left: 0; }
-  /* line 554, stdin */
+  /* line 587, stdin */
   a[href].link-animate-arrow.arrow-right:hover::after {
     left: -1.125rem; }
-  /* line 560, stdin */
+  /* line 593, stdin */
   a[href].link-animate-arrow.arrow-down::after {
     content: "\f063";
     bottom: -0.5rem;
@@ -9896,6 +9915,6 @@ a[href].link-animate-arrow {
     margin-left: -1rem;
     text-align: center;
     width: 2rem; }
-  /* line 569, stdin */
+  /* line 602, stdin */
   a[href].link-animate-arrow.arrow-down:hover::after {
     bottom: -1.4rem; }
