@@ -64,9 +64,12 @@ function Count(obj){
   }
 }
 
+// accessibility check
+const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+
 // apply an intersection observer to all elements with the class .make-inview
 document.addEventListener("DOMContentLoaded", function() {
-  if ("IntersectionObserver" in window) { // if available
+  if ("IntersectionObserver" in window && mediaQuery.matches === false) { // if available and if allowed
 
     // collect items that will be observed
     var counter_items = [].slice.call(document.querySelectorAll(".make-counter"));
@@ -98,6 +101,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
   else {
-    console.log("Warning: intersection observer not available")
+    console.log("Warning: intersection observer not available, or reduce motion is on")
   }
 });
