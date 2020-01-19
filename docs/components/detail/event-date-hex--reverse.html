@@ -250,6 +250,20 @@
   }
 }
 
+<span class="hljs-comment">// for accessibility, no animation and no change in opacity</span>
+<span class="hljs-comment">// https://www.w3.org/WAI/WCAG21/Techniques/css/C39.html</span>
+<span class="hljs-keyword">@media</span> (prefers-reduced-motion: reduce) {
+  <span class="hljs-variable">$event-date-hex-timing</span>:<span class="hljs-number">1ms</span>;
+  <span class="hljs-selector-class">.event-date-hex</span> {
+    &amp;<span class="hljs-selector-class">.not-inview</span> {
+      <span class="hljs-attribute">opacity</span>:<span class="hljs-number">1</span>;
+    }
+    &amp;<span class="hljs-selector-class">.inview</span> {
+      <span class="hljs-attribute">animation</span>:none;
+    }
+  }
+}
+
 <span class="hljs-keyword">@keyframes</span> hex-pop {
   0% {
     <span class="hljs-attribute">clip-path</span>:polygon(<span class="hljs-number">50%</span> <span class="hljs-number">48%</span>, <span class="hljs-number">51%</span> <span class="hljs-number">49%</span>, <span class="hljs-number">51%</span> <span class="hljs-number">51%</span>, <span class="hljs-number">50%</span> <span class="hljs-number">52%</span>, <span class="hljs-number">49%</span> <span class="hljs-number">51%</span>,<span class="hljs-number">49%</span> <span class="hljs-number">49%</span>);
@@ -277,7 +291,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">995 Bytes</span>
+                    <span class="Meta-value">1.3 KB</span>
                 </li>
             </ul>
         </div>
@@ -613,6 +627,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--animate-in.html" data-pjax>
+                <span>Animate In</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button--left-arrow.html" data-pjax>
                 <span>Left Arrow</span>
                 
@@ -703,6 +741,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button-outline--default.html" data-pjax>
                 <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-outline--animate-in.html" data-pjax>
+                <span>Animate In</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -853,8 +915,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="date-card--noborder.html" data-pjax>
-                <span>No Border</span>
+            <a class="Tree-entityLink" href="date-card--borderless.html" data-pjax>
+                <span>Borderless</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -877,8 +939,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="date-card--description.html" data-pjax>
-                <span>With Description</span>
+            <a class="Tree-entityLink" href="date-card--animated.html" data-pjax>
+                <span>Animated</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1787,6 +1849,16 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../../docs/inview.html" data-pjax>
                 <span>In View</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/accessibility.html" data-pjax>
+                <span>Accessibility</span>
                 
             </a>
         </li>

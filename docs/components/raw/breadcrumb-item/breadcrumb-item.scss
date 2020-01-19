@@ -52,6 +52,23 @@ $breadcrumb-item-timing:0.25s;
     }
   }
 }
+
+// for accessibility, no animation and no change in opacity
+// use !important because the main breadcrumb stylesheet overrides these styles
+// https://www.w3.org/WAI/WCAG21/Techniques/css/C39.html
+@media (prefers-reduced-motion: reduce) {
+  $breadcrumb-item-timing:1ms !important;
+  .breadcrumb-item {
+    &.not-inview {
+      opacity:1;
+    }
+    &.inview {
+      animation:none !important;
+    }
+  }
+}
+
+// define animation for breadcrum item
 @keyframes breadcrumb-item-slide {
   0% {
     left:-50px;

@@ -160,12 +160,12 @@
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card date-card d-flex flex-row"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"date-card-date"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"event-date"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"event-month make-inview"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"November"</span>&gt;</span>Nov<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"event-day make-counter"</span>&gt;</span>25<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"event-month make-inview animate-wipe"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"November"</span>&gt;</span>Nov<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"event-day make-counter"</span>&gt;</span>25<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"date-card-body border-left"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h5 date-card-title"</span>&gt;</span>Description of the date or deadline in the calendar<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"date-card-description links-animate-underline"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h5 date-card-title"</span>&gt;</span>Name of the date or deadline in the calendar<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"date-card-description links-animate-underline"</span>&gt;</span>Some additional description of the date that might include <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>a link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
@@ -192,8 +192,8 @@
             
             <pre>{
   <span class="hljs-attr">"date_card_style"</span>: <span class="hljs-string">""</span>,
-  <span class="hljs-attr">"date_card_title"</span>: <span class="hljs-string">"Description of the date or deadline in the calendar"</span>,
-  <span class="hljs-attr">"date_card_description"</span>: <span class="hljs-string">""</span>
+  <span class="hljs-attr">"date_card_title"</span>: <span class="hljs-string">"Name of the date or deadline in the calendar"</span>,
+  <span class="hljs-attr">"date_card_description"</span>: <span class="hljs-string">"Some additional description of the date that might include &lt;a href=\"#\"&gt;a link&lt;/a&gt;."</span>
 }</pre>
             
         
@@ -282,7 +282,7 @@
       <span class="hljs-attribute">transform</span>:scale(<span class="hljs-number">1.06</span>);
     }
   }
-  &amp;<span class="hljs-selector-class">.no-border</span> {
+  &amp;<span class="hljs-selector-class">.borderless</span> {
     <span class="hljs-attribute">border</span>:none;
     <span class="hljs-attribute">box-shadow</span>:none;
     <span class="hljs-selector-class">.date-card-date</span> {
@@ -339,12 +339,12 @@
                     <span>Default</span>
                 </a>, 
             
-                <a href="date-card--noborder.html">
-                    <span>No Border</span>
+                <a href="date-card--borderless.html">
+                    <span>Borderless</span>
                 </a>, 
             
-                <a href="date-card--description.html">
-                    <span>With Description</span>
+                <a href="date-card--animated.html">
+                    <span>Animated</span>
                 </a>
             
             </span>
@@ -639,6 +639,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--animate-in.html" data-pjax>
+                <span>Animate In</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button--left-arrow.html" data-pjax>
                 <span>Left Arrow</span>
                 
@@ -729,6 +753,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button-outline--default.html" data-pjax>
                 <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-outline--animate-in.html" data-pjax>
+                <span>Animate In</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -879,8 +927,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="date-card--noborder.html" data-pjax>
-                <span>No Border</span>
+            <a class="Tree-entityLink" href="date-card--borderless.html" data-pjax>
+                <span>Borderless</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -903,8 +951,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="date-card--description.html" data-pjax>
-                <span>With Description</span>
+            <a class="Tree-entityLink" href="date-card--animated.html" data-pjax>
+                <span>Animated</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1813,6 +1861,16 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../../docs/inview.html" data-pjax>
                 <span>In View</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/accessibility.html" data-pjax>
+                <span>Accessibility</span>
                 
             </a>
         </li>

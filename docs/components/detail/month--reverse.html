@@ -210,7 +210,6 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-variable">$color-event-month</span>:var(--red);
-<span class="hljs-variable">$event-month-timing</span>:<span class="hljs-number">0.5s</span>;
 
 <span class="hljs-selector-class">.event-month</span><span class="hljs-selector-attr">[title]</span> {
   <span class="hljs-attribute">border</span>:<span class="hljs-number">1px</span> rgba(black,<span class="hljs-number">0.1</span>) solid;
@@ -228,26 +227,8 @@
     <span class="hljs-attribute">background-color</span>:<span class="hljs-variable">$color-event-month</span>;
     <span class="hljs-attribute">border</span>:none;
     <span class="hljs-attribute">color</span>:white;
-    <span class="hljs-attribute">transition</span>:opacity <span class="hljs-variable">$event-month-timing</span>;
   }
-  &amp;<span class="hljs-selector-class">.not-inview</span> {
-    <span class="hljs-attribute">opacity</span>:<span class="hljs-number">0</span>;
-  }
-  &amp;<span class="hljs-selector-class">.inview</span> {
-    <span class="hljs-attribute">animation</span>:event-month-wipe <span class="hljs-variable">$event-month-timing</span> ease-in-out;
-  }
-}
-
-<span class="hljs-keyword">@keyframes</span> event-month-wipe {
-  0% {
-    <span class="hljs-attribute">clip-path</span>:polygon(<span class="hljs-number">0%</span> <span class="hljs-number">0%</span>, <span class="hljs-number">5%</span> <span class="hljs-number">0%</span>, <span class="hljs-number">1%</span> <span class="hljs-number">100%</span>, <span class="hljs-number">0%</span> <span class="hljs-number">100%</span>)
-  }
-  <span class="hljs-number">100%</span> {
-    clip-path:polygon(<span class="hljs-number">0%</span> <span class="hljs-number">0%</span>, <span class="hljs-number">100%</span> <span class="hljs-number">0%</span>, <span class="hljs-number">100%</span> <span class="hljs-number">100%</span>, <span class="hljs-number">0%</span> <span class="hljs-number">100%</span>)
-  }
-}
-
-</pre>
+}</pre>
                             </code>
                             
                         </div>
@@ -263,7 +244,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">764 Bytes</span>
+                    <span class="Meta-value">406 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -599,6 +580,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--animate-in.html" data-pjax>
+                <span>Animate In</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button--left-arrow.html" data-pjax>
                 <span>Left Arrow</span>
                 
@@ -689,6 +694,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button-outline--default.html" data-pjax>
                 <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-outline--animate-in.html" data-pjax>
+                <span>Animate In</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -839,8 +868,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="date-card--noborder.html" data-pjax>
-                <span>No Border</span>
+            <a class="Tree-entityLink" href="date-card--borderless.html" data-pjax>
+                <span>Borderless</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -863,8 +892,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="date-card--description.html" data-pjax>
-                <span>With Description</span>
+            <a class="Tree-entityLink" href="date-card--animated.html" data-pjax>
+                <span>Animated</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1773,6 +1802,16 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../../docs/inview.html" data-pjax>
                 <span>In View</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/accessibility.html" data-pjax>
+                <span>Accessibility</span>
                 
             </a>
         </li>

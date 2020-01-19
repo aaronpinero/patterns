@@ -37,6 +37,20 @@ $event-date-hex-timing:0.25s;
   }
 }
 
+// for accessibility, no animation and no change in opacity
+// https://www.w3.org/WAI/WCAG21/Techniques/css/C39.html
+@media (prefers-reduced-motion: reduce) {
+  $event-date-hex-timing:1ms;
+  .event-date-hex {
+    &.not-inview {
+      opacity:1;
+    }
+    &.inview {
+      animation:none;
+    }
+  }
+}
+
 @keyframes hex-pop {
   0% {
     clip-path:polygon(50% 48%, 51% 49%, 51% 51%, 50% 52%, 49% 51%,49% 49%);
