@@ -535,7 +535,65 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-b40734e8b061fc7ea8304fa0a5ddd2ae-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        <h1 id="donut-chart">Donut Chart</h1>
+<h2 id="overview">Overview</h2>
+<p>The donut chart pattern is a stylistic variation on a pie chart. The chart shows a small number of data points as percentage of a whole. The chart is build on values in the HTML that are indicated by a specific class name. This makes the chart data quickly editable and very accessible.</p>
+<h2 id="limitations">Limitations</h2>
+<ul>
+<li>data values will be parsed as integers for the purpose of calculating the chart slice size</li>
+<li>data is normalized based on the sum of all the integers parsed</li>
+<li>the CSS supports no more than 5 data points</li>
+</ul>
+<h2 id="class-names">Class Names</h2>
+<p>Below are custom class names for implementation of the donut chart. The pattern uses additional classes from Bootstrap for styling.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>.donutchart</td>
+<td>apply to the block level container for the chart and data</td>
+</tr>
+<tr>
+<td>.datum</td>
+<td>apply to each span that wraps (represents) a data point for the chart</td>
+</tr>
+<tr>
+<td>.make-inview</td>
+<td>apply to the block level container if you want the chart to animate in</td>
+</tr>
+</tbody></table>
+<h2 id="html-structure">HTML structure</h2>
+<p>Because data is being presented, I recommend using a table. </p>
+<pre><code>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"donutchart"</span>&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table table-borderless table-sm w-auto"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span>&gt;</span>[value column head]<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span>&gt;</span>[label column head]<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"align-middle"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"datum d-block text-center px-2 py-1 rounded"</span>&gt;</span>[value]<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&lt;/<span class="hljs-attr">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"align-middle"</span>&gt;</span>[label]<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      [...]
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>  
+  <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre><p>This structure allows the data to be presented effectively even if the chart does not render (either because of lack of JavaScript or CSS support). The chart visual is added to the DOM as an SVG using JavaScript.</p>
+<h2 id="references">References</h2>
+<p>The following articles were used as references for this pattern:</p>
+<ul>
+<li><a href="https://css-tricks.com/how-to-make-charts-with-svg/">https://css-tricks.com/how-to-make-charts-with-svg/</a></li>
+<li><a href="https://css-tricks.com/a-trick-that-makes-drawing-svg-lines-way-easier/">https://css-tricks.com/a-trick-that-makes-drawing-svg-lines-way-easier/</a></li>
+<li><a href="https://stackoverflow.com/questions/3642035/jquerys-append-not-working-with-svg-element">https://stackoverflow.com/questions/3642035/jquerys-append-not-working-with-svg-element</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio">https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio</a></li>
+</ul>
+
         
     </div>
 </div>
