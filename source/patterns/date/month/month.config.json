@@ -26,7 +26,7 @@
       "context": {
         "event_month_full": "November",
         "event_month_short": "Nov",
-        "event_month_style": " make-inview"
+        "event_month_style": " make-inview animate-wipe"
       }
     },
     {
@@ -36,7 +36,7 @@
       "context": {
         "event_month_full": "November",
         "event_month_short": "Nov",
-        "event_month_style": " reverse make-inview"
+        "event_month_style": " reverse make-inview animate-wipe"
       }
     }
   ]
