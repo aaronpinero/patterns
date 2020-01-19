@@ -86,4 +86,12 @@ body {
       }
     }
   }
+  &.not-inview {
+    .chart circle {
+      @media (prefers-reduced-motion: no-preference) {
+        stroke-dasharray:1 ($mathPI * 100%) !important;
+        stroke-dashoffset:1 !important;
+      }
+    }
+  }
 }
