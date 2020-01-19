@@ -1,0 +1,10 @@
+{
+  "title": "Donut Chart",
+  "label": "Donut Chart",
+  "context": {
+    "donut_th_value": "Percent",
+    "donut_th_label": "Area of Interest"
+  },
+  "order": 1,
+  "status": "ready"
+}

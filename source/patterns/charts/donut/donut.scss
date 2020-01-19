@@ -1,0 +1,89 @@
+$mathPI:3.14159;
+// color scheme from https://coolors.co/6610f2-20c997-db1a74-ffc107-60b5ff
+$color1:#{var(--indigo)} !default;
+$color2:#{var(--teal)} !default;
+$color3:#{var(--pink)} !default;
+$color4:#{var(--yellow)} !default;
+$color5:#60B5FF !default;
+$donutchart-break:640px !default;
+body {
+  margin:0;
+  padding:2rem;
+}
+.donutchart {
+  align-items:center;
+  position:relative;
+  @media (min-width:$donutchart-break) {
+    display:flex;
+  }
+  .chart {
+    border-radius:50%;
+    height:auto;
+    max-width:250px;
+    width:100%;
+    @media (min-width:$donutchart-break) {
+      width:50%;
+    }
+    circle {
+      fill: transparent;
+      stroke-width:50%;
+      stroke-dasharray:1 ($mathPI * 100%);
+      stroke-dashoffset:1;
+      transition:all 1s;
+      &:nth-child(1) {
+        stroke: $color1;
+      }
+      &:nth-child(2) {
+        stroke: $color2;
+      }
+      &:nth-child(3) {
+        stroke: $color3;
+      }
+      &:nth-child(4) {
+        stroke: $color4;
+      }
+      &:nth-child(5) {
+        stroke: $color5;
+      }
+    }
+  }
+  .chart + table {
+    margin-top:1rem;
+    @media (min-width:$donutchart-break) {
+      margin-left:1rem;
+      margin-top:0;
+    }
+  }
+  table {
+    margin-top:0;
+    margin-bottom:0;
+    tbody tr {
+      .datum {
+        background-color:black;
+        color:white;
+        font-weight:bold;
+      }
+      .datum + td {
+        padding-left:0.25rem;
+      }
+      &:nth-child(1) .datum {
+        background-color:$color1;
+      }
+      &:nth-child(2) .datum {
+        background-color:$color2;
+        color:black;
+      }
+      &:nth-child(3) .datum {
+        background-color:$color3;
+      }
+      &:nth-child(4) .datum {
+        background-color:$color4;
+        color:black;
+      }
+      &:nth-child(5) .datum {
+        background-color:$color5;
+        color:black;
+      }
+    }
+  }
+}
