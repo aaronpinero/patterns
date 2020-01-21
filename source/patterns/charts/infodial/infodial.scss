@@ -1,0 +1,87 @@
+$infodial-break:320px !default;
+$color-infodial-empty:#f2f2f2;
+.infodial {
+  display:flex;
+  flex-direction:column;
+  margin:0 auto;
+  position:relative;
+  width:100%;
+  @media (min-width:$infodial-break) {
+    &::before {
+      content:"";
+      display:block;
+      height:0;
+      padding-top:100%;
+      width:100%;
+      z-index:1;
+    }
+  }
+  .infodialtext {
+    justify-content:center;
+    display:flex;
+    flex-direction:column;
+    margin-top:1rem;
+    @media (min-width:$infodial-break) {
+      height:100%;
+      left:25%;
+      margin-top:0;
+      position:absolute;
+      width:50%;
+      z-index:3;
+    }
+  }
+  .chart {
+    border-radius:50%;
+    height:auto;
+    transform:rotate(-90deg);
+    width:100%;
+    @media (min-width:$infodial-break) {
+      height:100%;
+      position:absolute;
+    }
+    .dial {
+      fill:transparent;
+      stroke-width:15%;
+      stroke:$color-infodial-empty;
+    }
+    .reading {
+      fill:transparent;
+      // stroke:$color1;
+      stroke-width:15%;
+      stroke-dasharray:1 314.159%;
+      stroke-dashoffset:1;
+    }
+  }
+  &.purple {
+    .infodialtext .display-4 {
+      color:var(--purple);
+    }
+    .chart .reading {
+      stroke:var(--purple);
+    }
+  }
+  &.orange {
+    .infodialtext .display-4 {
+      color:var(--orange);
+    }
+    .chart .reading {
+      stroke:var(--orange);
+    }
+  }
+  &.green {
+    .infodialtext .display-4 {
+      color:var(--green);
+    }
+    .chart .reading {
+      stroke:var(--green);
+    }
+  }
+  &.blue {
+    .infodialtext .display-4 {
+      color:var(--blue);
+    }
+    .chart .reading {
+      stroke:var(--blue);
+    }
+  }
+}
