@@ -1,0 +1,9 @@
+{
+  "title": "Lazy-Loaded Image",
+  "label": "Lazy-Loaded Image",
+  "context": {
+    "lazyimage_src": "http://placeimg.com/640/480/arch",
+    "lazyimage_alt": "alt tag for the image"
+  },
+  "status": "ready"
+}
