@@ -9634,290 +9634,109 @@ body {
       border-left: none !important;
       padding: 0 0 0 0.375rem; }
 
-/* line 382, stdin */
-body {
-  margin: 0;
-  padding: 2rem; }
-
-/* line 386, stdin */
-.donutchart {
-  align-items: center;
-  position: relative; }
-  @media (min-width: 640px) {
-    /* line 386, stdin */
-    .donutchart {
-      display: flex; } }
-  /* line 392, stdin */
-  .donutchart .chart {
-    border-radius: 50%;
-    height: auto;
-    max-width: 250px;
-    width: 100%; }
-    @media (min-width: 640px) {
-      /* line 392, stdin */
-      .donutchart .chart {
-        width: 50%; } }
-    /* line 400, stdin */
-    .donutchart .chart circle {
-      fill: transparent;
-      stroke-width: 50%;
-      stroke-dasharray: 1 314.159%;
-      stroke-dashoffset: 1;
-      transition: all 1s; }
-      /* line 406, stdin */
-      .donutchart .chart circle:nth-child(1) {
-        stroke: var(--indigo); }
-      /* line 409, stdin */
-      .donutchart .chart circle:nth-child(2) {
-        stroke: var(--teal); }
-      /* line 412, stdin */
-      .donutchart .chart circle:nth-child(3) {
-        stroke: var(--pink); }
-      /* line 415, stdin */
-      .donutchart .chart circle:nth-child(4) {
-        stroke: var(--yellow); }
-      /* line 418, stdin */
-      .donutchart .chart circle:nth-child(5) {
-        stroke: #60B5FF; }
-  /* line 423, stdin */
-  .donutchart .chart + table {
-    margin-top: 1rem; }
-    @media (min-width: 640px) {
-      /* line 423, stdin */
-      .donutchart .chart + table {
-        margin-left: 1rem;
-        margin-top: 0; } }
-  /* line 430, stdin */
-  .donutchart table {
-    margin-top: 0;
-    margin-bottom: 0; }
-    /* line 434, stdin */
-    .donutchart table tbody tr .datum {
-      background-color: black;
-      color: white;
-      font-weight: bold; }
-    /* line 439, stdin */
-    .donutchart table tbody tr .datum + td {
-      padding-left: 0.25rem; }
-    /* line 442, stdin */
-    .donutchart table tbody tr:nth-child(1) .datum {
-      background-color: var(--indigo); }
-    /* line 445, stdin */
-    .donutchart table tbody tr:nth-child(2) .datum {
-      background-color: var(--teal);
-      color: black; }
-    /* line 449, stdin */
-    .donutchart table tbody tr:nth-child(3) .datum {
-      background-color: var(--pink); }
-    /* line 452, stdin */
-    .donutchart table tbody tr:nth-child(4) .datum {
-      background-color: var(--yellow);
-      color: black; }
-    /* line 456, stdin */
-    .donutchart table tbody tr:nth-child(5) .datum {
-      background-color: #60B5FF;
-      color: black; }
-  @media (prefers-reduced-motion: no-preference) {
-    /* line 463, stdin */
-    .donutchart.not-inview .chart circle {
-      stroke-dasharray: 1% 314.159% !important;
-      stroke-dashoffset: 1% !important; } }
-
-/* line 474, stdin */
-.infodial {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  position: relative;
-  width: 100%; }
-  @media (min-width: 380px) {
-    /* line 481, stdin */
-    .infodial::before {
-      content: "";
-      display: block;
-      height: 0;
-      padding-top: 100%;
-      width: 100%;
-      z-index: 1; } }
-  /* line 490, stdin */
-  .infodial .infodialtext {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem; }
-    @media (min-width: 380px) {
-      /* line 490, stdin */
-      .infodial .infodialtext {
-        height: 100%;
-        left: 25%;
-        margin-top: 0;
-        position: absolute;
-        width: 50%;
-        z-index: 3; } }
-    /* line 503, stdin */
-    .infodial .infodialtext .infodialnumber {
-      font-size: 3rem;
-      font-weight: bold;
-      line-height: 1; }
-      /* line 507, stdin */
-      .infodial .infodialtext .infodialnumber.make-counter {
-        display: inline-flex !important;
-        height: 3rem;
-        justify-content: center; }
-  /* line 514, stdin */
-  .infodial .chart {
-    border-radius: 50%;
-    height: auto;
-    transform: rotate(-90deg);
-    width: 100%; }
-    @media (min-width: 380px) {
-      /* line 514, stdin */
-      .infodial .chart {
-        height: 100%;
-        position: absolute; } }
-    /* line 523, stdin */
-    .infodial .chart .dial {
-      fill: transparent;
-      stroke-width: 15%;
-      stroke: #f2f2f2; }
-    /* line 528, stdin */
-    .infodial .chart .reading {
-      fill: transparent;
-      stroke-width: 15%;
-      stroke-dasharray: 1 314.159%;
-      stroke-dashoffset: 1;
-      transition: all 1s; }
-  /* line 537, stdin */
-  .infodial.purple .infodialtext .infodialnumber {
-    color: var(--purple); }
-  /* line 540, stdin */
-  .infodial.purple .chart .reading {
-    stroke: var(--purple); }
-  /* line 545, stdin */
-  .infodial.orange .infodialtext .infodialnumber {
-    color: var(--orange); }
-  /* line 548, stdin */
-  .infodial.orange .chart .reading {
-    stroke: var(--orange); }
-  /* line 553, stdin */
-  .infodial.green .infodialtext .infodialnumber {
-    color: var(--green); }
-  /* line 556, stdin */
-  .infodial.green .chart .reading {
-    stroke: var(--green); }
-  /* line 561, stdin */
-  .infodial.blue .infodialtext .infodialnumber {
-    color: var(--blue); }
-  /* line 564, stdin */
-  .infodial.blue .chart .reading {
-    stroke: var(--blue); }
-  @media (prefers-reduced-motion: no-preference) {
-    /* line 569, stdin */
-    .infodial.not-inview .chart .reading {
-      stroke-dasharray: 1% 314.159% !important;
-      stroke-dashoffset: 1% !important; } }
-
-/* line 577, stdin */
+/* line 374, stdin */
 .make-counter {
   display: inline-flex;
   flex-wrap: nowrap;
   font-size: 1rem;
   height: 1.5rem;
-  line-height: 1.5rem;
-  overflow: hidden; }
+  line-height: 1.5rem; }
 
-/* line 585, stdin */
+/* line 381, stdin */
 .make-counter span {
   display: block;
+  flex-shrink: 0;
+  font-family: inherit;
   font-size: inherit;
+  height: inherit;
   line-height: inherit;
   margin-top: 0;
   position: relative;
   top: 0; }
 
-/* line 593, stdin */
+/* line 392, stdin */
 .make-counter .digit-con {
-  width: 0.62em;
   height: inherit;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 0.6em; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(1) .count-transition {
   transition: top 1.15s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(2) .count-transition {
   transition: top 1.3s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(3) .count-transition {
   transition: top 1.45s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(4) .count-transition {
   transition: top 1.6s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(5) .count-transition {
   transition: top 1.75s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(6) .count-transition {
   transition: top 1.9s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(7) .count-transition {
   transition: top 2.05s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(8) .count-transition {
   transition: top 2.2s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(9) .count-transition {
   transition: top 2.35s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(10) .count-transition {
   transition: top 2.5s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(11) .count-transition {
   transition: top 2.65s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(12) .count-transition {
   transition: top 2.8s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(13) .count-transition {
   transition: top 2.95s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(14) .count-transition {
   transition: top 3.1s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(15) .count-transition {
   transition: top 3.25s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(16) .count-transition {
   transition: top 3.4s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(17) .count-transition {
   transition: top 3.55s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(18) .count-transition {
   transition: top 3.7s; }
 
-/* line 599, stdin */
+/* line 398, stdin */
 .make-counter .digit-con:nth-child(19) .count-transition {
   transition: top 3.85s; }
 
-/* line 605, stdin */
+/* line 404, stdin */
 .event-day {
   color: var(--gray-dark);
   display: block;
@@ -9925,7 +9744,7 @@ body {
   line-height: 1;
   margin: 0.25rem auto;
   text-align: center; }
-  /* line 612, stdin */
+  /* line 411, stdin */
   .event-day.make-counter {
     display: flex;
     justify-content: center;
@@ -9933,7 +9752,7 @@ body {
     height: 2rem;
     line-height: 2rem; }
 
-/* line 623, stdin */
+/* line 422, stdin */
 .event-date-hex {
   background-color: rgba(0, 0, 0, 0.05);
   display: flex;
@@ -9941,40 +9760,40 @@ body {
   justify-content: center;
   height: 5.313rem;
   width: 4.6rem; }
-  /* line 630, stdin */
+  /* line 429, stdin */
   .event-date-hex .event-month[title] {
     border-left: none;
     border-right: none;
     border-top: none;
     margin: 0 auto; }
-  /* line 636, stdin */
+  /* line 435, stdin */
   .event-date-hex .event-day {
     font-size: 1.75rem;
     line-height: 2rem;
     height: 2rem;
     margin-top: 0; }
-  /* line 642, stdin */
+  /* line 441, stdin */
   .event-date-hex.reverse {
     background-color: var(--blue); }
-    /* line 644, stdin */
+    /* line 443, stdin */
     .event-date-hex.reverse .event-month[title] {
       border-bottom-color: rgba(255, 255, 255, 0.4);
       color: white; }
-    /* line 648, stdin */
+    /* line 447, stdin */
     .event-date-hex.reverse .event-day {
       color: white; }
-  /* line 652, stdin */
+  /* line 451, stdin */
   .event-date-hex.not-inview {
     opacity: 0; }
-  /* line 655, stdin */
+  /* line 454, stdin */
   .event-date-hex.inview {
     animation: hex-pop 0.25s ease-in-out; }
 
 @media (prefers-reduced-motion: reduce) {
-  /* line 665, stdin */
+  /* line 464, stdin */
   .event-date-hex.not-inview {
     opacity: 1; }
-  /* line 668, stdin */
+  /* line 467, stdin */
   .event-date-hex.inview {
     animation: none; } }
 
@@ -9988,11 +9807,11 @@ body {
             clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transform: scale(1); } }
 
-/* line 687, stdin */
+/* line 486, stdin */
 .event-date .event-year {
   margin-top: 0; }
 
-/* line 693, stdin */
+/* line 492, stdin */
 .event-month[title] {
   border: 1px rgba(0, 0, 0, 0.1) solid;
   color: var(--red);
@@ -10005,13 +9824,13 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase; }
-  /* line 705, stdin */
+  /* line 504, stdin */
   .event-month[title].reverse {
     background-color: var(--red);
     border: none;
     color: white; }
 
-/* line 713, stdin */
+/* line 512, stdin */
 .event-year {
   border-top: 1px rgba(0, 0, 0, 0.1) solid;
   color: var(--gray);
@@ -10023,19 +9842,201 @@ body {
   position: relative;
   text-align: center; }
 
-/* line 729, stdin */
+/* line 532, stdin */
+body {
+  margin: 0;
+  padding: 2rem; }
+
+/* line 536, stdin */
+.donutchart {
+  align-items: center;
+  position: relative; }
+  @media (min-width: 640px) {
+    /* line 536, stdin */
+    .donutchart {
+      display: flex; } }
+  /* line 542, stdin */
+  .donutchart .chart {
+    border-radius: 50%;
+    height: auto;
+    max-width: 250px;
+    width: 100%; }
+    @media (min-width: 640px) {
+      /* line 542, stdin */
+      .donutchart .chart {
+        width: 50%; } }
+    /* line 550, stdin */
+    .donutchart .chart circle {
+      fill: transparent;
+      stroke-width: 50%;
+      stroke-dasharray: 1 314.159%;
+      stroke-dashoffset: 1;
+      transition: all 1s; }
+      /* line 556, stdin */
+      .donutchart .chart circle:nth-child(1) {
+        stroke: var(--indigo); }
+      /* line 559, stdin */
+      .donutchart .chart circle:nth-child(2) {
+        stroke: var(--teal); }
+      /* line 562, stdin */
+      .donutchart .chart circle:nth-child(3) {
+        stroke: var(--pink); }
+      /* line 565, stdin */
+      .donutchart .chart circle:nth-child(4) {
+        stroke: var(--yellow); }
+      /* line 568, stdin */
+      .donutchart .chart circle:nth-child(5) {
+        stroke: #60B5FF; }
+  /* line 573, stdin */
+  .donutchart .chart + table {
+    margin-top: 1rem; }
+    @media (min-width: 640px) {
+      /* line 573, stdin */
+      .donutchart .chart + table {
+        margin-left: 1rem;
+        margin-top: 0; } }
+  /* line 580, stdin */
+  .donutchart table {
+    margin-top: 0;
+    margin-bottom: 0; }
+    /* line 584, stdin */
+    .donutchart table tbody tr .datum {
+      background-color: black;
+      color: white;
+      font-weight: bold; }
+    /* line 589, stdin */
+    .donutchart table tbody tr .datum + td {
+      padding-left: 0.25rem; }
+    /* line 592, stdin */
+    .donutchart table tbody tr:nth-child(1) .datum {
+      background-color: var(--indigo); }
+    /* line 595, stdin */
+    .donutchart table tbody tr:nth-child(2) .datum {
+      background-color: var(--teal);
+      color: black; }
+    /* line 599, stdin */
+    .donutchart table tbody tr:nth-child(3) .datum {
+      background-color: var(--pink); }
+    /* line 602, stdin */
+    .donutchart table tbody tr:nth-child(4) .datum {
+      background-color: var(--yellow);
+      color: black; }
+    /* line 606, stdin */
+    .donutchart table tbody tr:nth-child(5) .datum {
+      background-color: #60B5FF;
+      color: black; }
+  @media (prefers-reduced-motion: no-preference) {
+    /* line 613, stdin */
+    .donutchart.not-inview .chart circle {
+      stroke-dasharray: 1% 314.159% !important;
+      stroke-dashoffset: 1% !important; } }
+
+/* line 624, stdin */
+.infodial {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  width: 100%; }
+  @media (min-width: 380px) {
+    /* line 631, stdin */
+    .infodial::before {
+      content: "";
+      display: block;
+      height: 0;
+      padding-top: 100%;
+      width: 100%;
+      z-index: 1; } }
+  /* line 640, stdin */
+  .infodial .infodialtext {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem; }
+    @media (min-width: 380px) {
+      /* line 640, stdin */
+      .infodial .infodialtext {
+        height: 100%;
+        left: 25%;
+        margin-top: 0;
+        position: absolute;
+        width: 50%;
+        z-index: 3; } }
+    /* line 653, stdin */
+    .infodial .infodialtext .infodialnumber {
+      font-size: 3.5rem;
+      line-height: 1; }
+      /* line 656, stdin */
+      .infodial .infodialtext .infodialnumber.make-counter {
+        display: inline-flex !important;
+        height: 3.5rem;
+        justify-content: center; }
+  /* line 663, stdin */
+  .infodial .chart {
+    border-radius: 50%;
+    height: auto;
+    transform: rotate(-90deg);
+    width: 100%; }
+    @media (min-width: 380px) {
+      /* line 663, stdin */
+      .infodial .chart {
+        height: 100%;
+        position: absolute; } }
+    /* line 672, stdin */
+    .infodial .chart .dial {
+      fill: transparent;
+      stroke-width: 15%;
+      stroke: #f2f2f2; }
+    /* line 677, stdin */
+    .infodial .chart .reading {
+      fill: transparent;
+      stroke-width: 15%;
+      stroke-dasharray: 1 314.159%;
+      stroke-dashoffset: 1;
+      transition: all 1s; }
+  /* line 686, stdin */
+  .infodial.purple .infodialtext .infodialnumber {
+    color: var(--purple); }
+  /* line 689, stdin */
+  .infodial.purple .chart .reading {
+    stroke: var(--purple); }
+  /* line 694, stdin */
+  .infodial.orange .infodialtext .infodialnumber {
+    color: var(--orange); }
+  /* line 697, stdin */
+  .infodial.orange .chart .reading {
+    stroke: var(--orange); }
+  /* line 702, stdin */
+  .infodial.green .infodialtext .infodialnumber {
+    color: var(--green); }
+  /* line 705, stdin */
+  .infodial.green .chart .reading {
+    stroke: var(--green); }
+  /* line 710, stdin */
+  .infodial.blue .infodialtext .infodialnumber {
+    color: var(--blue); }
+  /* line 713, stdin */
+  .infodial.blue .chart .reading {
+    stroke: var(--blue); }
+  @media (prefers-reduced-motion: no-preference) {
+    /* line 718, stdin */
+    .infodial.not-inview .chart .reading {
+      stroke-dasharray: 1% 314.159% !important;
+      stroke-dashoffset: 1% !important; } }
+
+/* line 730, stdin */
 a[href].link-underline,
 .links-underline a[href] {
   border-bottom: 1px currentColor solid;
   transition: color 0.25s ease-in-out; }
-  /* line 733, stdin */
+  /* line 734, stdin */
   a[href].link-underline:hover, a[href].link-underline:active,
   .links-underline a[href]:hover,
   .links-underline a[href]:active {
     border-bottom: 2px currentColor solid;
     text-decoration: none; }
 
-/* line 739, stdin */
+/* line 740, stdin */
 a[href].link-animate-underline,
 .links-animate-underline a[href] {
   background-image: linear-gradient(to bottom, transparent 20%, currentColor 21%);
@@ -10044,17 +10045,17 @@ a[href].link-animate-underline,
   background-size: 0% 6px;
   text-decoration: none;
   transition: background-size 0.25s ease-in-out; }
-  /* line 747, stdin */
+  /* line 748, stdin */
   a[href].link-animate-underline:hover, a[href].link-animate-underline:focus,
   .links-animate-underline a[href]:hover,
   .links-animate-underline a[href]:focus {
     background-size: 100% 6px; }
 
-/* line 752, stdin */
+/* line 753, stdin */
 a[href].link-animate-arrow {
   position: relative;
   transition: padding-right 0.25s; }
-  /* line 755, stdin */
+  /* line 756, stdin */
   a[href].link-animate-arrow::after {
     display: inline-block;
     font-family: "Font Awesome 5 Free";
@@ -10063,27 +10064,27 @@ a[href].link-animate-arrow {
     position: absolute;
     transform: scale(0.8);
     transition: opacity 0.25s, right 0.25s, left 0.25s, bottom 0.25s; }
-  /* line 764, stdin */
+  /* line 765, stdin */
   a[href].link-animate-arrow:hover {
     text-decoration: none; }
-    /* line 766, stdin */
+    /* line 767, stdin */
     a[href].link-animate-arrow:hover::after {
       opacity: 1; }
-  /* line 771, stdin */
+  /* line 772, stdin */
   a[href].link-animate-arrow.arrow-left::after {
     content: "\f061";
     right: 0; }
-  /* line 775, stdin */
+  /* line 776, stdin */
   a[href].link-animate-arrow.arrow-left:hover {
     padding-right: 1.125rem; }
-  /* line 780, stdin */
+  /* line 781, stdin */
   a[href].link-animate-arrow.arrow-right::after {
     content: "\f060";
     left: 0; }
-  /* line 785, stdin */
+  /* line 786, stdin */
   a[href].link-animate-arrow.arrow-right:hover::after {
     left: -1.125rem; }
-  /* line 791, stdin */
+  /* line 792, stdin */
   a[href].link-animate-arrow.arrow-down::after {
     content: "\f063";
     bottom: -0.5rem;
@@ -10091,6 +10092,6 @@ a[href].link-animate-arrow {
     margin-left: -1rem;
     text-align: center;
     width: 2rem; }
-  /* line 800, stdin */
+  /* line 801, stdin */
   a[href].link-animate-arrow.arrow-down:hover::after {
     bottom: -1.4rem; }
