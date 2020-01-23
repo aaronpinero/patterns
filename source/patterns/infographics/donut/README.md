@@ -20,30 +20,6 @@ Name | Usage
 .datum | apply to each span that wraps (represents) a data point for the chart
 .make-inview | apply to the block level container if you want the chart to animate in
 
-## HTML structure
-
-Because data is being presented, I recommend using a table. 
-
-    <div class="donutchart">
-      <table class="table table-borderless table-sm w-auto">
-        <thead class="sr-only">
-          <tr>
-            <th scope="col">[value column head]</th>
-            <th scope="col">[label column head]</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="align-middle"><span class="datum d-block text-center px-2 py-1 rounded">[value]</span</td>
-            <td class="align-middle">[label]</td>
-          </tr>
-          [...]
-        </tbody>  
-      </table>
-    </div>
-
-This structure allows the data to be presented effectively even if the chart does not render (either because of lack of JavaScript or CSS support). The chart visual is added to the DOM as an SVG using JavaScript.
-
 ## References
 
 The following articles were used as references for this pattern:
