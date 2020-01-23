@@ -1,5 +1,9 @@
 $animation-timing:0.5s;
 .animate-wipe {
+  // try to get hardware acceleration for the animation
+  -webkit-transform:translate3d(0,0,0);
+  -webkit-backface-visibility:hidden;
+  -webkit-perspective:1000;
   transition:all $animation-timing;
   &.not-inview {
     opacity:0;

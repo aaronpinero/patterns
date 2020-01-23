@@ -1,7 +1,10 @@
+$lazyimage-timing:0.5s !default;
 img[data-lazyimage] {
-  transition:all 1s;
+  -webkit-transform:translate3d(0,0,0);
+  -webkit-backface-visibility:hidden;
+  -webkit-perspective:1000;
+  transition:all $lazyimage-timing ease-in-out;
   &.not-lazyLoaded {
     opacity:0;
-    filter:blur(5px);
   }
 }

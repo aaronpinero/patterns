@@ -268,11 +268,14 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre><span class="hljs-selector-tag">img</span><span class="hljs-selector-attr">[data-lazyimage]</span> {
-  <span class="hljs-attribute">transition</span>:all <span class="hljs-number">1s</span>;
+                                <pre><span class="hljs-variable">$lazyimage-timing</span>:<span class="hljs-number">0.5s</span> !default;
+<span class="hljs-selector-tag">img</span><span class="hljs-selector-attr">[data-lazyimage]</span> {
+  -webkit-<span class="hljs-attribute">transform</span>:translate3d(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
+  -webkit-<span class="hljs-attribute">backface-visibility</span>:hidden;
+  -webkit-<span class="hljs-attribute">perspective</span>:<span class="hljs-number">1000</span>;
+  <span class="hljs-attribute">transition</span>:all <span class="hljs-variable">$lazyimage-timing</span> ease-in-out;
   &amp;<span class="hljs-selector-class">.not-lazyLoaded</span> {
     <span class="hljs-attribute">opacity</span>:<span class="hljs-number">0</span>;
-    <span class="hljs-attribute">filter</span>:blur(<span class="hljs-number">5px</span>);
   }
 }</pre>
                             </code>
@@ -290,7 +293,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">106 Bytes</span>
+                    <span class="Meta-value">250 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -334,6 +337,15 @@
             <span class="Meta-value">source/patterns/lazyimage/lazyimage.hbs</span>
         </li>
         
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(1)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="peekaboo.html">@<span>peekaboo</span></a>
+            
+            </span>
+        </li>
         
     </ul>
 </div>
@@ -929,6 +941,30 @@
     
 
             </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="peekaboo.html" data-pjax>
+                <span>Peek-a-boo Card</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
         </li>
         
     

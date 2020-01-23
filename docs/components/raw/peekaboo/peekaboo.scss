@@ -1,7 +1,7 @@
 $card-peek-break:520px !default;
-$card-peek-timing:0.5s !default;
+$card-peek-max:640px !default;
+$card-peek-timing:0.25s !default;
 .card-peek {
-  -webkit-backface-visibility:hidden;
   &.js-processed {
     @media (min-width:$card-peek-break) {
       cursor:pointer;
@@ -16,6 +16,7 @@ $card-peek-timing:0.5s !default;
     width:100%;
     z-index:1;
     img {
+      filter:blur(0px) brightness(1);
       height:100%;
       left:0;
       object-fit:cover;
@@ -31,6 +32,14 @@ $card-peek-timing:0.5s !default;
       padding-left:0;
       padding-right:0;
       position:static;
+    }
+    @media (min-width:$card-peek-max) {
+      &:before {
+        // this is here to keep the text from moving all the way to the top
+        content:"";
+        display:block;
+        flex:2;
+      }
     }
     * + * {
       @media (min-width:$card-peek-break) {
@@ -58,6 +67,10 @@ $card-peek-timing:0.5s !default;
       }
       @media (min-width:$card-peek-break) {
         color:white;
+        flex:0;
+        overflow:hidden;
+        position:relative;
+        transition:all $card-peek-timing ease-in-out;
       }
     }
   }
@@ -65,7 +78,7 @@ $card-peek-timing:0.5s !default;
     .card-img img {
       @media (min-width:$card-peek-break) {
         filter:blur(5px) brightness(0.5);
-        opacity:0.4;
+        opacity:0.6;
       }
     }
     .card-img-overlay {
@@ -74,6 +87,9 @@ $card-peek-timing:0.5s !default;
           background-color:transparent;
         }  
       }
+    }
+    .card-peek-content {
+      flex:1;
     }
   }
 }
