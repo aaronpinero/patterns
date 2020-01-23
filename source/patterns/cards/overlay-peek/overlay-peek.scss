@@ -1,22 +1,80 @@
+$card-peek-break:520px !default;
+$card-peek-timing:0.5s !default;
 .card-peek {
+  &.js-processed {
+    @media (min-width:$card-peek-break) {
+      cursor:pointer;
+    }
+  }
   .card-img {
-    background-color:black;
+    background-color:var(--primary);
     height:0;
+    overflow:hidden;
     padding-top:62.5%;
     position:relative;
     width:100%;
     z-index:1;
     img {
+      filter:blur(0px) brightness(1);
       height:100%;
       left:0;
       object-fit:cover;
       object-position:center center;
       position:absolute;
       top:0;
+      transition:all $card-peek-timing ease-in-out;
       width:100%;
     }
   }
   .card-img-overlay {
     z-index:2;
+    @media (max-width:$card-peek-break - 1px) {
+      padding-left:0;
+      padding-right:0;
+      position:static;
+    }
+    * + * {
+      @media (min-width:$card-peek-break) {
+        margin-top:0;
+      }
+    }
+    .card-peek-title {
+      transition:background-color $card-peek-timing ease-in-out;
+      @media (max-width:$card-peek-break - 1px) {
+        padding:0 !important;
+      }
+      @media (min-width:$card-peek-break) {
+        background-color:var(--primary);
+        color:white;
+      }
+      a {
+        @media (min-width:$card-peek-break) {
+          color:white;
+        }
+      }
+    }
+    .card-peek-content {
+      @media (max-width:$card-peek-break - 1px) {
+        padding:0 !important;
+      }
+      @media (min-width:$card-peek-break) {
+        color:white;
+      }
+    }
+  }
+  &:hover {
+    .card-img img {
+      @media (min-width:$card-peek-break) {
+        filter:blur(5px) brightness(0.5);
+        opacity:0.4;
+      }
+    }
+    .card-img-overlay {
+      .card-peek-title {
+        @media (min-width:$card-peek-break) {
+          background-color:transparent;
+        }  
+      }
+    }
   }
 }
