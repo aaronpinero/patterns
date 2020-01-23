@@ -9634,82 +9634,79 @@ body {
       border-left: none !important;
       padding: 0 0 0 0.375rem; }
 
-@media (min-width: 520px) {
-  /* line 377, stdin */
-  .card-peek.js-processed {
-    cursor: pointer; } }
-
-/* line 382, stdin */
-.card-peek .card-img {
-  background-color: var(--primary);
-  height: 0;
-  overflow: hidden;
-  padding-top: 62.5%;
-  position: relative;
-  width: 100%;
-  z-index: 1; }
-  /* line 390, stdin */
-  .card-peek .card-img img {
-    filter: blur(0px) brightness(1);
-    height: 100%;
-    left: 0;
-    object-fit: cover;
-    object-position: center center;
-    position: absolute;
-    top: 0;
-    transition: all 0.5s ease-in-out;
-    width: 100%; }
-
-/* line 402, stdin */
-.card-peek .card-img-overlay {
-  z-index: 2; }
-  @media (max-width: 519px) {
-    /* line 402, stdin */
-    .card-peek .card-img-overlay {
-      padding-left: 0;
-      padding-right: 0;
-      position: static; } }
+/* line 376, stdin */
+.card-peek {
+  -webkit-backface-visibility: hidden; }
   @media (min-width: 520px) {
-    /* line 409, stdin */
-    .card-peek .card-img-overlay * + * {
-      margin-top: 0; } }
-  /* line 414, stdin */
-  .card-peek .card-img-overlay .card-peek-title {
-    transition: background-color 0.5s ease-in-out; }
+    /* line 378, stdin */
+    .card-peek.js-processed {
+      cursor: pointer; } }
+  /* line 383, stdin */
+  .card-peek .card-img {
+    background-color: var(--primary);
+    height: 0;
+    overflow: hidden;
+    padding-top: 62.5%;
+    position: relative;
+    width: 100%;
+    z-index: 1; }
+    /* line 391, stdin */
+    .card-peek .card-img img {
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+      object-position: center center;
+      position: absolute;
+      top: 0;
+      width: 100%; }
+  /* line 401, stdin */
+  .card-peek .card-img-overlay {
+    z-index: 2; }
     @media (max-width: 519px) {
-      /* line 414, stdin */
-      .card-peek .card-img-overlay .card-peek-title {
+      /* line 401, stdin */
+      .card-peek .card-img-overlay {
+        padding-left: 0;
+        padding-right: 0;
+        position: static; } }
+    @media (min-width: 520px) {
+      /* line 408, stdin */
+      .card-peek .card-img-overlay * + * {
+        margin-top: 0; } }
+    /* line 413, stdin */
+    .card-peek .card-img-overlay .card-peek-title {
+      transition: background-color 0.5s ease-in-out; }
+      @media (max-width: 519px) {
+        /* line 413, stdin */
+        .card-peek .card-img-overlay .card-peek-title {
+          padding: 0 !important; } }
+      @media (min-width: 520px) {
+        /* line 413, stdin */
+        .card-peek .card-img-overlay .card-peek-title {
+          background-color: var(--primary);
+          color: white; } }
+      @media (min-width: 520px) {
+        /* line 422, stdin */
+        .card-peek .card-img-overlay .card-peek-title a {
+          color: white; } }
+    @media (max-width: 519px) {
+      /* line 428, stdin */
+      .card-peek .card-img-overlay .card-peek-content {
         padding: 0 !important; } }
     @media (min-width: 520px) {
-      /* line 414, stdin */
-      .card-peek .card-img-overlay .card-peek-title {
-        background-color: var(--primary);
+      /* line 428, stdin */
+      .card-peek .card-img-overlay .card-peek-content {
         color: white; } }
-    @media (min-width: 520px) {
-      /* line 423, stdin */
-      .card-peek .card-img-overlay .card-peek-title a {
-        color: white; } }
-  @media (max-width: 519px) {
-    /* line 429, stdin */
-    .card-peek .card-img-overlay .card-peek-content {
-      padding: 0 !important; } }
   @media (min-width: 520px) {
-    /* line 429, stdin */
-    .card-peek .card-img-overlay .card-peek-content {
-      color: white; } }
+    /* line 438, stdin */
+    .card-peek:hover .card-img img {
+      filter: blur(5px) brightness(0.5);
+      opacity: 0.4; } }
+  @media (min-width: 520px) {
+    /* line 445, stdin */
+    .card-peek:hover .card-img-overlay .card-peek-title {
+      background-color: transparent; } }
 
-@media (min-width: 520px) {
-  /* line 439, stdin */
-  .card-peek:hover .card-img img {
-    filter: blur(5px) brightness(0.5);
-    opacity: 0.4; } }
-
-@media (min-width: 520px) {
-  /* line 446, stdin */
-  .card-peek:hover .card-img-overlay .card-peek-title {
-    background-color: transparent; } }
-
-/* line 454, stdin */
+/* line 453, stdin */
 .make-counter {
   display: inline-flex;
   flex-wrap: nowrap;
@@ -9717,7 +9714,7 @@ body {
   height: 1.5rem;
   line-height: 1.5rem; }
 
-/* line 461, stdin */
+/* line 460, stdin */
 .make-counter span {
   display: block;
   flex-shrink: 0;
@@ -9729,89 +9726,89 @@ body {
   position: relative;
   top: 0; }
 
-/* line 472, stdin */
+/* line 471, stdin */
 .make-counter .digit-con {
   height: inherit;
   overflow: hidden;
   width: 0.6em; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(1) .count-transition {
   transition: top 1.15s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(2) .count-transition {
   transition: top 1.3s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(3) .count-transition {
   transition: top 1.45s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(4) .count-transition {
   transition: top 1.6s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(5) .count-transition {
   transition: top 1.75s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(6) .count-transition {
   transition: top 1.9s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(7) .count-transition {
   transition: top 2.05s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(8) .count-transition {
   transition: top 2.2s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(9) .count-transition {
   transition: top 2.35s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(10) .count-transition {
   transition: top 2.5s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(11) .count-transition {
   transition: top 2.65s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(12) .count-transition {
   transition: top 2.8s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(13) .count-transition {
   transition: top 2.95s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(14) .count-transition {
   transition: top 3.1s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(15) .count-transition {
   transition: top 3.25s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(16) .count-transition {
   transition: top 3.4s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(17) .count-transition {
   transition: top 3.55s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(18) .count-transition {
   transition: top 3.7s; }
 
-/* line 478, stdin */
+/* line 477, stdin */
 .make-counter .digit-con:nth-child(19) .count-transition {
   transition: top 3.85s; }
 
-/* line 484, stdin */
+/* line 483, stdin */
 .event-day {
   color: var(--gray-dark);
   display: block;
@@ -9819,7 +9816,7 @@ body {
   line-height: 1;
   margin: 0.25rem auto;
   text-align: center; }
-  /* line 491, stdin */
+  /* line 490, stdin */
   .event-day.make-counter {
     display: flex;
     justify-content: center;
@@ -9827,7 +9824,7 @@ body {
     height: 2rem;
     line-height: 2rem; }
 
-/* line 502, stdin */
+/* line 501, stdin */
 .event-date-hex {
   background-color: rgba(0, 0, 0, 0.05);
   display: flex;
@@ -9835,40 +9832,40 @@ body {
   justify-content: center;
   height: 5.313rem;
   width: 4.6rem; }
-  /* line 509, stdin */
+  /* line 508, stdin */
   .event-date-hex .event-month[title] {
     border-left: none;
     border-right: none;
     border-top: none;
     margin: 0 auto; }
-  /* line 515, stdin */
+  /* line 514, stdin */
   .event-date-hex .event-day {
     font-size: 1.75rem;
     line-height: 2rem;
     height: 2rem;
     margin-top: 0; }
-  /* line 521, stdin */
+  /* line 520, stdin */
   .event-date-hex.reverse {
     background-color: var(--blue); }
-    /* line 523, stdin */
+    /* line 522, stdin */
     .event-date-hex.reverse .event-month[title] {
       border-bottom-color: rgba(255, 255, 255, 0.4);
       color: white; }
-    /* line 527, stdin */
+    /* line 526, stdin */
     .event-date-hex.reverse .event-day {
       color: white; }
-  /* line 531, stdin */
+  /* line 530, stdin */
   .event-date-hex.not-inview {
     opacity: 0; }
-  /* line 534, stdin */
+  /* line 533, stdin */
   .event-date-hex.inview {
     animation: hex-pop 0.25s ease-in-out; }
 
 @media (prefers-reduced-motion: reduce) {
-  /* line 544, stdin */
+  /* line 543, stdin */
   .event-date-hex.not-inview {
     opacity: 1; }
-  /* line 547, stdin */
+  /* line 546, stdin */
   .event-date-hex.inview {
     animation: none; } }
 
@@ -9882,11 +9879,11 @@ body {
             clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transform: scale(1); } }
 
-/* line 566, stdin */
+/* line 565, stdin */
 .event-date .event-year {
   margin-top: 0; }
 
-/* line 572, stdin */
+/* line 571, stdin */
 .event-month[title] {
   border: 1px rgba(0, 0, 0, 0.1) solid;
   color: var(--red);
@@ -9899,13 +9896,13 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase; }
-  /* line 584, stdin */
+  /* line 583, stdin */
   .event-month[title].reverse {
     background-color: var(--red);
     border: none;
     color: white; }
 
-/* line 592, stdin */
+/* line 591, stdin */
 .event-year {
   border-top: 1px rgba(0, 0, 0, 0.1) solid;
   color: var(--gray);
@@ -9917,96 +9914,96 @@ body {
   position: relative;
   text-align: center; }
 
-/* line 612, stdin */
+/* line 611, stdin */
 body {
   margin: 0;
   padding: 2rem; }
 
-/* line 616, stdin */
+/* line 615, stdin */
 .donutchart {
   align-items: center;
   position: relative; }
   @media (min-width: 640px) {
-    /* line 616, stdin */
+    /* line 615, stdin */
     .donutchart {
       display: flex; } }
-  /* line 622, stdin */
+  /* line 621, stdin */
   .donutchart .chart {
     border-radius: 50%;
     height: auto;
     max-width: 250px;
     width: 100%; }
     @media (min-width: 640px) {
-      /* line 622, stdin */
+      /* line 621, stdin */
       .donutchart .chart {
         width: 50%; } }
-    /* line 630, stdin */
+    /* line 629, stdin */
     .donutchart .chart circle {
       fill: transparent;
       stroke-width: 50%;
       stroke-dasharray: 1 314.159%;
       stroke-dashoffset: 1;
       transition: all 1s; }
-      /* line 636, stdin */
+      /* line 635, stdin */
       .donutchart .chart circle:nth-child(1) {
         stroke: var(--indigo); }
-      /* line 639, stdin */
+      /* line 638, stdin */
       .donutchart .chart circle:nth-child(2) {
         stroke: var(--teal); }
-      /* line 642, stdin */
+      /* line 641, stdin */
       .donutchart .chart circle:nth-child(3) {
         stroke: var(--pink); }
-      /* line 645, stdin */
+      /* line 644, stdin */
       .donutchart .chart circle:nth-child(4) {
         stroke: var(--yellow); }
-      /* line 648, stdin */
+      /* line 647, stdin */
       .donutchart .chart circle:nth-child(5) {
         stroke: #60B5FF; }
-  /* line 653, stdin */
+  /* line 652, stdin */
   .donutchart .chart + table {
     margin-top: 1rem; }
     @media (min-width: 640px) {
-      /* line 653, stdin */
+      /* line 652, stdin */
       .donutchart .chart + table {
         margin-left: 1rem;
         margin-top: 0; } }
-  /* line 660, stdin */
+  /* line 659, stdin */
   .donutchart table {
     margin-top: 0;
     margin-bottom: 0; }
-    /* line 664, stdin */
+    /* line 663, stdin */
     .donutchart table tbody tr .datum {
       background-color: black;
       color: white;
       font-weight: bold; }
-    /* line 669, stdin */
+    /* line 668, stdin */
     .donutchart table tbody tr .datum + td {
       padding-left: 0.25rem; }
-    /* line 672, stdin */
+    /* line 671, stdin */
     .donutchart table tbody tr:nth-child(1) .datum {
       background-color: var(--indigo); }
-    /* line 675, stdin */
+    /* line 674, stdin */
     .donutchart table tbody tr:nth-child(2) .datum {
       background-color: var(--teal);
       color: black; }
-    /* line 679, stdin */
+    /* line 678, stdin */
     .donutchart table tbody tr:nth-child(3) .datum {
       background-color: var(--pink); }
-    /* line 682, stdin */
+    /* line 681, stdin */
     .donutchart table tbody tr:nth-child(4) .datum {
       background-color: var(--yellow);
       color: black; }
-    /* line 686, stdin */
+    /* line 685, stdin */
     .donutchart table tbody tr:nth-child(5) .datum {
       background-color: #60B5FF;
       color: black; }
   @media (prefers-reduced-motion: no-preference) {
-    /* line 693, stdin */
+    /* line 692, stdin */
     .donutchart.not-inview .chart circle {
       stroke-dasharray: 1% 314.159% !important;
       stroke-dashoffset: 1% !important; } }
 
-/* line 704, stdin */
+/* line 703, stdin */
 .infodial {
   display: flex;
   flex-direction: column;
@@ -10014,7 +10011,7 @@ body {
   position: relative;
   width: 100%; }
   @media (min-width: 380px) {
-    /* line 711, stdin */
+    /* line 710, stdin */
     .infodial::before {
       content: "";
       display: block;
@@ -10022,14 +10019,14 @@ body {
       padding-top: 100%;
       width: 100%;
       z-index: 1; } }
-  /* line 720, stdin */
+  /* line 719, stdin */
   .infodial .infodialtext {
     justify-content: center;
     display: flex;
     flex-direction: column;
     margin-top: 1rem; }
     @media (min-width: 380px) {
-      /* line 720, stdin */
+      /* line 719, stdin */
       .infodial .infodialtext {
         height: 100%;
         left: 25%;
@@ -10037,89 +10034,89 @@ body {
         position: absolute;
         width: 50%;
         z-index: 3; } }
-    /* line 733, stdin */
+    /* line 732, stdin */
     .infodial .infodialtext .infodialnumber {
       font-size: 3.5rem;
       line-height: 1; }
-      /* line 736, stdin */
+      /* line 735, stdin */
       .infodial .infodialtext .infodialnumber.make-counter {
         display: inline-flex !important;
         height: 3.5rem;
         justify-content: center; }
-  /* line 743, stdin */
+  /* line 742, stdin */
   .infodial .chart {
     border-radius: 50%;
     height: auto;
     transform: rotate(-90deg);
     width: 100%; }
     @media (min-width: 380px) {
-      /* line 743, stdin */
+      /* line 742, stdin */
       .infodial .chart {
         height: 100%;
         position: absolute; } }
-    /* line 752, stdin */
+    /* line 751, stdin */
     .infodial .chart .dial {
       fill: transparent;
       stroke-width: 15%;
       stroke: #f2f2f2; }
-    /* line 757, stdin */
+    /* line 756, stdin */
     .infodial .chart .reading {
       fill: transparent;
       stroke-width: 15%;
       stroke-dasharray: 1 314.159%;
       stroke-dashoffset: 1;
       transition: all 1s; }
-  /* line 766, stdin */
+  /* line 765, stdin */
   .infodial.purple .infodialtext .infodialnumber {
     color: var(--purple); }
-  /* line 769, stdin */
+  /* line 768, stdin */
   .infodial.purple .chart .reading {
     stroke: var(--purple); }
-  /* line 774, stdin */
+  /* line 773, stdin */
   .infodial.orange .infodialtext .infodialnumber {
     color: var(--orange); }
-  /* line 777, stdin */
+  /* line 776, stdin */
   .infodial.orange .chart .reading {
     stroke: var(--orange); }
-  /* line 782, stdin */
+  /* line 781, stdin */
   .infodial.green .infodialtext .infodialnumber {
     color: var(--green); }
-  /* line 785, stdin */
+  /* line 784, stdin */
   .infodial.green .chart .reading {
     stroke: var(--green); }
-  /* line 790, stdin */
+  /* line 789, stdin */
   .infodial.blue .infodialtext .infodialnumber {
     color: var(--blue); }
-  /* line 793, stdin */
+  /* line 792, stdin */
   .infodial.blue .chart .reading {
     stroke: var(--blue); }
   @media (prefers-reduced-motion: no-preference) {
-    /* line 798, stdin */
+    /* line 797, stdin */
     .infodial.not-inview .chart .reading {
       stroke-dasharray: 1% 314.159% !important;
       stroke-dashoffset: 1% !important; } }
 
-/* line 806, stdin */
+/* line 805, stdin */
 img[data-lazyimage] {
-  transition: all 1s; }
-  /* line 808, stdin */
+  transition: all 0.5s; }
+  /* line 807, stdin */
   img[data-lazyimage].not-lazyLoaded {
     opacity: 0;
     filter: blur(5px); }
 
-/* line 817, stdin */
+/* line 816, stdin */
 a[href].link-underline,
 .links-underline a[href] {
   border-bottom: 1px currentColor solid;
   transition: color 0.25s ease-in-out; }
-  /* line 821, stdin */
+  /* line 820, stdin */
   a[href].link-underline:hover, a[href].link-underline:active,
   .links-underline a[href]:hover,
   .links-underline a[href]:active {
     border-bottom: 2px currentColor solid;
     text-decoration: none; }
 
-/* line 827, stdin */
+/* line 826, stdin */
 a[href].link-animate-underline,
 .links-animate-underline a[href] {
   background-image: linear-gradient(to bottom, transparent 20%, currentColor 21%);
@@ -10128,17 +10125,17 @@ a[href].link-animate-underline,
   background-size: 0% 6px;
   text-decoration: none;
   transition: background-size 0.25s ease-in-out; }
-  /* line 835, stdin */
+  /* line 834, stdin */
   a[href].link-animate-underline:hover, a[href].link-animate-underline:focus,
   .links-animate-underline a[href]:hover,
   .links-animate-underline a[href]:focus {
     background-size: 100% 6px; }
 
-/* line 840, stdin */
+/* line 839, stdin */
 a[href].link-animate-arrow {
   position: relative;
   transition: padding-right 0.25s; }
-  /* line 843, stdin */
+  /* line 842, stdin */
   a[href].link-animate-arrow::after {
     display: inline-block;
     font-family: "Font Awesome 5 Free";
@@ -10147,27 +10144,27 @@ a[href].link-animate-arrow {
     position: absolute;
     transform: scale(0.8);
     transition: opacity 0.25s, right 0.25s, left 0.25s, bottom 0.25s; }
-  /* line 852, stdin */
+  /* line 851, stdin */
   a[href].link-animate-arrow:hover {
     text-decoration: none; }
-    /* line 854, stdin */
+    /* line 853, stdin */
     a[href].link-animate-arrow:hover::after {
       opacity: 1; }
-  /* line 859, stdin */
+  /* line 858, stdin */
   a[href].link-animate-arrow.arrow-left::after {
     content: "\f061";
     right: 0; }
-  /* line 863, stdin */
+  /* line 862, stdin */
   a[href].link-animate-arrow.arrow-left:hover {
     padding-right: 1.125rem; }
-  /* line 868, stdin */
+  /* line 867, stdin */
   a[href].link-animate-arrow.arrow-right::after {
     content: "\f060";
     left: 0; }
-  /* line 873, stdin */
+  /* line 872, stdin */
   a[href].link-animate-arrow.arrow-right:hover::after {
     left: -1.125rem; }
-  /* line 879, stdin */
+  /* line 878, stdin */
   a[href].link-animate-arrow.arrow-down::after {
     content: "\f063";
     bottom: -0.5rem;
@@ -10175,6 +10172,6 @@ a[href].link-animate-arrow {
     margin-left: -1rem;
     text-align: center;
     width: 2rem; }
-  /* line 888, stdin */
+  /* line 887, stdin */
   a[href].link-animate-arrow.arrow-down:hover::after {
     bottom: -1.4rem; }
