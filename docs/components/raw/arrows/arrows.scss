@@ -1,6 +1,6 @@
-$arrow-height:2rem;
+$arrow-height:2rem !default;
 $arrow-width:$arrow-height;
-$arrow-timing:0.25s;
+$arrow-timing:0.25s !default;
 
 .arrow {
   cursor:pointer;
@@ -12,7 +12,7 @@ $arrow-timing:0.25s;
   width:$arrow-width;
   &::before {
     background-color:rgba(black,0.4);
-    clip-path:polygon(73% 57%, 73% 57%, 78.4% 50%, 73% 43%, 73% 43%, 50% 14%, 60.8% 0%, 100% 50%, 60.8% 100%, 50% 86%);
+    clip-path:polygon(20% 11%, 31% 0%, 81% 50%, 31% 100%, 20% 89%, 51% 58%, 52% 57%, 59% 50%, 52% 43%, 51% 42%);
     content:"";
     display:block;
     height:$arrow-height;
@@ -23,7 +23,12 @@ $arrow-timing:0.25s;
   &:hover {
     &::before {
       background-color:var(--primary);
-      clip-path:polygon(73% 57%, 0 57%, 5.4% 50%, 10.8% 43%, 73% 43%, 50% 14%, 60.8% 0%, 100% 50%, 60.8% 100%, 50% 86%);  
+      clip-path:polygon(39% 11%, 50% 0%, 100% 50%, 50% 100%, 39% 89%, 70% 58%, 0% 58%, 0% 50%, 0% 42%, 70% 42%);  
+    }
+  }
+  &.prev {
+    &::before {
+      transform:rotate(180deg);
     }
   }
 }

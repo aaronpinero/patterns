@@ -1,0 +1,25 @@
+{
+  "title": "Arrows",
+  "label": "Arrows",
+  "status": "ready",
+  "context": {
+    "arrows_type": "next",
+    "arrows_text": "Next"
+  },
+  "variants": [
+    {
+      "name": "default",
+      "title": "Next",
+      "label": "Next"
+    },
+    {
+      "name": "prev",
+      "title": "Previous",
+      "label": "Previous",
+      "context": {
+        "arrows_type": "prev",
+        "arrows_text": "Previous"
+      }
+    }
+  ]
+}
