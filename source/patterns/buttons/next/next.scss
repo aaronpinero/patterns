@@ -1,0 +1,29 @@
+$arrow-height:2rem;
+$arrow-width:$arrow-height;
+$arrow-timing:0.25s;
+
+.arrow {
+  cursor:pointer;
+  display:inline-block;
+  height:$arrow-height;
+  overflow:hidden;
+  transition:all $arrow-timing;
+  white-space:nowrap;
+  width:$arrow-width;
+  &::before {
+    background-color:rgba(black,0.4);
+    clip-path:polygon(73% 57%, 73% 57%, 78.4% 50%, 73% 43%, 73% 43%, 50% 14%, 60.8% 0%, 100% 50%, 60.8% 100%, 50% 86%);
+    content:"";
+    display:block;
+    height:$arrow-height;
+    position:relative;
+    transition:all $arrow-timing;
+    width:$arrow-width;
+  }
+  &:hover {
+    &::before {
+      background-color:var(--primary);
+      clip-path:polygon(73% 57%, 0 57%, 5.4% 50%, 10.8% 43%, 73% 43%, 50% 14%, 60.8% 0%, 100% 50%, 60.8% 100%, 50% 86%);  
+    }
+  }
+}
