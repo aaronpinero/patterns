@@ -1,5 +1,31 @@
 {
   "title": "Slider",
   "label": "Slider",
-  "status": "ready"
+  "status": "ready",
+  "context": {
+    "slider_type": ""
+  },
+  "variants": [
+    {
+      "name": "single",
+      "title": "Single",
+      "label": "Single"
+    },
+    {
+      "name": "double",
+      "title": "Double",
+      "label": "Double",
+      "context": {
+        "slider_type": " slider-2"
+      }
+    },
+    {
+      "name": "triple",
+      "title": "Triple",
+      "label": "Triple",
+      "context": {
+        "slider_type": " slider-3"
+      }
+    }
+  ]
 }
