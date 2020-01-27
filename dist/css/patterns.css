@@ -9778,7 +9778,7 @@ body {
 .make-counter .digit-con {
   height: inherit;
   overflow: hidden;
-  width: 0.6em; }
+  width: 1ch; }
 
 /* line 531, stdin */
 .make-counter .digit-con:nth-child(1) .count-transition {
