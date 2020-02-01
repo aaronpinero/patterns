@@ -10247,57 +10247,53 @@ a[href].link-animate-arrow {
   a[href].link-animate-arrow.arrow-down:hover::after {
     bottom: -1.4rem; }
 
-/* line 974, stdin */
-.slider {
-  overflow: hidden;
-  padding-bottom: 1.5rem;
+/* line 976, stdin */
+.slider .slider-port {
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll;
   position: relative;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   width: 100%; }
-  /* line 979, stdin */
-  .slider .slides {
-    display: flex;
-    overflow: auto;
-    padding-bottom: 1rem;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch; }
-    /* line 986, stdin */
-    .slider .slides .slide {
-      flex-shrink: 0;
-      scroll-snap-align: start;
-      width: 100%; }
-    /* line 991, stdin */
-    .slider .slides .slide + .slide {
-      margin-left: 1rem; }
-  /* line 995, stdin */
-  .slider .slide-index {
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    left: 0;
+  @media (min-width: 640px) {
+    /* line 976, stdin */
+    .slider .slider-port {
+      width: calc(100% - 4rem); } }
+
+/* line 989, stdin */
+.slider .slides {
+  display: flex;
+  padding: 0;
+  padding-bottom: 1rem; }
+  /* line 993, stdin */
+  .slider .slides .slide {
+    display: block;
+    flex-shrink: 0;
     margin: 0;
     padding: 0;
-    position: absolute;
+    scroll-snap-align: start;
     width: 100%; }
-    /* line 1004, stdin */
-    .slider .slide-index li {
-      display: block; }
-      /* line 1006, stdin */
-      .slider .slide-index li a {
-        background-color: white;
-        border: 2px solid #808080;
-        border-radius: 50%;
-        box-sizing: border-box;
-        display: block;
-        height: 1rem;
-        overflow: hidden;
-        padding-top: calc(1rem - 4px);
-        transition: all 0.25s;
-        width: 1rem; }
-        /* line 1017, stdin */
-        .slider .slide-index li a:hover {
-          background-color: var(--primary);
-          border-color: var(--primary); }
-    /* line 1023, stdin */
-    .slider .slide-index li + li {
-      margin-left: 1rem; }
+  /* line 1001, stdin */
+  .slider .slides .slide + .slide {
+    margin-left: 1rem; }
+
+@media (max-width: 639px) {
+  /* line 1005, stdin */
+  .slider .slider-controls {
+    display: flex;
+    justify-content: space-between; } }
+
+@media (min-width: 640px) {
+  /* line 1011, stdin */
+  .slider .slider-control {
+    position: absolute;
+    top: 50%;
+    z-index: 2; }
+    /* line 1016, stdin */
+    .slider .slider-control.slider-control-prev {
+      left: 0; }
+    /* line 1019, stdin */
+    .slider .slider-control.slider-control-next {
+      right: 0; } }

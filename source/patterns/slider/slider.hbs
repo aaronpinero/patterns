@@ -1,27 +1,28 @@
-<div class="slider{{slider_type}}">
-  <ul class="slide-index sibling-margins-off">
-    <li><a href="#slider-0-slide-0">Slide 1</a></li>
-    <li><a href="#slider-0-slide-1">Slide 2</a></li>
-    <li><a href="#slider-0-slide-2">Slide 3</a></li>
-  </ul>
-  <div class="slides sibling-margins-skip">
-    <div class="slide" id="slider-0-slide-0">
-      {{ render '@image-card' }}
-    </div>
-    <div class="slide" id="slider-0-slide-1">
-      {{ render '@image-card' }}
-    </div>
-    <div class="slide" id="slider-0-slide-2">
-      {{ render '@image-card' }}
-    </div>
-    <div class="slide" id="slider-0-slide-2">
-      {{ render '@image-card' }}
-    </div>
-    <div class="slide" id="slider-0-slide-2">
-      {{ render '@image-card' }}
-    </div>
-    <div class="slide" id="slider-0-slide-2">
-      {{ render '@image-card' }}
-    </div>
+<div class="slider{{slider_type}} position-relative">
+  <div class="slider-port" role="region" aria-label="slider" tabindex="0">
+    <ul class="slides sibling-margins-skip">
+      <li class="slide" id="slider-0-slide-0">
+        {{ render '@image-card' }}
+      </li>
+      <li class="slide" id="slider-0-slide-1">
+        {{ render '@image-card' }}
+      </li>
+      <li class="slide" id="slider-0-slide-2">
+        {{ render '@image-card' }}
+      </li>
+      <li class="slide" id="slider-0-slide-3">
+        {{ render '@image-card' }}
+      </li>
+      <li class="slide" id="slider-0-slide-4">
+        {{ render '@image-card' }}
+      </li>
+      <li class="slide" id="slider-0-slide-5">
+        {{ render '@image-card' }}
+      </li>
+    </ul>
   </div>
+  <ul aria-label="slider controls" class="slider-controls list-unstyled p-0 m-0">  
+    <li class="d-block p-0 m-0"><button class="slider-control slider-control-prev" aria-label="previous">Previous</button></li>
+    <li class="d-block p-0 m-0"><button class="slider-control slider-control-next" aria-label="next">Next</button></li class="d-block p-0 m-0">
+  </ul>
 </div>
