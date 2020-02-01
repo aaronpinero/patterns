@@ -1,0 +1,22 @@
+.card {
+  .card-img-scalable {
+    background-color:var(--grey);
+    height:0;
+    overflow:hidden;
+    padding-top:50%;
+    position:relative;
+    width:100%;
+    z-index:1;
+    img {
+      border-radius:4px 4px 0 0;
+      display:block;
+      height:100%;
+      left:0;
+      object-fit:cover;
+      object-position:center center;
+      position:absolute;
+      top:0;
+      width:100%;
+    }
+  }
+}

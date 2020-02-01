@@ -19,7 +19,7 @@
 .make-counter .digit-con {
   height:inherit;
   overflow:hidden;
-  width:0.6em;
+  width:1ch;
 }
 @for $i from 1 to 20 {
   .make-counter .digit-con:nth-child(#{$i}) .count-transition {

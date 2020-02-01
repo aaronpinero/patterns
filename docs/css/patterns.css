@@ -9666,12 +9666,33 @@ body {
       border-left: none !important;
       padding: 0 0 0 0.375rem; }
 
+/* line 413, stdin */
+.card .card-img-scalable {
+  background-color: var(--grey);
+  height: 0;
+  overflow: hidden;
+  padding-top: 50%;
+  position: relative;
+  width: 100%;
+  z-index: 1; }
+  /* line 421, stdin */
+  .card .card-img-scalable img {
+    border-radius: 4px 4px 0 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+
 @media (min-width: 520px) {
-  /* line 416, stdin */
+  /* line 438, stdin */
   .card-peek.js-processed {
     cursor: pointer; } }
 
-/* line 421, stdin */
+/* line 443, stdin */
 .card-peek .card-img {
   background-color: var(--primary);
   height: 0;
@@ -9680,7 +9701,7 @@ body {
   position: relative;
   width: 100%;
   z-index: 1; }
-  /* line 429, stdin */
+  /* line 451, stdin */
   .card-peek .card-img img {
     filter: blur(0px) brightness(1);
     height: 100%;
@@ -9691,47 +9712,47 @@ body {
     top: 0;
     width: 100%; }
 
-/* line 440, stdin */
+/* line 462, stdin */
 .card-peek .card-img-overlay {
   z-index: 2; }
   @media (max-width: 519px) {
-    /* line 440, stdin */
+    /* line 462, stdin */
     .card-peek .card-img-overlay {
       padding-left: 0;
       padding-right: 0;
       position: static; } }
   @media (min-width: 640px) {
-    /* line 448, stdin */
+    /* line 470, stdin */
     .card-peek .card-img-overlay:before {
       content: "";
       display: block;
       flex: 2; } }
   @media (min-width: 520px) {
-    /* line 455, stdin */
+    /* line 477, stdin */
     .card-peek .card-img-overlay * + * {
       margin-top: 0; } }
-  /* line 460, stdin */
+  /* line 482, stdin */
   .card-peek .card-img-overlay .card-peek-title {
     transition: background-color 0.25s ease-in-out; }
     @media (max-width: 519px) {
-      /* line 460, stdin */
+      /* line 482, stdin */
       .card-peek .card-img-overlay .card-peek-title {
         padding: 0 !important; } }
     @media (min-width: 520px) {
-      /* line 460, stdin */
+      /* line 482, stdin */
       .card-peek .card-img-overlay .card-peek-title {
         background-color: var(--primary);
         color: white; } }
     @media (min-width: 520px) {
-      /* line 469, stdin */
+      /* line 491, stdin */
       .card-peek .card-img-overlay .card-peek-title a {
         color: white; } }
   @media (max-width: 519px) {
-    /* line 475, stdin */
+    /* line 497, stdin */
     .card-peek .card-img-overlay .card-peek-content {
       padding: 0 !important; } }
   @media (min-width: 520px) {
-    /* line 475, stdin */
+    /* line 497, stdin */
     .card-peek .card-img-overlay .card-peek-content {
       color: white;
       flex: 0;
@@ -9740,21 +9761,21 @@ body {
       transition: all 0.25s ease-in-out; } }
 
 @media (min-width: 520px) {
-  /* line 489, stdin */
+  /* line 511, stdin */
   .card-peek:hover .card-img img {
     filter: blur(5px) brightness(0.5);
     opacity: 0.6; } }
 
 @media (min-width: 520px) {
-  /* line 496, stdin */
+  /* line 518, stdin */
   .card-peek:hover .card-img-overlay .card-peek-title {
     background-color: transparent; } }
 
-/* line 502, stdin */
+/* line 524, stdin */
 .card-peek:hover .card-peek-content {
   flex: 1; }
 
-/* line 507, stdin */
+/* line 529, stdin */
 .make-counter {
   display: inline-flex;
   flex-wrap: nowrap;
@@ -9762,7 +9783,7 @@ body {
   height: 1.5rem;
   line-height: 1.5rem; }
 
-/* line 514, stdin */
+/* line 536, stdin */
 .make-counter span {
   display: block;
   flex-shrink: 0;
@@ -9774,89 +9795,89 @@ body {
   position: relative;
   top: 0; }
 
-/* line 525, stdin */
+/* line 547, stdin */
 .make-counter .digit-con {
   height: inherit;
   overflow: hidden;
-  width: 0.6em; }
+  width: 1ch; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(1) .count-transition {
   transition: top 1.15s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(2) .count-transition {
   transition: top 1.3s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(3) .count-transition {
   transition: top 1.45s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(4) .count-transition {
   transition: top 1.6s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(5) .count-transition {
   transition: top 1.75s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(6) .count-transition {
   transition: top 1.9s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(7) .count-transition {
   transition: top 2.05s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(8) .count-transition {
   transition: top 2.2s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(9) .count-transition {
   transition: top 2.35s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(10) .count-transition {
   transition: top 2.5s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(11) .count-transition {
   transition: top 2.65s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(12) .count-transition {
   transition: top 2.8s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(13) .count-transition {
   transition: top 2.95s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(14) .count-transition {
   transition: top 3.1s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(15) .count-transition {
   transition: top 3.25s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(16) .count-transition {
   transition: top 3.4s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(17) .count-transition {
   transition: top 3.55s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(18) .count-transition {
   transition: top 3.7s; }
 
-/* line 531, stdin */
+/* line 553, stdin */
 .make-counter .digit-con:nth-child(19) .count-transition {
   transition: top 3.85s; }
 
-/* line 537, stdin */
+/* line 559, stdin */
 .event-day {
   color: var(--gray-dark);
   display: block;
@@ -9864,7 +9885,7 @@ body {
   line-height: 1;
   margin: 0.25rem auto;
   text-align: center; }
-  /* line 544, stdin */
+  /* line 566, stdin */
   .event-day.make-counter {
     display: flex;
     justify-content: center;
@@ -9872,7 +9893,7 @@ body {
     height: 2rem;
     line-height: 2rem; }
 
-/* line 555, stdin */
+/* line 577, stdin */
 .event-date-hex {
   background-color: rgba(0, 0, 0, 0.05);
   display: flex;
@@ -9880,40 +9901,40 @@ body {
   justify-content: center;
   height: 5.313rem;
   width: 4.6rem; }
-  /* line 562, stdin */
+  /* line 584, stdin */
   .event-date-hex .event-month[title] {
     border-left: none;
     border-right: none;
     border-top: none;
     margin: 0 auto; }
-  /* line 568, stdin */
+  /* line 590, stdin */
   .event-date-hex .event-day {
     font-size: 1.75rem;
     line-height: 2rem;
     height: 2rem;
     margin-top: 0; }
-  /* line 574, stdin */
+  /* line 596, stdin */
   .event-date-hex.reverse {
     background-color: var(--blue); }
-    /* line 576, stdin */
+    /* line 598, stdin */
     .event-date-hex.reverse .event-month[title] {
       border-bottom-color: rgba(255, 255, 255, 0.4);
       color: white; }
-    /* line 580, stdin */
+    /* line 602, stdin */
     .event-date-hex.reverse .event-day {
       color: white; }
-  /* line 584, stdin */
+  /* line 606, stdin */
   .event-date-hex.not-inview {
     opacity: 0; }
-  /* line 587, stdin */
+  /* line 609, stdin */
   .event-date-hex.inview {
     animation: hex-pop 0.25s ease-in-out; }
 
 @media (prefers-reduced-motion: reduce) {
-  /* line 597, stdin */
+  /* line 619, stdin */
   .event-date-hex.not-inview {
     opacity: 1; }
-  /* line 600, stdin */
+  /* line 622, stdin */
   .event-date-hex.inview {
     animation: none; } }
 
@@ -9927,11 +9948,11 @@ body {
             clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transform: scale(1); } }
 
-/* line 619, stdin */
+/* line 641, stdin */
 .event-date .event-year {
   margin-top: 0; }
 
-/* line 625, stdin */
+/* line 647, stdin */
 .event-month[title] {
   border: 1px rgba(0, 0, 0, 0.1) solid;
   color: var(--red);
@@ -9944,13 +9965,13 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase; }
-  /* line 637, stdin */
+  /* line 659, stdin */
   .event-month[title].reverse {
     background-color: var(--red);
     border: none;
     color: white; }
 
-/* line 645, stdin */
+/* line 667, stdin */
 .event-year {
   border-top: 1px rgba(0, 0, 0, 0.1) solid;
   color: var(--gray);
@@ -9962,96 +9983,96 @@ body {
   position: relative;
   text-align: center; }
 
-/* line 665, stdin */
+/* line 687, stdin */
 body {
   margin: 0;
   padding: 2rem; }
 
-/* line 669, stdin */
+/* line 691, stdin */
 .donutchart {
   align-items: center;
   position: relative; }
   @media (min-width: 640px) {
-    /* line 669, stdin */
+    /* line 691, stdin */
     .donutchart {
       display: flex; } }
-  /* line 675, stdin */
+  /* line 697, stdin */
   .donutchart .chart {
     border-radius: 50%;
     height: auto;
     max-width: 250px;
     width: 100%; }
     @media (min-width: 640px) {
-      /* line 675, stdin */
+      /* line 697, stdin */
       .donutchart .chart {
         width: 50%; } }
-    /* line 683, stdin */
+    /* line 705, stdin */
     .donutchart .chart circle {
       fill: transparent;
       stroke-width: 50%;
       stroke-dasharray: 1 314.159%;
       stroke-dashoffset: 1;
       transition: all 1s; }
-      /* line 689, stdin */
+      /* line 711, stdin */
       .donutchart .chart circle:nth-child(1) {
         stroke: var(--indigo); }
-      /* line 692, stdin */
+      /* line 714, stdin */
       .donutchart .chart circle:nth-child(2) {
         stroke: var(--teal); }
-      /* line 695, stdin */
+      /* line 717, stdin */
       .donutchart .chart circle:nth-child(3) {
         stroke: var(--pink); }
-      /* line 698, stdin */
+      /* line 720, stdin */
       .donutchart .chart circle:nth-child(4) {
         stroke: var(--yellow); }
-      /* line 701, stdin */
+      /* line 723, stdin */
       .donutchart .chart circle:nth-child(5) {
         stroke: #60B5FF; }
-  /* line 706, stdin */
+  /* line 728, stdin */
   .donutchart .chart + table {
     margin-top: 1rem; }
     @media (min-width: 640px) {
-      /* line 706, stdin */
+      /* line 728, stdin */
       .donutchart .chart + table {
         margin-left: 1rem;
         margin-top: 0; } }
-  /* line 713, stdin */
+  /* line 735, stdin */
   .donutchart table {
     margin-top: 0;
     margin-bottom: 0; }
-    /* line 717, stdin */
+    /* line 739, stdin */
     .donutchart table tbody tr .datum {
       background-color: black;
       color: white;
       font-weight: bold; }
-    /* line 722, stdin */
+    /* line 744, stdin */
     .donutchart table tbody tr .datum + td {
       padding-left: 0.25rem; }
-    /* line 725, stdin */
+    /* line 747, stdin */
     .donutchart table tbody tr:nth-child(1) .datum {
       background-color: var(--indigo); }
-    /* line 728, stdin */
+    /* line 750, stdin */
     .donutchart table tbody tr:nth-child(2) .datum {
       background-color: var(--teal);
       color: black; }
-    /* line 732, stdin */
+    /* line 754, stdin */
     .donutchart table tbody tr:nth-child(3) .datum {
       background-color: var(--pink); }
-    /* line 735, stdin */
+    /* line 757, stdin */
     .donutchart table tbody tr:nth-child(4) .datum {
       background-color: var(--yellow);
       color: black; }
-    /* line 739, stdin */
+    /* line 761, stdin */
     .donutchart table tbody tr:nth-child(5) .datum {
       background-color: #60B5FF;
       color: black; }
   @media (prefers-reduced-motion: no-preference) {
-    /* line 746, stdin */
+    /* line 768, stdin */
     .donutchart.not-inview .chart circle {
       stroke-dasharray: 1% 314.159% !important;
       stroke-dashoffset: 1% !important; } }
 
-/* line 757, stdin */
+/* line 779, stdin */
 .infodial {
   display: flex;
   flex-direction: column;
@@ -10059,7 +10080,7 @@ body {
   position: relative;
   width: 100%; }
   @media (min-width: 380px) {
-    /* line 764, stdin */
+    /* line 786, stdin */
     .infodial::before {
       content: "";
       display: block;
@@ -10067,14 +10088,14 @@ body {
       padding-top: 100%;
       width: 100%;
       z-index: 1; } }
-  /* line 773, stdin */
+  /* line 795, stdin */
   .infodial .infodialtext {
     justify-content: center;
     display: flex;
     flex-direction: column;
     margin-top: 1rem; }
     @media (min-width: 380px) {
-      /* line 773, stdin */
+      /* line 795, stdin */
       .infodial .infodialtext {
         height: 100%;
         left: 25%;
@@ -10082,91 +10103,91 @@ body {
         position: absolute;
         width: 50%;
         z-index: 3; } }
-    /* line 786, stdin */
+    /* line 808, stdin */
     .infodial .infodialtext .infodialnumber {
       font-size: 3.5rem;
       line-height: 1; }
-      /* line 789, stdin */
+      /* line 811, stdin */
       .infodial .infodialtext .infodialnumber.make-counter {
         display: inline-flex !important;
         height: 3.5rem;
         justify-content: center; }
-  /* line 796, stdin */
+  /* line 818, stdin */
   .infodial .chart {
     border-radius: 50%;
     height: auto;
     transform: rotate(-90deg);
     width: 100%; }
     @media (min-width: 380px) {
-      /* line 796, stdin */
+      /* line 818, stdin */
       .infodial .chart {
         height: 100%;
         position: absolute; } }
-    /* line 805, stdin */
+    /* line 827, stdin */
     .infodial .chart .dial {
       fill: transparent;
       stroke-width: 15%;
       stroke: #f2f2f2; }
-    /* line 810, stdin */
+    /* line 832, stdin */
     .infodial .chart .reading {
       fill: transparent;
       stroke-width: 15%;
       stroke-dasharray: 1 314.159%;
       stroke-dashoffset: 1;
       transition: all 1s; }
-  /* line 819, stdin */
+  /* line 841, stdin */
   .infodial.purple .infodialtext .infodialnumber {
     color: var(--purple); }
-  /* line 822, stdin */
+  /* line 844, stdin */
   .infodial.purple .chart .reading {
     stroke: var(--purple); }
-  /* line 827, stdin */
+  /* line 849, stdin */
   .infodial.orange .infodialtext .infodialnumber {
     color: var(--orange); }
-  /* line 830, stdin */
+  /* line 852, stdin */
   .infodial.orange .chart .reading {
     stroke: var(--orange); }
-  /* line 835, stdin */
+  /* line 857, stdin */
   .infodial.green .infodialtext .infodialnumber {
     color: var(--green); }
-  /* line 838, stdin */
+  /* line 860, stdin */
   .infodial.green .chart .reading {
     stroke: var(--green); }
-  /* line 843, stdin */
+  /* line 865, stdin */
   .infodial.blue .infodialtext .infodialnumber {
     color: var(--blue); }
-  /* line 846, stdin */
+  /* line 868, stdin */
   .infodial.blue .chart .reading {
     stroke: var(--blue); }
   @media (prefers-reduced-motion: no-preference) {
-    /* line 851, stdin */
+    /* line 873, stdin */
     .infodial.not-inview .chart .reading {
       stroke-dasharray: 1% 314.159% !important;
       stroke-dashoffset: 1% !important; } }
 
-/* line 860, stdin */
+/* line 882, stdin */
 img[data-lazyimage] {
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   transition: all 0.5s ease-in-out; }
-  /* line 865, stdin */
+  /* line 887, stdin */
   img[data-lazyimage].not-lazyLoaded {
     opacity: 0; }
 
-/* line 873, stdin */
+/* line 895, stdin */
 a[href].link-underline,
 .links-underline a[href] {
   border-bottom: 1px currentColor solid;
   transition: color 0.25s ease-in-out; }
-  /* line 877, stdin */
+  /* line 899, stdin */
   a[href].link-underline:hover, a[href].link-underline:active,
   .links-underline a[href]:hover,
   .links-underline a[href]:active {
     border-bottom: 2px currentColor solid;
     text-decoration: none; }
 
-/* line 883, stdin */
+/* line 905, stdin */
 a[href].link-animate-underline,
 .links-animate-underline a[href] {
   background-image: linear-gradient(to bottom, transparent 20%, currentColor 21%);
@@ -10175,17 +10196,17 @@ a[href].link-animate-underline,
   background-size: 0% 6px;
   text-decoration: none;
   transition: background-size 0.25s ease-in-out; }
-  /* line 891, stdin */
+  /* line 913, stdin */
   a[href].link-animate-underline:hover, a[href].link-animate-underline:focus,
   .links-animate-underline a[href]:hover,
   .links-animate-underline a[href]:focus {
     background-size: 100% 6px; }
 
-/* line 896, stdin */
+/* line 918, stdin */
 a[href].link-animate-arrow {
   position: relative;
   transition: padding-right 0.25s; }
-  /* line 899, stdin */
+  /* line 921, stdin */
   a[href].link-animate-arrow::after {
     display: inline-block;
     font-family: "Font Awesome 5 Free";
@@ -10194,27 +10215,27 @@ a[href].link-animate-arrow {
     position: absolute;
     transform: scale(0.8);
     transition: opacity 0.25s, right 0.25s, left 0.25s, bottom 0.25s; }
-  /* line 908, stdin */
+  /* line 930, stdin */
   a[href].link-animate-arrow:hover {
     text-decoration: none; }
-    /* line 910, stdin */
+    /* line 932, stdin */
     a[href].link-animate-arrow:hover::after {
       opacity: 1; }
-  /* line 915, stdin */
+  /* line 937, stdin */
   a[href].link-animate-arrow.arrow-left::after {
     content: "\f061";
     right: 0; }
-  /* line 919, stdin */
+  /* line 941, stdin */
   a[href].link-animate-arrow.arrow-left:hover {
     padding-right: 1.125rem; }
-  /* line 924, stdin */
+  /* line 946, stdin */
   a[href].link-animate-arrow.arrow-right::after {
     content: "\f060";
     left: 0; }
-  /* line 929, stdin */
+  /* line 951, stdin */
   a[href].link-animate-arrow.arrow-right:hover::after {
     left: -1.125rem; }
-  /* line 935, stdin */
+  /* line 957, stdin */
   a[href].link-animate-arrow.arrow-down::after {
     content: "\f063";
     bottom: -0.5rem;
@@ -10222,6 +10243,6 @@ a[href].link-animate-arrow {
     margin-left: -1rem;
     text-align: center;
     width: 2rem; }
-  /* line 944, stdin */
+  /* line 966, stdin */
   a[href].link-animate-arrow.arrow-down:hover::after {
     bottom: -1.4rem; }
