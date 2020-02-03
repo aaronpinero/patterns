@@ -3,7 +3,8 @@ $break-slider-control:640px;
   .slider-port {
     margin-left:auto;
     margin-right:auto;
-    overflow-x:scroll;
+    overflow:scroll;
+    padding-bottom:0.25rem;
     position:relative;
     scroll-snap-type:x mandatory;
     scroll-snap-stop:always;
@@ -22,9 +23,16 @@ $break-slider-control:640px;
       display:block;
       flex-shrink:0;
       margin:0;
+      opacity:0;
       padding:0;
       scroll-snap-align:start;
+      transition:all 0.5s;
+      visibility:hidden;
       width:100%;
+      &.visible {
+        opacity:1;
+        visibility:visible;
+      }
     }
     .slide + .slide {
       margin-left:16px;

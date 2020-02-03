@@ -5,11 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // function to scroll to a certain slide
     var scrollIt = function scrollIt(slider,slideToShow) {
+      console.log("called Scrollit");
       var slides = slider.querySelectorAll('li');
       var sliderPort = slider.querySelector('.slider-port');
       var scrollPos = slideToShow.offsetLeft;
-      console.log({scrollPos});
       sliderPort.scrollLeft = scrollPos;
+      setTimeout(function(){ sliderPort.scrollLeft = scrollPos; },50);
     };
 
     // function to show a slide
@@ -80,9 +81,10 @@ document.addEventListener("DOMContentLoaded", function() {
       controls.innerHTML = '\n  <li class="d-block p-0 m-0"><button class="slider-control slider-control-prev" aria-label="previous">Previous</button></li>\n  <li class="d-block p-0 m-0"><button class="slider-control slider-control-next" aria-label="next">Next</button></li>';
       slider.append(controls);
       controls.addEventListener('click', function (e) {
-        console.log(e.target.closest('button').getAttribute('aria-label'));
+        e.preventDefault();
         showSlide(slider,e.target.closest('button').getAttribute('aria-label'));
       });
+      
   
     });
 
