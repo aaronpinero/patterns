@@ -10254,6 +10254,7 @@ a[href].link-animate-arrow {
   overflow-x: scroll;
   position: relative;
   scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   width: 100%; }
@@ -10262,12 +10263,12 @@ a[href].link-animate-arrow {
     .slider .slider-port {
       width: calc(100% - 4rem); } }
 
-/* line 989, stdin */
+/* line 990, stdin */
 .slider .slides {
   display: flex;
   padding: 0;
   padding-bottom: 1rem; }
-  /* line 993, stdin */
+  /* line 994, stdin */
   .slider .slides .slide {
     display: block;
     flex-shrink: 0;
@@ -10275,25 +10276,25 @@ a[href].link-animate-arrow {
     padding: 0;
     scroll-snap-align: start;
     width: 100%; }
-  /* line 1001, stdin */
+  /* line 1002, stdin */
   .slider .slides .slide + .slide {
-    margin-left: 1rem; }
+    margin-left: 16px; }
 
 @media (max-width: 639px) {
-  /* line 1005, stdin */
+  /* line 1006, stdin */
   .slider .slider-controls {
     display: flex;
     justify-content: space-between; } }
 
 @media (min-width: 640px) {
-  /* line 1011, stdin */
+  /* line 1012, stdin */
   .slider .slider-control {
     position: absolute;
     top: 50%;
     z-index: 2; }
-    /* line 1016, stdin */
+    /* line 1017, stdin */
     .slider .slider-control.slider-control-prev {
       left: 0; }
-    /* line 1019, stdin */
+    /* line 1020, stdin */
     .slider .slider-control.slider-control-next {
       right: 0; } }

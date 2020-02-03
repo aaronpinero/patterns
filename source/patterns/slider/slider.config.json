@@ -7,7 +7,7 @@
   },
   "variants": [
     {
-      "name": "single",
+      "name": "default",
       "title": "Single",
       "label": "Single"
     },

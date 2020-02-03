@@ -6,6 +6,7 @@ $break-slider-control:640px;
     overflow-x:scroll;
     position:relative;
     scroll-snap-type:x mandatory;
+    scroll-snap-stop:always;
     scroll-behavior:smooth;
     -webkit-overflow-scrolling:touch;
     width:100%;
@@ -26,7 +27,7 @@ $break-slider-control:640px;
       width:100%;
     }
     .slide + .slide {
-      margin-left:1rem;
+      margin-left:16px;
     }
   }
   .slider-controls {
