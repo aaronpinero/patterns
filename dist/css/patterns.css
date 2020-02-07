@@ -10255,7 +10255,7 @@ a[href].link-animate-arrow {
   a[href].link-animate-arrow.arrow-down:hover::after {
     bottom: -1.4rem; }
 
-/* line 984, stdin */
+/* line 986, stdin */
 .slider .slider-port {
   margin-left: auto;
   margin-right: auto;
@@ -10266,16 +10266,16 @@ a[href].link-animate-arrow {
   -webkit-overflow-scrolling: touch;
   width: 100%; }
   @media (min-width: 640px) {
-    /* line 984, stdin */
+    /* line 986, stdin */
     .slider .slider-port {
       width: calc(100% - 5rem); } }
 
-/* line 997, stdin */
+/* line 999, stdin */
 .slider .slides {
   display: flex;
   padding: 0;
   padding-bottom: 1rem; }
-  /* line 1001, stdin */
+  /* line 1003, stdin */
   .slider .slides .slide {
     display: block;
     flex-shrink: 0;
@@ -10283,29 +10283,44 @@ a[href].link-animate-arrow {
     padding: 0;
     scroll-snap-align: start;
     width: 100%; }
-  /* line 1009, stdin */
+  /* line 1011, stdin */
   .slider .slides .slide + .slide {
     margin-left: 16px; }
 
 @media (max-width: 639px) {
-  /* line 1013, stdin */
+  /* line 1015, stdin */
   .slider .slider-controls {
     display: flex;
     justify-content: space-between; } }
 
-/* line 1019, stdin */
+/* line 1021, stdin */
 .slider .slider-control {
   background: transparent;
   border: 0;
   padding: 0; }
   @media (min-width: 640px) {
-    /* line 1019, stdin */
+    /* line 1021, stdin */
     .slider .slider-control {
       position: absolute;
       top: 50%; }
-      /* line 1026, stdin */
+      /* line 1028, stdin */
       .slider .slider-control.slider-control-prev {
         left: 0; }
-      /* line 1029, stdin */
+      /* line 1031, stdin */
       .slider .slider-control.slider-control-next {
         right: 0; } }
+
+@media (min-width: 600px) {
+  /* line 1038, stdin */
+  .slider.slider-2 .slides .slide {
+    width: calc(50% - (16px / 2)); } }
+
+@media (min-width: 600px) {
+  /* line 1047, stdin */
+  .slider.slider-3 .slides .slide {
+    width: calc(50% - (16px / 2)); } }
+
+@media (min-width: 900px) {
+  /* line 1047, stdin */
+  .slider.slider-3 .slides .slide {
+    width: calc(33.333% - (32px / 3)); } }

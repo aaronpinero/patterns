@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if (visible.length > max_visible) {
         // if next
         if (direction) {
-          scrollIt(slider,visible[visible.length - 1]);
+          scrollIt(slider,visible[1]);
         }
         // if previous
         else {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       }
       else {
-        var newSlide = i === 0 ? visible[0].previousElementSibling : visible[visible.length - 1].nextElementSibling;
+        var newSlide = i === 0 ? visible[0].previousElementSibling : visible[0].nextElementSibling;
         if (newSlide) {
           scrollIt(slider,newSlide);
         }

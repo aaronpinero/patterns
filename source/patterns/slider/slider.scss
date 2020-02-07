@@ -1,4 +1,6 @@
 $break-slider-control:640px;
+$break-slider-2:600px;
+$break-slider-3:900px;
 .slider {
   .slider-port {
     margin-left:auto;
@@ -47,6 +49,27 @@ $break-slider-control:640px;
       }
       &.slider-control-next {
         right:0;
+      }
+    }
+  }
+  &.slider-2 {
+    .slides {
+      .slide {
+        @media (min-width:$break-slider-2) {
+          width:calc(50% - (16px / 2));
+        }
+      }
+    }
+  }
+  &.slider-3 {
+    .slides {
+      .slide {
+        @media (min-width:$break-slider-2) {
+          width:calc(50% - (16px / 2));
+        }
+        @media (min-width:$break-slider-3) {
+          width:calc(33.333% - (32px / 3));
+        }
       }
     }
   }
