@@ -1,0 +1,10 @@
+{
+  "title": "Info Bar",
+  "label": "Info Bar",
+  "context": {
+    "infobar_color": "purple",
+    "infobar_current": "$216,600",
+    "infobar_max": "$250,000"
+  },
+  "status": "ready"
+}
