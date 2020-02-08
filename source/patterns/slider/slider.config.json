@@ -1,0 +1,31 @@
+{
+  "title": "Slider",
+  "label": "Slider",
+  "status": "ready",
+  "context": {
+    "slider_type": ""
+  },
+  "variants": [
+    {
+      "name": "default",
+      "title": "Single Item",
+      "label": "Single Item"
+    },
+    {
+      "name": "two-up",
+      "title": "Two Items",
+      "label": "Two Items",
+      "context": {
+        "slider_type": " slider-2"
+      }
+    },
+    {
+      "name": "three-up",
+      "title": "Three Items",
+      "label": "Three Items",
+      "context": {
+        "slider_type": " slider-3"
+      }
+    }
+  ]
+}
