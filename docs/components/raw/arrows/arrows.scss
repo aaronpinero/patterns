@@ -31,4 +31,12 @@ $arrow-timing:0.25s !default;
       transform:rotate(180deg);
     }
   }
+  &[disabled],
+  &:disabled {
+    cursor:default;
+    &::before {
+      background-color:rgba(black,0.2);
+      clip-path:polygon(20% 11%, 31% 0%, 81% 50%, 31% 100%, 20% 89%, 51% 58%, 52% 57%, 59% 50%, 52% 43%, 51% 42%);
+    }
+  }
 }
