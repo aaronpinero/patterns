@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", function() {
       var sliderPort = slider.querySelector('.slider-port');
       var scrollPos = slideToShow.offsetLeft;
       sliderPort.scrollLeft = scrollPos;
-      setTimeout(function(){ sliderPort.scrollLeft = scrollPos; },75);
+      setTimeout(function(){ sliderPort.scrollLeft = scrollPos; },75); // i am doing this because there is something strage about setting scroll left position
     };
 
     // function to show a slide
     var showSlide = function showSlide(slider,direction) {
-      var sliderPort = slider.querySelector('.slider-port');
       var slides = slider.querySelectorAll('.slide');
+      var sliderPort = slider.querySelector('.slider-port');
       var visible = slider.querySelectorAll('.visible');
       var max_visible = Math.round(sliderPort.offsetWidth / slides[0].offsetWidth);
       var i = direction === 'previous' ? 0 : 1;
@@ -41,10 +41,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // do for each slider
     sliders.forEach(function(slider) {
-      var sliderPort = slider.querySelector('.slider-port');
-
       // find all the slides
       var slides = slider.querySelectorAll('.slide');
+
+      // the slider port is the container for the slides
+      var sliderPort = slider.querySelector('.slider-port');
 
       // set the default tab index such that the slide links cannot be focused
       Array.prototype.forEach.call(slides, function (slide) {
@@ -61,10 +62,12 @@ document.addEventListener("DOMContentLoaded", function() {
         Array.prototype.forEach.call(slides, function (entry) {
           var link = entry.target.querySelector('a');
           if (entry.isIntersecting) {
+            // if the slide is in the port, make it visible and focusable
             entry.target.classList.add('visible');
             link.removeAttribute('tabindex', '-1');
           }
           else {
+            // otherwise, make it not visible and not focusable
             entry.target.classList.remove('visible');
             link.setAttribute('tabindex', '-1');
           }
@@ -72,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }, observerSettings);
 
       Array.prototype.forEach.call(slides, function(slide) {
+        // observe all the slides
         return slide_observer.observe(slide);
       });
 
@@ -109,6 +113,8 @@ document.addEventListener("DOMContentLoaded", function() {
       controls.className = "slider-controls list-unstyled p-0 m-0";
       controls.innerHTML = '\n  <li class="d-block p-0 m-0"><button class="slider-control slider-control-prev arrow prev" aria-label="previous">Previous</button></li>\n  <li class="d-block p-0 m-0"><button class="slider-control slider-control-next arrow next" aria-label="next">Next</button></li>';
       slider.append(controls);
+
+      // add event handlers to controls
       var prev = controls.querySelector('.slider-control-prev');
       var next = controls.querySelector('.slider-control-next');
       prev.addEventListener('click', function(e) {
