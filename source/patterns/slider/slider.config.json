@@ -8,21 +8,21 @@
   "variants": [
     {
       "name": "default",
-      "title": "Single",
-      "label": "Single"
+      "title": "Single Item",
+      "label": "Single Item"
     },
     {
-      "name": "double",
-      "title": "Double",
-      "label": "Double",
+      "name": "two-up",
+      "title": "Two Items",
+      "label": "Two Items",
       "context": {
         "slider_type": " slider-2"
       }
     },
     {
-      "name": "triple",
-      "title": "Triple",
-      "label": "Triple",
+      "name": "three-up",
+      "title": "Three Items",
+      "label": "Three Items",
       "context": {
         "slider_type": " slider-3"
       }
