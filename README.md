@@ -1,3 +1,3 @@
-# TyBs Patterns
+# Tyfy Bootstrap Patterns
 
-A collection of UI patterns build on the TyBs framework and organized using Fractal. The static pattern library documentation is at https://aaronpinero.github.io/patterns/index.html
+A collection of UI patterns built on [Tyfy Bootstrap](https://github.com/aaronpinero/typography-bootstrap) (**TyBs**; a themed version of Bootstrap 4) and organized using [Fractal](https://fractal.build). The pattern documentation is hosted on [GitHub Pages](https://aaronpinero.github.io/patterns/index.html).
