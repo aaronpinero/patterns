@@ -1,10 +1,8 @@
 ---
 title: Dependencies
 label: Dependencies
-order: 2
+order: 3
 ---
-
-# Dependencies
 
 **Bootstrap** has a number of dependencies which are included in this project. In addition, I have added dependencies to aid development or add important features.
 
@@ -24,7 +22,7 @@ Popper.js is required for a number of Boostrap components -- most notably dropdo
 
 ## Bootstrap
 
-Since I am relying on Bootstrap components it is necessary to include the Bootstrap JavaScript.
+Since I am relying on Bootstrap components it is necessary to include the Bootstrap JavaScript and the Tyfy-Bootstrap CSS.
 
 ## FontAwesome
 

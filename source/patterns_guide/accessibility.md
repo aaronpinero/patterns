@@ -1,7 +1,7 @@
 ---
 title: Accessibility
 label: Accessibility
-order: 3
+order: 4
 ---
 
 This framework attempts to address accessibility for individual components. The following accessibility concerns have been considered:

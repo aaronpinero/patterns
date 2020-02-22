@@ -1,0 +1,51 @@
+{
+  "title": "Info Dial",
+  "label": "Info Dial",
+  "context": {
+    "infodial_color": "purple",
+    "infodial_current": "76",
+    "infodial_max": "100",
+    "infodial_number": "76%",
+    "infodial_desc": "of students receive financial aid"
+  },
+  "order": 2,
+  "status": "ready",
+  "variants": [
+    {
+      "name": "blue",
+      "title": "Blue",
+      "label": "Blue",
+      "context": {
+        "infodial_color": "blue",
+        "infodial_current": "54",
+        "infodial_max": "100",
+        "infodial_number": "54%",
+        "infodial_desc": "of respondents were female"
+      }
+    },
+    {
+      "name": "orange",
+      "title": "Orange",
+      "label": "Orange",
+      "context": {
+        "infodial_color": "orange",
+        "infodial_current": "27",
+        "infodial_max": "100",
+        "infodial_number": "27%",
+        "infodial_desc": "of registered voters approve"
+      }
+    },
+    {
+      "name": "green",
+      "title": "Green",
+      "label": "Green",
+      "context": {
+        "infodial_color": "green",
+        "infodial_current": "62",
+        "infodial_max": "100",
+        "infodial_number": "62%",
+        "infodial_desc": "of infected patients survived"
+      }
+    }
+  ]
+}
