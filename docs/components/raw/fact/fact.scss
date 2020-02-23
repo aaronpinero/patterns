@@ -1,0 +1,39 @@
+$fact-fontsize:4rem !default;
+.fact {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  margin:0 auto;
+  position:relative;
+  width:100%;
+  .factnumber {
+    @include condensed-font;
+    font-size:$fact-fontsize;
+    line-height:1;
+    &.make-counter {
+      display:inline-flex !important;
+      height:$fact-fontsize;
+      justify-content:center;
+    }
+  }
+  &.purple {
+    .factnumber {
+      color:var(--purple);
+    }
+  }
+  &.orange {
+    .factnumber {
+      color:var(--orange);
+    }
+  }
+  &.green {
+    .factnumber {
+      color:var(--green);
+    }
+  }
+  &.blue {
+    .factnumber {
+      color:var(--blue);
+    }
+  }
+}
