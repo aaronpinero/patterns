@@ -1,0 +1,48 @@
+{
+  "title": "Fact",
+  "label": "Fact",
+  "context": {
+    "fact_color": "purple",
+    "fact_number": "$1.25 million",
+    "fact_desc": "raised to fight climate change"
+  },
+  "order": 2,
+  "status": "ready",
+  "variants": [
+    {
+      "name": "default",
+      "title": "Purple",
+      "label": "Purple"
+    },
+    {
+      "name": "blue",
+      "title": "Blue",
+      "label": "Blue",
+      "context": {
+        "fact_color": "blue",
+        "fact_number": "4,792",
+        "fact_desc": "random acts of kindness in 2019"
+      }
+    },
+    {
+      "name": "orange",
+      "title": "Orange",
+      "label": "Orange",
+      "context": {
+        "fact_color": "orange",
+        "fact_number": "4 of 5",
+        "fact_desc": "dentists recommend OralB"
+      }
+    },
+    {
+      "name": "green",
+      "title": "Green",
+      "label": "Green",
+      "context": {
+        "fact_color": "green",
+        "fact_number": "99.999%",
+        "fact_desc": "guaranteed uptime of our services"
+      }
+    }
+  ]
+}

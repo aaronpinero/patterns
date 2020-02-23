@@ -31,6 +31,11 @@ function Count(obj){
       // record the number
       numArray[numArray.length] = thisnum;
     }
+    else if (numChars[i] == " ") {
+      var new_character = document.createElement('span');
+      new_character.innerHTML = "&nbsp;";
+      obj.appendChild(new_character);
+    }
     else {
       var new_character = document.createElement('span');
       new_character.innerText = numChars[i];

@@ -1,5 +1,5 @@
 $infodial-break:380px !default;
-$infodial-fontsize:3.5rem !default;
+$infodial-fontsize:4rem !default;
 $color-infodial-empty:#f2f2f2;
 .infodial {
   display:flex;
@@ -31,10 +31,9 @@ $color-infodial-empty:#f2f2f2;
       z-index:3;
     }
     .infodialnumber {
+      @include condensed-font;
       font-size:$infodial-fontsize;
-      font-weight:bolder;
       line-height:1;
-      transform:scaleX(0.8);
       &.make-counter {
         display:inline-flex !important;
         height:$infodial-fontsize;

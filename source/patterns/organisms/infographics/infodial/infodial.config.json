@@ -12,6 +12,11 @@
   "status": "ready",
   "variants": [
     {
+      "name": "default",
+      "title": "Purple",
+      "label": "Purple"
+    },
+    {
       "name": "blue",
       "title": "Blue",
       "label": "Blue",
