@@ -49,7 +49,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // set the default tab index such that the slide links cannot be focused
       Array.prototype.forEach.call(slides, function (slide) {
-        slide.querySelector('a').setAttribute('tabindex', '-1');
+        if (slide.querySelector('a')) {
+          slide.querySelector('a').setAttribute('tabindex', '-1');
+        }
       });
 
       // settings for intersection observer
@@ -64,12 +66,12 @@ document.addEventListener("DOMContentLoaded", function() {
           if (entry.isIntersecting) {
             // if the slide is in the port, make it visible and focusable
             entry.target.classList.add('visible');
-            link.removeAttribute('tabindex', '-1');
+            if (link) { link.removeAttribute('tabindex', '-1'); }
           }
           else {
             // otherwise, make it not visible and not focusable
             entry.target.classList.remove('visible');
-            link.setAttribute('tabindex', '-1');
+            if (link) { link.setAttribute('tabindex', '-1'); }
           }
         });
       }, observerSettings);

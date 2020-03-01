@@ -2,7 +2,7 @@
   "title": "Lazy-Loaded Image",
   "label": "Lazy-Loaded Image",
   "context": {
-    "lazyimage_src": "http://placeimg.com/640/480/arch",
+    "lazyimage_src": "/img/unsplash/alex-knight-4NJoYCuWDok-unsplash.jpg",
     "lazyimage_alt": "alt tag for the image"
   },
   "status": "ready"

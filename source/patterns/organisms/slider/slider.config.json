@@ -3,7 +3,32 @@
   "label": "Slider",
   "status": "ready",
   "context": {
-    "slider_type": ""
+    "slider_type": "",
+    "slides":[{
+      "lazyimage_src": "/img/unsplash/alex-knight-4NJoYCuWDok-unsplash.jpg",
+      "lazyimage_alt": "alt tag for the image",
+      "image-card_body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href=\"#\">Learn More</a></p>"
+    },{
+      "lazyimage_src": "/img/unsplash/beasty--HxIhfS_dUk-unsplash.jpg",
+      "lazyimage_alt": "alt tag for the image",
+      "image-card_body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href=\"#\">Learn More</a></p>"
+    },{
+      "lazyimage_src": "/img/unsplash/danist-LZ7-lLCRS3s-unsplash.jpg",
+      "lazyimage_alt": "alt tag for the image",
+      "image-card_body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href=\"#\">Learn More</a></p>"
+    },{
+      "lazyimage_src": "/img/unsplash/nori-webb-fORnjg5ahmM-unsplash.jpg",
+      "lazyimage_alt": "alt tag for the image",
+      "image-card_body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href=\"#\">Learn More</a></p>"
+    },{
+      "lazyimage_src": "/img/unsplash/oleksii-drozdov-aFHxJx-aKMk-unsplash.jpg",
+      "lazyimage_alt": "alt tag for the image",
+      "image-card_body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href=\"#\">Learn More</a></p>"
+    },{
+      "lazyimage_src": "/img/unsplash/thomas-drouault-Y1UtWeiRmhE-unsplash.jpg",
+      "lazyimage_alt": "alt tag for the image",
+      "image-card_body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href=\"#\">Learn More</a></p>"
+    }]
   },
   "variants": [
     {

@@ -1,24 +1,11 @@
 <div class="slider{{slider_type}} position-relative">
   <div class="slider-port" role="region" aria-label="slider" tabindex="0">
     <ul class="slides sibling-margins-skip">
+      {{#each slides}}
       <li class="slide">
-        {{ render '@image-card' }}
+        {{> @image-card }}
       </li>
-      <li class="slide">
-        {{ render '@image-card' }}
-      </li>
-      <li class="slide">
-        {{ render '@image-card' }}
-      </li>
-      <li class="slide">
-        {{ render '@image-card' }}
-      </li>
-      <li class="slide">
-        {{ render '@image-card' }}
-      </li>
-      <li class="slide">
-        {{ render '@image-card' }}
-      </li>
+      {{/each}}
     </ul>
   </div>
 </div>
