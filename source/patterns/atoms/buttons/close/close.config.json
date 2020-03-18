@@ -1,0 +1,18 @@
+{
+  "title": "Close",
+  "label": "Close",
+  "status": "ready",
+  "context": {
+    "close_classes": "btn btn-close"
+  },
+  "variants": [
+    {
+      "name": "button",
+      "title": "As Button",
+      "label": "As Button",
+      "context": {
+        "close_classes": "btn btn-primary btn-close"
+      }
+    }
+  ]
+}
