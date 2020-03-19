@@ -1,8 +1,9 @@
-$close-height:2rem !default;
-$close-width:$arrow-height;
+$close-height:1.5rem !default;
+$close-width:$close-height;
 $close-timing:0.25s !default;
 
 .btn-close {
+  cursor:pointer;
   &::before {
     background-color:rgba(black,0.4);
     clip-path:polygon(79% 10%, 90% 21%, 61% 50%, 90% 79%, 79% 90%, 50% 61%, 21% 90%, 10% 79%, 39% 50%, 10% 21%, 21% 10%, 50% 39%);
