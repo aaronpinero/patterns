@@ -184,6 +184,10 @@
             &lt;/tr&gt;
             &lt;tr&gt;
                 &lt;td class="align-middle"&gt;&lt;span class="datum d-block text-center px-2 py-1 rounded"&gt;5%&lt;/span&gt;&lt;/td&gt;
+                &lt;td class="align-middle"&gt;Performing Arts&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td class="align-middle"&gt;&lt;span class="datum d-block text-center px-2 py-1 rounded"&gt;5%&lt;/span&gt;&lt;/td&gt;
                 &lt;td class="align-middle"&gt;Undecided&lt;/td&gt;
             &lt;/tr&gt;
         &lt;/tbody&gt;
@@ -220,6 +224,10 @@
       <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"align-middle"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"datum d-block text-center px-2 py-1 rounded"</span>&gt;</span>20%<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"align-middle"</span>&gt;</span>Social Sciences<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"align-middle"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"datum d-block text-center px-2 py-1 rounded"</span>&gt;</span>5%<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"align-middle"</span>&gt;</span>Performing Arts<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"align-middle"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"datum d-block text-center px-2 py-1 rounded"</span>&gt;</span>5%<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
@@ -378,6 +386,7 @@
 <span class="hljs-variable">$color3</span>:#{var(--pink)} !default;
 <span class="hljs-variable">$color4</span>:#{var(--yellow)} !default;
 <span class="hljs-variable">$color5</span>:<span class="hljs-number">#60B5FF</span> !default;
+<span class="hljs-variable">$color6</span>:<span class="hljs-number">#ff794c</span> !default;
 <span class="hljs-variable">$donutchart-break</span>:<span class="hljs-number">640px</span> !default;
 <span class="hljs-selector-tag">body</span> {
   <span class="hljs-attribute">margin</span>:<span class="hljs-number">0</span>;
@@ -418,6 +427,9 @@
       &amp;<span class="hljs-selector-pseudo">:nth-child</span>(5) {
         stroke: <span class="hljs-variable">$color5</span>;
       }
+      &amp;<span class="hljs-selector-pseudo">:nth-child</span>(6) {
+        stroke: <span class="hljs-variable">$color6</span>;
+      }
     }
   }
   <span class="hljs-selector-class">.chart</span> + <span class="hljs-selector-tag">table</span> {
@@ -457,6 +469,10 @@
         <span class="hljs-attribute">background-color</span>:<span class="hljs-variable">$color5</span>;
         <span class="hljs-attribute">color</span>:black;
       }
+      &amp;<span class="hljs-selector-pseudo">:nth-child</span>(6) <span class="hljs-selector-class">.datum</span> {
+        <span class="hljs-attribute">background-color</span>:<span class="hljs-variable">$color6</span>;
+        <span class="hljs-attribute">color</span>:black;
+      }
     }
   }
   &amp;<span class="hljs-selector-class">.not-inview</span> {
@@ -483,7 +499,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2 KB</span>
+                    <span class="Meta-value">2.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -1029,6 +1045,70 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button-outline--button-down.html" data-pjax>
                 <span>Down Arrow</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-close">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Close</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="close--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="close--button.html" data-pjax>
+                <span>As Button</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1959,6 +2039,30 @@
     
 
             </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="image-popup.html" data-pjax>
+                <span>Image Popup</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
         </li>
         
     

@@ -1,0 +1,41 @@
+$close-height:1.5rem !default;
+$close-width:$close-height;
+$close-timing:0.25s !default;
+
+.btn-close {
+  cursor:pointer;
+  &::before {
+    background-color:rgba(black,0.4);
+    clip-path:polygon(79% 10%, 90% 21%, 61% 50%, 90% 79%, 79% 90%, 50% 61%, 21% 90%, 10% 79%, 39% 50%, 10% 21%, 21% 10%, 50% 39%);
+    content:"";
+    cursor:pointer;
+    display:block;
+    height:$close-height;
+    transition:all $close-timing;
+    width:$close-width;
+  }
+  &:hover {
+    &::before {
+      background-color:var(--primary);
+    }
+  }
+  &.btn-primary {
+    border:none;
+    padding:0.5rem;
+    &::before {
+      background-color:white;
+    }
+    &:hover {
+      &::before {
+        background-color:white;
+      }
+    }  
+  }
+  &[disabled],
+  &:disabled {
+    cursor:default;
+    &::before {
+      background-color:rgba(black,0.2);
+    }
+  }
+}
