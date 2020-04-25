@@ -2,6 +2,8 @@
   "title": "Image Popup",
   "label": "Image Popup",
   "context": {
+    "image_popup_small": "../../img/unsplash/danist-LZ7-lLCRS3s-unsplash-small.jpg",
+    "image_popup_small_alt": "alt tag for the small image",
     "image_popup_id": "p1",
     "image_caption": "Test caption",
     "image_credit": "Test credit",

@@ -1,22 +1,22 @@
-
-
 <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../../css/patterns.css">
+    <link rel="stylesheet" href="{{ path '/css/patterns.css' }}">
     <title>Preview</title>
   </head>
   <body class="m-0 p-5">
     <main class="container-fluid">
       <div class="row">
         <div class="col">
-          <a href="#" class="btn btn-primary btn-close"><span class="sr-only">Close</span></a>
+          <div style="max-width:300px">
+            {{{ yield }}}
+          </div>
         </div>
       </div>
     </main>
-    <script src="../../js/patterns.min.js"></script>
+    <script src="{{ path '/js/patterns.min.js' }}"></script>
   </body>
 </html>
