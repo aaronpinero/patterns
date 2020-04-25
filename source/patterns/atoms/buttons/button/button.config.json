@@ -4,7 +4,8 @@
   "status": "ready",
   "context": {
     "button_classes": "btn btn-primary",
-    "button_text": "Button Text"
+    "button_text": "Button Text",
+    "button_href": "#"
   },
   "variants": [
     {

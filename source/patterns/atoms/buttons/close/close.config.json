@@ -3,7 +3,8 @@
   "label": "Close",
   "status": "ready",
   "context": {
-    "close_classes": "btn btn-close"
+    "close_classes": "btn btn-close",
+    "close_href": "#"
   },
   "variants": [
     {

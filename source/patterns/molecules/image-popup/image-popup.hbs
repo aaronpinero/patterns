@@ -1,0 +1,13 @@
+<div class="image-popup">
+  <a class="image-popup-trigger" href="#image-popup-{{image_popup_id}}">
+    {{> @lazyimage }}
+  </a>
+  <div id="image-popup-{{image_popup_id}}" class="image-popup-target">
+    <div class="image-popped-image">
+      {{> @lazyimage }}
+      <div class="image-caption">{{image_caption}}</div>
+      <div class="image-credit">{{image_credit}}</div>
+    </div>
+    {{render '@close--button' }}
+  </div>
+</div>

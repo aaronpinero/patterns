@@ -1,0 +1,13 @@
+{
+  "title": "Image Popup",
+  "label": "Image Popup",
+  "context": {
+    "image_popup_id": "p1",
+    "image_caption": "Test caption",
+    "image_credit": "Test credit",
+    "close_href": "#_",
+    "lazyimage_src": "../../img/unsplash/danist-LZ7-lLCRS3s-unsplash.jpg",
+    "lazyimage_alt": "alt tag for the image"
+  },
+  "status": "ready"
+}
