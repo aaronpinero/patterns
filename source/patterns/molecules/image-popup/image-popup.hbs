@@ -3,11 +3,10 @@
     <img border="0" src="{{image_popup_small}}" alt="{{image_popup_small_alt}}">
   </a>
   <div id="image-popup-{{image_popup_id}}" class="image-popup-target sibling-margins-off">
-    <div class="image-popped-image sibling-margins-off">
+    <figure class="image-popped-image">
       {{> @lazyimage }}
-      <div class="image-caption">{{image_caption}}</div>
-      <div class="image-credit">{{image_credit}}</div>
-    </div>
+      <figcaption class="image-caption">{{image_caption}}</figcaption>
+    </figure>
     {{render '@close--button' }}
   </div>
 </div>
