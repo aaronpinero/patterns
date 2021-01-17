@@ -1,0 +1,11 @@
+{
+  "title": "Range Input",
+  "label": "Range Input",
+  "status": "ready",
+  "context": {
+    "range_min": "1",
+    "range_max": "100",
+    "range_step": "1",
+    "range_value": "50"
+  }
+}

@@ -9841,7 +9841,45 @@ a[href].link-animate-arrow {
   a[href].link-animate-arrow.arrow-down:hover::after {
     bottom: -1.4rem; }
 
-/* line 552, stdin */
+/* line 550, stdin */
+input[type="range"] {
+  -webkit-appearance: none !important;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 0;
+  border-radius: 2px;
+  height: 4px;
+  margin: calc(1rem - 2px) 0;
+  min-width: 4rem;
+  outline: none;
+  width: 100%; }
+  /* line 560, stdin */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    border: 4px var(--red) solid;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.33);
+    box-sizing: border-box;
+    height: 1.25rem;
+    width: 1.25rem; }
+  /* line 570, stdin */
+  input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    border: 4px var(--red) solid;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.33);
+    box-sizing: border-box;
+    height: 1.25rem;
+    width: 1.25rem; }
+  /* line 580, stdin */
+  input[type="range"]::-moz-range-progress {
+    -webkit-appearance: none !important;
+    background-color: var(--red);
+    border-radius: 2px;
+    height: 4px; }
+
+/* line 589, stdin */
 .event-date-hex {
   background-color: rgba(0, 0, 0, 0.05);
   display: flex;
@@ -9849,40 +9887,40 @@ a[href].link-animate-arrow {
   justify-content: center;
   height: 5.313rem;
   width: 4.6rem; }
-  /* line 559, stdin */
+  /* line 596, stdin */
   .event-date-hex .event-month[title] {
     border-left: none;
     border-right: none;
     border-top: none;
     margin: 0 auto; }
-  /* line 565, stdin */
+  /* line 602, stdin */
   .event-date-hex .event-day {
     font-size: 1.75rem;
     line-height: 2rem;
     height: 2rem;
     margin-top: 0; }
-  /* line 571, stdin */
+  /* line 608, stdin */
   .event-date-hex.reverse {
     background-color: var(--blue); }
-    /* line 573, stdin */
+    /* line 610, stdin */
     .event-date-hex.reverse .event-month[title] {
       border-bottom-color: rgba(255, 255, 255, 0.4);
       color: white; }
-    /* line 577, stdin */
+    /* line 614, stdin */
     .event-date-hex.reverse .event-day {
       color: white; }
-  /* line 581, stdin */
+  /* line 618, stdin */
   .event-date-hex.not-inview {
     opacity: 0; }
-  /* line 584, stdin */
+  /* line 621, stdin */
   .event-date-hex.inview {
     animation: hex-pop 0.25s ease-in-out; }
 
 @media (prefers-reduced-motion: reduce) {
-  /* line 594, stdin */
+  /* line 631, stdin */
   .event-date-hex.not-inview {
     opacity: 1; }
-  /* line 597, stdin */
+  /* line 634, stdin */
   .event-date-hex.inview {
     animation: none; } }
 
@@ -9896,20 +9934,20 @@ a[href].link-animate-arrow {
             clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transform: scale(1); } }
 
-/* line 616, stdin */
+/* line 653, stdin */
 .event-date .event-year {
   margin-top: 0; }
 
-/* line 621, stdin */
+/* line 658, stdin */
 .image-popup a.image-popup-trigger {
   display: block; }
-  /* line 623, stdin */
+  /* line 660, stdin */
   .image-popup a.image-popup-trigger img {
     display: block;
     height: auto;
     width: 100%; }
 
-/* line 629, stdin */
+/* line 666, stdin */
 .image-popup .image-popup-target {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.75);
@@ -9928,14 +9966,14 @@ a[href].link-animate-arrow {
   transition: opacity 0.25s;
   width: 100%;
   z-index: -1; }
-  /* line 647, stdin */
+  /* line 684, stdin */
   .image-popup .image-popup-target .image-popped-image {
     display: inline-block;
     position: relative;
     transform: scale(0.9);
     transition: transform 0.25s;
     z-index: 3; }
-  /* line 654, stdin */
+  /* line 691, stdin */
   .image-popup .image-popup-target img {
     border-radius: 4px;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -9943,90 +9981,90 @@ a[href].link-animate-arrow {
     max-height: 60vh;
     max-width: calc(100vw - 4.5rem); }
     @media (min-height: 500px) {
-      /* line 654, stdin */
+      /* line 691, stdin */
       .image-popup .image-popup-target img {
         max-height: 70vh; } }
     @media (min-height: 800px) {
-      /* line 654, stdin */
+      /* line 691, stdin */
       .image-popup .image-popup-target img {
         max-height: 80vh; } }
-  /* line 667, stdin */
+  /* line 704, stdin */
   .image-popup .image-popup-target .image-caption {
     border-top: 1px rgba(255, 255, 255, 0.2) solid;
     margin: 1.5rem auto 0 auto;
     max-width: 45em;
     padding: 1rem 2.25rem;
     text-align: left; }
-  /* line 674, stdin */
+  /* line 711, stdin */
   .image-popup .image-popup-target:target {
     opacity: 1;
     outline: none;
     visibility: visible;
     z-index: 999; }
-    /* line 679, stdin */
+    /* line 716, stdin */
     .image-popup .image-popup-target:target .image-popped-image {
       transform: scale(1); }
-  /* line 683, stdin */
+  /* line 720, stdin */
   .image-popup .image-popup-target .btn-close {
     position: absolute;
     right: 1rem;
     top: 1rem;
     z-index: 5; }
 
-/* line 693, stdin */
+/* line 730, stdin */
 .breadcrumb {
   background-color: white; }
-  /* line 696, stdin */
+  /* line 733, stdin */
   .breadcrumb .breadcrumb-item:first-child {
     min-width: 3.125rem; }
-    /* line 698, stdin */
+    /* line 735, stdin */
     .breadcrumb .breadcrumb-item:first-child > a {
       -webkit-clip-path: polygon(0% 0%, calc(100% - 0.75rem) 0%, 100% 50%, calc(100% - 0.75rem) 100%, 0% 100%, 0 50%);
               clip-path: polygon(0% 0%, calc(100% - 0.75rem) 0%, 100% 50%, calc(100% - 0.75rem) 100%, 0% 100%, 0 50%);
       padding-left: 0.75rem; }
-  /* line 703, stdin */
+  /* line 740, stdin */
   .breadcrumb .breadcrumb-item:nth-last-child(2) {
     transition: opacity 0.35s; }
-    /* line 705, stdin */
+    /* line 742, stdin */
     .breadcrumb .breadcrumb-item:nth-last-child(2).inview {
       animation: breadcrumb-item-slide 0.35s ease-in-out; }
-  /* line 709, stdin */
+  /* line 746, stdin */
   .breadcrumb .breadcrumb-item:nth-last-child(3) {
     transition: opacity 0.45s; }
-    /* line 711, stdin */
+    /* line 748, stdin */
     .breadcrumb .breadcrumb-item:nth-last-child(3).inview {
       animation: breadcrumb-item-slide 0.45s ease-in-out; }
-  /* line 715, stdin */
+  /* line 752, stdin */
   .breadcrumb .breadcrumb-item:nth-last-child(4) {
     transition: opacity 0.55s; }
-    /* line 717, stdin */
+    /* line 754, stdin */
     .breadcrumb .breadcrumb-item:nth-last-child(4).inview {
       animation: breadcrumb-item-slide 0.55s ease-in-out; }
-  /* line 721, stdin */
+  /* line 758, stdin */
   .breadcrumb .breadcrumb-item:nth-last-child(5) {
     transition: opacity 0.65s; }
-    /* line 723, stdin */
+    /* line 760, stdin */
     .breadcrumb .breadcrumb-item:nth-last-child(5).inview {
       animation: breadcrumb-item-slide 0.65s ease-in-out; }
-  /* line 727, stdin */
+  /* line 764, stdin */
   .breadcrumb .breadcrumb-item:nth-last-child(6) {
     transition: opacity 0.75s; }
-    /* line 729, stdin */
+    /* line 766, stdin */
     .breadcrumb .breadcrumb-item:nth-last-child(6).inview {
       animation: breadcrumb-item-slide 0.75s ease-in-out; }
-  /* line 733, stdin */
+  /* line 770, stdin */
   .breadcrumb .breadcrumb-item.dropdown {
     overflow: visible; }
-  /* line 736, stdin */
+  /* line 773, stdin */
   .breadcrumb .breadcrumb-item + .breadcrumb-item {
     padding-left: 0; }
-    /* line 738, stdin */
+    /* line 775, stdin */
     .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
       display: none; }
-  /* line 745, stdin */
+  /* line 782, stdin */
   .breadcrumb.smallscreen li:first-child a {
     font-size: 0; }
-    /* line 747, stdin */
+    /* line 784, stdin */
     .breadcrumb.smallscreen li:first-child a:before {
       content: "\f015";
       display: block;
@@ -10038,12 +10076,12 @@ a[href].link-animate-arrow {
       font-weight: 900;
       text-rendering: auto; }
 
-/* line 764, stdin */
+/* line 801, stdin */
 .date-card .date-time,
 .date-card .date-location {
   padding-left: 1.5rem;
   position: relative; }
-  /* line 768, stdin */
+  /* line 805, stdin */
   .date-card .date-time::before,
   .date-card .date-location::before {
     color: rgba(0, 0, 0, 0.4);
@@ -10054,54 +10092,54 @@ a[href].link-animate-arrow {
     text-align: center;
     width: 1rem; }
 
-/* line 779, stdin */
+/* line 816, stdin */
 .date-card .date-time::before {
   content: "\f017"; }
 
-/* line 784, stdin */
+/* line 821, stdin */
 .date-card .date-location::before {
   content: "\f3c5"; }
 
-/* line 791, stdin */
+/* line 828, stdin */
 .date-card {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
   position: relative;
   transition: all 0.25s; }
-  /* line 795, stdin */
+  /* line 832, stdin */
   .date-card .date-card-date {
     padding: 0.875rem; }
-    /* line 797, stdin */
+    /* line 834, stdin */
     .date-card .date-card-date .event-date {
       width: 3rem; }
-  /* line 801, stdin */
+  /* line 838, stdin */
   .date-card .date-card-body {
     padding: 0.875rem; }
-  /* line 804, stdin */
+  /* line 841, stdin */
   .date-card .date-card-title + .date-card-description {
     margin-top: 0.5rem; }
-  /* line 808, stdin */
+  /* line 845, stdin */
   .date-card.js-date-clickthrough .date-card-title a {
     background-image: none !important;
     border: none !important;
     text-decoration: none !important; }
-  /* line 813, stdin */
+  /* line 850, stdin */
   .date-card.js-date-clickthrough:hover {
     border-color: rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transform: scale(1.06); }
-  /* line 819, stdin */
+  /* line 856, stdin */
   .date-card.borderless {
     border: none;
     box-shadow: none; }
-    /* line 822, stdin */
+    /* line 859, stdin */
     .date-card.borderless .date-card-date {
       padding: 0 0.875rem 0 0; }
-    /* line 825, stdin */
+    /* line 862, stdin */
     .date-card.borderless .date-card-body {
       border-left: none !important;
       padding: 0 0 0 0.375rem; }
 
-/* line 832, stdin */
+/* line 869, stdin */
 .card .card-img-scalable {
   background-color: var(--grey);
   height: 0;
@@ -10110,7 +10148,7 @@ a[href].link-animate-arrow {
   position: relative;
   width: 100%;
   z-index: 1; }
-  /* line 840, stdin */
+  /* line 877, stdin */
   .card .card-img-scalable img {
     border-radius: 4px 4px 0 0;
     display: block;
@@ -10123,11 +10161,11 @@ a[href].link-animate-arrow {
     width: 100%; }
 
 @media (min-width: 520px) {
-  /* line 857, stdin */
+  /* line 894, stdin */
   .card-peek.js-processed {
     cursor: pointer; } }
 
-/* line 862, stdin */
+/* line 899, stdin */
 .card-peek .card-img {
   background-color: var(--primary);
   height: 0;
@@ -10136,7 +10174,7 @@ a[href].link-animate-arrow {
   position: relative;
   width: 100%;
   z-index: 1; }
-  /* line 870, stdin */
+  /* line 907, stdin */
   .card-peek .card-img img {
     filter: blur(0px) brightness(1);
     height: 100%;
@@ -10147,47 +10185,47 @@ a[href].link-animate-arrow {
     top: 0;
     width: 100%; }
 
-/* line 881, stdin */
+/* line 918, stdin */
 .card-peek .card-img-overlay {
   z-index: 2; }
   @media (max-width: 519px) {
-    /* line 881, stdin */
+    /* line 918, stdin */
     .card-peek .card-img-overlay {
       padding-left: 0;
       padding-right: 0;
       position: static; } }
   @media (min-width: 640px) {
-    /* line 889, stdin */
+    /* line 926, stdin */
     .card-peek .card-img-overlay:before {
       content: "";
       display: block;
       flex: 2; } }
   @media (min-width: 520px) {
-    /* line 896, stdin */
+    /* line 933, stdin */
     .card-peek .card-img-overlay * + * {
       margin-top: 0; } }
-  /* line 901, stdin */
+  /* line 938, stdin */
   .card-peek .card-img-overlay .card-peek-title {
     transition: background-color 0.25s ease-in-out; }
     @media (max-width: 519px) {
-      /* line 901, stdin */
+      /* line 938, stdin */
       .card-peek .card-img-overlay .card-peek-title {
         padding: 0 !important; } }
     @media (min-width: 520px) {
-      /* line 901, stdin */
+      /* line 938, stdin */
       .card-peek .card-img-overlay .card-peek-title {
         background-color: var(--primary);
         color: white; } }
     @media (min-width: 520px) {
-      /* line 910, stdin */
+      /* line 947, stdin */
       .card-peek .card-img-overlay .card-peek-title a {
         color: white; } }
   @media (max-width: 519px) {
-    /* line 916, stdin */
+    /* line 953, stdin */
     .card-peek .card-img-overlay .card-peek-content {
       padding: 0 !important; } }
   @media (min-width: 520px) {
-    /* line 916, stdin */
+    /* line 953, stdin */
     .card-peek .card-img-overlay .card-peek-content {
       color: white;
       flex: 0;
@@ -10196,117 +10234,117 @@ a[href].link-animate-arrow {
       transition: all 0.25s ease-in-out; } }
 
 @media (min-width: 520px) {
-  /* line 930, stdin */
+  /* line 967, stdin */
   .card-peek:hover .card-img img {
     filter: blur(5px) brightness(0.5);
     opacity: 0.6; } }
 
 @media (min-width: 520px) {
-  /* line 937, stdin */
+  /* line 974, stdin */
   .card-peek:hover .card-img-overlay .card-peek-title {
     background-color: transparent; } }
 
-/* line 943, stdin */
+/* line 980, stdin */
 .card-peek:hover .card-peek-content {
   flex: 1; }
 
-/* line 957, stdin */
+/* line 994, stdin */
 body {
   margin: 0;
   padding: 2rem; }
 
-/* line 961, stdin */
+/* line 998, stdin */
 .donutchart {
   align-items: center;
   position: relative; }
   @media (min-width: 640px) {
-    /* line 961, stdin */
+    /* line 998, stdin */
     .donutchart {
       display: flex; } }
-  /* line 967, stdin */
+  /* line 1004, stdin */
   .donutchart .chart {
     border-radius: 50%;
     height: auto;
     max-width: 250px;
     width: 100%; }
     @media (min-width: 640px) {
-      /* line 967, stdin */
+      /* line 1004, stdin */
       .donutchart .chart {
         width: 50%; } }
-    /* line 975, stdin */
+    /* line 1012, stdin */
     .donutchart .chart circle {
       fill: transparent;
       stroke-width: 50%;
       stroke-dasharray: 1 314.159%;
       stroke-dashoffset: 1;
       transition: all 1s; }
-      /* line 981, stdin */
+      /* line 1018, stdin */
       .donutchart .chart circle:nth-child(1) {
         stroke: var(--indigo); }
-      /* line 984, stdin */
+      /* line 1021, stdin */
       .donutchart .chart circle:nth-child(2) {
         stroke: var(--teal); }
-      /* line 987, stdin */
+      /* line 1024, stdin */
       .donutchart .chart circle:nth-child(3) {
         stroke: var(--pink); }
-      /* line 990, stdin */
+      /* line 1027, stdin */
       .donutchart .chart circle:nth-child(4) {
         stroke: var(--yellow); }
-      /* line 993, stdin */
+      /* line 1030, stdin */
       .donutchart .chart circle:nth-child(5) {
         stroke: #60B5FF; }
-      /* line 996, stdin */
+      /* line 1033, stdin */
       .donutchart .chart circle:nth-child(6) {
         stroke: #ff794c; }
-  /* line 1001, stdin */
+  /* line 1038, stdin */
   .donutchart .chart + table {
     margin-top: 1rem; }
     @media (min-width: 640px) {
-      /* line 1001, stdin */
+      /* line 1038, stdin */
       .donutchart .chart + table {
         margin-left: 1rem;
         margin-top: 0; } }
-  /* line 1008, stdin */
+  /* line 1045, stdin */
   .donutchart table {
     margin-top: 0;
     margin-bottom: 0; }
-    /* line 1012, stdin */
+    /* line 1049, stdin */
     .donutchart table tbody tr .datum {
       background-color: black;
       color: white;
       font-weight: bold; }
-    /* line 1017, stdin */
+    /* line 1054, stdin */
     .donutchart table tbody tr .datum + td {
       padding-left: 0.25rem; }
-    /* line 1020, stdin */
+    /* line 1057, stdin */
     .donutchart table tbody tr:nth-child(1) .datum {
       background-color: var(--indigo); }
-    /* line 1023, stdin */
+    /* line 1060, stdin */
     .donutchart table tbody tr:nth-child(2) .datum {
       background-color: var(--teal);
       color: black; }
-    /* line 1027, stdin */
+    /* line 1064, stdin */
     .donutchart table tbody tr:nth-child(3) .datum {
       background-color: var(--pink); }
-    /* line 1030, stdin */
+    /* line 1067, stdin */
     .donutchart table tbody tr:nth-child(4) .datum {
       background-color: var(--yellow);
       color: black; }
-    /* line 1034, stdin */
+    /* line 1071, stdin */
     .donutchart table tbody tr:nth-child(5) .datum {
       background-color: #60B5FF;
       color: black; }
-    /* line 1038, stdin */
+    /* line 1075, stdin */
     .donutchart table tbody tr:nth-child(6) .datum {
       background-color: #ff794c;
       color: black; }
   @media (prefers-reduced-motion: no-preference) {
-    /* line 1045, stdin */
+    /* line 1082, stdin */
     .donutchart.not-inview .chart circle {
       stroke-dasharray: 1% 314.159% !important;
       stroke-dashoffset: 1% !important; } }
 
-/* line 1054, stdin */
+/* line 1091, stdin */
 .fact {
   display: flex;
   flex-direction: column;
@@ -10314,31 +10352,31 @@ body {
   margin: 0 auto;
   position: relative;
   width: 100%; }
-  /* line 1061, stdin */
+  /* line 1098, stdin */
   .fact .factnumber {
     font-family: 'League Gothic';
     font-weight: normal;
     font-size: 4rem;
     line-height: 1; }
-    /* line 1065, stdin */
+    /* line 1102, stdin */
     .fact .factnumber.make-counter {
       display: inline-flex !important;
       height: 4rem;
       justify-content: center; }
-  /* line 1072, stdin */
+  /* line 1109, stdin */
   .fact.purple .factnumber {
     color: var(--purple); }
-  /* line 1077, stdin */
+  /* line 1114, stdin */
   .fact.orange .factnumber {
     color: var(--orange); }
-  /* line 1082, stdin */
+  /* line 1119, stdin */
   .fact.green .factnumber {
     color: var(--green); }
-  /* line 1087, stdin */
+  /* line 1124, stdin */
   .fact.blue .factnumber {
     color: var(--blue); }
 
-/* line 1095, stdin */
+/* line 1132, stdin */
 .infodial {
   display: flex;
   flex-direction: column;
@@ -10346,7 +10384,7 @@ body {
   position: relative;
   width: 100%; }
   @media (min-width: 380px) {
-    /* line 1102, stdin */
+    /* line 1139, stdin */
     .infodial::before {
       content: "";
       display: block;
@@ -10354,14 +10392,14 @@ body {
       padding-top: 100%;
       width: 100%;
       z-index: 1; } }
-  /* line 1111, stdin */
+  /* line 1148, stdin */
   .infodial .infodialtext {
     justify-content: center;
     display: flex;
     flex-direction: column;
     margin-top: 1rem; }
     @media (min-width: 380px) {
-      /* line 1111, stdin */
+      /* line 1148, stdin */
       .infodial .infodialtext {
         height: 100%;
         left: 25%;
@@ -10369,71 +10407,71 @@ body {
         position: absolute;
         width: 50%;
         z-index: 3; } }
-    /* line 1124, stdin */
+    /* line 1161, stdin */
     .infodial .infodialtext .infodialnumber {
       font-family: 'League Gothic';
       font-weight: normal;
       font-size: 4rem;
       line-height: 1; }
-      /* line 1128, stdin */
+      /* line 1165, stdin */
       .infodial .infodialtext .infodialnumber.make-counter {
         display: inline-flex !important;
         height: 4rem;
         justify-content: center; }
-  /* line 1135, stdin */
+  /* line 1172, stdin */
   .infodial .chart {
     border-radius: 50%;
     height: auto;
     transform: rotate(-90deg);
     width: 100%; }
     @media (min-width: 380px) {
-      /* line 1135, stdin */
+      /* line 1172, stdin */
       .infodial .chart {
         height: 100%;
         position: absolute; } }
-    /* line 1144, stdin */
+    /* line 1181, stdin */
     .infodial .chart .dial {
       fill: transparent;
       stroke-width: 15%;
       stroke: #f2f2f2; }
-    /* line 1149, stdin */
+    /* line 1186, stdin */
     .infodial .chart .reading {
       fill: transparent;
       stroke-width: 15%;
       stroke-dasharray: 1 314.159%;
       stroke-dashoffset: 1;
       transition: all 1s; }
-  /* line 1158, stdin */
+  /* line 1195, stdin */
   .infodial.purple .infodialtext .infodialnumber {
     color: var(--purple); }
-  /* line 1161, stdin */
+  /* line 1198, stdin */
   .infodial.purple .chart .reading {
     stroke: var(--purple); }
-  /* line 1166, stdin */
+  /* line 1203, stdin */
   .infodial.orange .infodialtext .infodialnumber {
     color: var(--orange); }
-  /* line 1169, stdin */
+  /* line 1206, stdin */
   .infodial.orange .chart .reading {
     stroke: var(--orange); }
-  /* line 1174, stdin */
+  /* line 1211, stdin */
   .infodial.green .infodialtext .infodialnumber {
     color: var(--green); }
-  /* line 1177, stdin */
+  /* line 1214, stdin */
   .infodial.green .chart .reading {
     stroke: var(--green); }
-  /* line 1182, stdin */
+  /* line 1219, stdin */
   .infodial.blue .infodialtext .infodialnumber {
     color: var(--blue); }
-  /* line 1185, stdin */
+  /* line 1222, stdin */
   .infodial.blue .chart .reading {
     stroke: var(--blue); }
   @media (prefers-reduced-motion: no-preference) {
-    /* line 1190, stdin */
+    /* line 1227, stdin */
     .infodial.not-inview .chart .reading {
       stroke-dasharray: 1% 314.159% !important;
       stroke-dashoffset: 1% !important; } }
 
-/* line 1202, stdin */
+/* line 1239, stdin */
 .slider .slider-port {
   margin-left: auto;
   margin-right: auto;
@@ -10444,16 +10482,16 @@ body {
   -webkit-overflow-scrolling: touch;
   width: 100%; }
   @media (min-width: 640px) {
-    /* line 1202, stdin */
+    /* line 1239, stdin */
     .slider .slider-port {
       width: calc(100% - 5rem); } }
 
-/* line 1215, stdin */
+/* line 1252, stdin */
 .slider .slides {
   display: flex;
   padding: 0;
   padding-bottom: 1rem; }
-  /* line 1219, stdin */
+  /* line 1256, stdin */
   .slider .slides .slide {
     display: block;
     flex-shrink: 0;
@@ -10461,44 +10499,44 @@ body {
     padding: 0;
     scroll-snap-align: start;
     width: 100%; }
-  /* line 1227, stdin */
+  /* line 1264, stdin */
   .slider .slides .slide + .slide {
     margin-left: 16px; }
 
 @media (max-width: 639px) {
-  /* line 1231, stdin */
+  /* line 1268, stdin */
   .slider .slider-controls {
     display: flex;
     justify-content: space-between; } }
 
-/* line 1237, stdin */
+/* line 1274, stdin */
 .slider .slider-control {
   background: transparent;
   border: 0;
   padding: 0; }
   @media (min-width: 640px) {
-    /* line 1237, stdin */
+    /* line 1274, stdin */
     .slider .slider-control {
       position: absolute;
       top: 50%; }
-      /* line 1244, stdin */
+      /* line 1281, stdin */
       .slider .slider-control.slider-control-prev {
         left: 0; }
-      /* line 1247, stdin */
+      /* line 1284, stdin */
       .slider .slider-control.slider-control-next {
         right: 0; } }
 
 @media (min-width: 600px) {
-  /* line 1254, stdin */
+  /* line 1291, stdin */
   .slider.slider-2 .slides .slide {
     width: calc(50% - (16px / 2)); } }
 
 @media (min-width: 600px) {
-  /* line 1263, stdin */
+  /* line 1300, stdin */
   .slider.slider-3 .slides .slide {
     width: calc(50% - (16px / 2)); } }
 
 @media (min-width: 900px) {
-  /* line 1263, stdin */
+  /* line 1300, stdin */
   .slider.slider-3 .slides .slide {
     width: calc(33.333% - (32px / 3)); } }
