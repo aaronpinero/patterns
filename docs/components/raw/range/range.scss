@@ -1,0 +1,37 @@
+input[type="range"] {
+	-webkit-appearance: none !important;
+	background-color: rgba(0,0,0,0.25);
+	border: 0;
+	border-radius: 2px;
+	height: 4px;
+	margin: calc(1rem - 2px) 0;
+	min-width: 4rem;
+	outline: none;
+	width: 100%;
+  &::-webkit-slider-thumb {
+	  -webkit-appearance: none;
+	  background-color: white;
+	  border: 4px var(--red) solid;
+	  border-radius: 50%;
+	  box-shadow: 1px 1px 3px rgba(0,0,0,0.33);
+	  box-sizing: border-box;
+	  height: 1.25rem;
+	  width: 1.25rem;
+  }
+  &::-moz-range-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    border: 4px var(--red) solid;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.33);
+    box-sizing: border-box;
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  &::-moz-range-progress {
+	  -webkit-appearance: none !important;
+	  background-color: var(--red);
+	  border-radius: 2px;
+    height: 4px;
+  }
+}

@@ -33,11 +33,24 @@
       z-index:3;
     }
     img {
+      border-radius:4px;
+      box-shadow:0 0 1rem rgba(0,0,0,0.2);
       display:inline-block;
-      max-height:80%;
-      max-height:80vh;
-      max-width:90%;
-      max-width:90vw;
+      max-height:60vh;
+      max-width:calc(100vw - 4.5rem);
+      @media (min-height:500px) {
+        max-height:70vh;
+      }
+      @media (min-height:800px) {
+        max-height:80vh;
+      }
+    }
+    .image-caption {
+      border-top:1px rgba(white,0.2) solid;
+      margin:1.5rem auto 0 auto;
+      max-width:45em;
+      padding:1rem 2.25rem;
+      text-align:left;
     }
     &:target {
       opacity:1;
