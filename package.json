@@ -28,7 +28,7 @@
     "jquery": "^3.5.0",
     "node-sass": "^4.14.0",
     "popper.js": "^1.16.1",
-    "postcss": "^7.0.27",
+    "postcss": "^7.0.36",
     "terser": "^4.6.12",
     "tyfy": "^2.0.6",
     "tyfy-bootstrap": "^1.1.0"
