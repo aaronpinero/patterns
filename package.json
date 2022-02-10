@@ -26,7 +26,7 @@
     "bootstrap": "^4.4.1",
     "glob": "^7.1.6",
     "jquery": "^3.5.0",
-    "node-sass": "^4.14.0",
+    "node-sass": "^7.0.0",
     "popper.js": "^1.16.1",
     "postcss": "^7.0.27",
     "terser": "^4.6.12",
