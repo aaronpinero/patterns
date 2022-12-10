@@ -21,7 +21,7 @@
   "devDependencies": {},
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
-    "@frctl/fractal": "^1.2.1",
+    "@frctl/fractal": "^1.5.14",
     "autoprefixer": "^9.7.6",
     "bootstrap": "^4.4.1",
     "glob": "^7.1.6",
